@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "prepare": "husky",
+    "lint": "echo \"Linting...\"",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

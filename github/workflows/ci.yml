@@ -1,0 +1,17 @@
+name: CI
+on:
+  pull_request:
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # (demo) bạn có thể thay bằng lệnh thật cho dự án (npm ci / test…)
+      - name: Run checks
+        run: |
+          echo "Linting..."
+          echo "Testing..."
+          echo "All good!"
