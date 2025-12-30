@@ -1,0 +1,1292 @@
+[
+  {
+    "productId": 101,
+    "name": "Bánh macaron thường – vị chanh leo sốt xoài",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Macaron vị chanh leo sốt xoài thơm mát.",
+    "variants": [
+      {
+        "variantId": "101-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 102,
+    "name": "Bánh macaron thường – vị Chocolate",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Macaron vị chocolate đậm đà.",
+    "variants": [
+      {
+        "variantId": "102-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 103,
+    "name": "Bánh macaron thường – vị Bạc hà sốt me",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Sự kết hợp giữa bạc hà mát lạnh và sốt me chua ngọt.",
+    "variants": [
+      {
+        "variantId": "103-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 104,
+    "name": "Bánh macaron thường – vị Caramel chuối",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Macaron Caramel chuối độc đáo, ngọt dịu và thơm.",
+    "variants": [
+      {
+        "variantId": "104-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 105,
+    "name": "Bánh macaron thường – vị Dubai Chocolate",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Hương vị Chocolate Dubai sang trọng và quyến rũ.",
+    "variants": [
+      {
+        "variantId": "105-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 106,
+    "name": "Bánh macaron thường – vị Sữa chua mận",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Sữa chua mận chua nhẹ, ngọt thanh vừa miệng.",
+    "variants": [
+      {
+        "variantId": "106-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 107,
+    "name": "Bánh macaron thường – vị Phomai ngô",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Phomai ngô béo thơm tự nhiên.",
+    "variants": [
+      {
+        "variantId": "107-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 108,
+    "name": "Bánh macaron thường – vị Bacon & Cheese",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Phomai thịt xông khói đậm vị.",
+    "variants": [
+      {
+        "variantId": "108-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 109,
+    "name": "Bánh macaron thường – vị Phomai dâu",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Phomai dâu chua ngọt hài hòa.",
+    "variants": [
+      {
+        "variantId": "109-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 110,
+    "name": "Bánh macaron thường – vị Tiramisu",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Macaron vị tiramisu Ý chuẩn mịn béo.",
+    "variants": [
+      {
+        "variantId": "110-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 111,
+    "name": "Bánh macaron thường – vị Matcha",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Matcha Nhật Bản vị đậm, thơm tinh tế.",
+    "variants": [
+      {
+        "variantId": "111-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 112,
+    "name": "Bánh macaron thường – vị Trà Bá tước cam",
+    "image": "../images/product/avatar/20201107180549.jpg",
+    "description": "Hương Earl Grey hòa quyện cam thơm.",
+    "variants": [
+      {
+        "variantId": "112-default",
+        "price": 20000,
+        "stock": 999
+      }
+    ]
+  },
+
+  {
+    "productId": 150,
+    "name": "Set 6 bánh macaron thường",
+    "image": "../images/product/avatar/20201012090720.jpg",
+    "description": "Set 6 bánh macaron thường nhiều vị.",
+    "variants": [
+      {
+        "variantId": "150-default",
+        "price": 120000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 151,
+    "name": "Set 8 bánh macaron thường",
+    "image": "../images/product/avatar/2020110717565.jpg",
+    "description": "Set 8 bánh macaron thường đa dạng.",
+    "variants": [
+      {
+        "variantId": "151-default",
+        "price": 170000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 152,
+    "name": "Set 12 bánh macaron thường",
+    "image": "../images/product/avatar/20201107174726.jpg",
+    "description": "Set lớn 12 bánh macaron thường.",
+    "variants": [
+      {
+        "variantId": "152-default",
+        "price": 250000,
+        "stock": 999
+      }
+    ]
+  },
+
+  {
+    "productId": 180,
+    "name": "Hũ macaron mini 25 bánh",
+    "image": "../images/product/avatar/20201107180419.jpg",
+    "description": "Hũ 25 bánh macaron mini nhỏ xinh.",
+    "variants": [
+      {
+        "variantId": "180-default",
+        "price": 170000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 181,
+    "name": "Hũ macaron mini 55 bánh",
+    "image": "../images/product/avatar/20201012090457.jpg",
+    "description": "Hũ 55 bánh macaron mini đủ màu.",
+    "variants": [
+      {
+        "variantId": "181-default",
+        "price": 340000,
+        "stock": 999
+      }
+    ]
+  },
+
+  {
+    "productId": 201,
+    "name": "Fatcaron vị chanh mật ong",
+    "image": "../images/product/avatar/20240629201224.png",
+    "description": "Fatcaron nhân chanh mật ong thơm mát và ngọt dịu.",
+    "variants": [
+      {
+        "variantId": "201-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 202,
+    "name": "Fatcaron vị Black Forest",
+    "image": "../images/product/avatar/20240629201224.png",
+    "description": "Fatcaron Black Forest đậm vị chocolate và anh đào.",
+    "variants": [
+      {
+        "variantId": "202-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 203,
+    "name": "Fatcaron vị Genmaicha (Trà gạo rang)",
+    "image": "../images/product/avatar/20240629201312.png",
+    "description": "Fatcaron vị trà gạo rang Genmaicha thơm béo nhẹ.",
+    "variants": [
+      {
+        "variantId": "203-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 204,
+    "name": "Fatcaron vị Creme Brulée",
+    "image": "../images/product/avatar/20240629201543.png",
+    "description": "Fatcaron vị kem đường cháy Creme Brulée béo ngậy.",
+    "variants": [
+      {
+        "variantId": "204-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 205,
+    "name": "Fatcaron vị Olong Nhài Nhãn",
+    "image": "../images/product/avatar/20240629201224.png",
+    "description": "Fatcaron Olong Nhài Nhãn thơm hương trà thanh mát.",
+    "variants": [
+      {
+        "variantId": "205-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 206,
+    "name": "Fatcaron vị Bơ Hạt dẻ cười",
+    "image": "../images/product/avatar/20240629201224.png",
+    "description": "Fatcaron vị bơ hạt dẻ cười béo bùi hấp dẫn.",
+    "variants": [
+      {
+        "variantId": "206-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 207,
+    "name": "Fatcaron vị Sữa chua quả mọng",
+    "image": "../images/product/avatar/20240629201224.png",
+    "description": "Fatcaron với nhân sữa chua quả mọng chua ngọt.",
+    "variants": [
+      {
+        "variantId": "207-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 208,
+    "name": "Fatcaron vị Pina Colada (dừa dứa)",
+    "image": "../images/product/avatar/20240629201224.png",
+    "description": "Fatcaron vị Pina Colada kết hợp dừa và dứa nhiệt đới.",
+    "variants": [
+      {
+        "variantId": "208-default",
+        "price": 35000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 250,
+    "name": "Set 6 Fatcaron",
+    "image": "../images/product/avatar/20240629210219.jpg",
+    "description": "Set 6 bánh Fatcaron với nhiều vị hấp dẫn.",
+    "variants": [
+      {
+        "variantId": "250-default",
+        "price": 220000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 251,
+    "name": "Set 8 Fatcaron đủ vị",
+    "image": "../images/product/avatar/20240629210219.jpg",
+    "description": "Set 8 Fatcaron đủ vị, lựa chọn hoàn hảo cho quà tặng.",
+    "variants": [
+      {
+        "variantId": "251-default",
+        "price": 290000,
+        "stock": 999
+      }
+    ]
+  },
+  {
+    "productId": 301,
+    "name": "Bánh Big Mac 3 tầng (12cm)",
+    "image": "../images/product/avatar/20220319152154.jpg",
+    "description": "Bánh Big Mac 3 tầng size 12cm với lớp kem mềm và trang trí sang trọng.",
+    "variants": [
+      {
+        "variantId": "301-1",
+        "price": 350000,
+        "stock": 10,
+        "attributes": {
+          "attributeId": 1,
+          "valueId": 1,
+          "label": "Xoài chanh leo"
+        }
+      },
+      {
+        "variantId": "301-2",
+        "price": 360000,
+        "stock": 8,
+        "attributes": {
+          "attributeId": 1,
+          "valueId": 2,
+          "label": "Sữa chua Dâu"
+        }
+      },
+      {
+        "variantId": "301-3",
+        "price": 380000,
+        "stock": 5,
+        "attributes": {
+          "attributeId": 1,
+          "valueId": 3,
+          "label": "Coffee Macchiato"
+        }
+      }
+    ]
+  },
+  {
+    "productId": 302,
+    "name": "Bánh Big Mac 3 tầng (16cm)",
+    "image": "../images/product/avatar/20220319152154.jpg",
+    "description": "Bánh Big Mac 3 tầng size 16cm phù hợp cho tiệc sinh nhật vừa và nhỏ.",
+    "variants": [
+      {
+        "variantId": "302-1",
+        "price": 400000,
+        "stock": 8,
+        "attributes": {
+          "attributeId": 1,
+          "valueId": 1,
+          "label": "Xoài chanh leo"
+        }
+      },
+      {
+        "variantId": "302-2",
+        "price": 420000,
+        "stock": 6,
+        "attributes": {
+          "attributeId": 1,
+          "valueId": 2,
+          "label": "Sữa chua Dâu"
+        }
+      },
+      {
+        "variantId": "302-3",
+        "price": 450000,
+        "stock": 4,
+        "attributes": {
+          "attributeId": 1,
+          "valueId": 3,
+          "label": "Coffee Macchiato"
+        }
+      }
+    ]
+  },
+  {
+    "productId": 303,
+    "name": "Bánh Big Mac 2 tầng (12cm)",
+    "image": "../images/product/avatar/20210719191233.jpg",
+    "description": "Bánh Big Mac 2 tầng size 12cm trang trí đẹp mắt, phù hợp tiệc nhỏ.",
+    "variants": [
+      {
+        "variantId": "303-1",
+        "price": 350000,
+        "stock": 10,
+        "attributes": {
+          "attributeId": 3,
+          "valueId": 1,
+          "label": "Xoài chanh leo"
+        }
+      },
+      {
+        "variantId": "303-2",
+        "price": 370000,
+        "stock": 7,
+        "attributes": {
+          "attributeId": 3,
+          "valueId": 2,
+          "label": "Sữa chua Dâu"
+        }
+      },
+      {
+        "variantId": "303-3",
+        "price": 390000,
+        "stock": 5,
+        "attributes": {
+          "attributeId": 3,
+          "valueId": 3,
+          "label": "Coffee Macchiato"
+        }
+      }
+    ]
+  },
+  {
+    "productId": 304,
+    "name": "Bánh Big Mac 2 tầng (16cm)",
+    "image": "../images/product/avatar/20210719191233.jpg",
+    "description": "Bánh Big Mac 2 tầng size 16cm với vị kem ngọt dịu và mềm mịn.",
+    "variants": [
+      {
+        "variantId": "304-1",
+        "price": 400000,
+        "stock": 8,
+        "attributes": {
+          "attributeId": 4,
+          "valueId": 1,
+          "label": "Xoài chanh leo"
+        }
+      },
+      {
+        "variantId": "304-2",
+        "price": 420000,
+        "stock": 6,
+        "attributes": {
+          "attributeId": 4,
+          "valueId": 2,
+          "label": "Sữa chua Dâu"
+        }
+      },
+      {
+        "variantId": "304-3",
+        "price": 450000,
+        "stock": 4,
+        "attributes": {
+          "attributeId": 4,
+          "valueId": 3,
+          "label": "Coffee Macchiato"
+        }
+      }
+    ]
+  },
+  {
+    "productId": 310,
+    "name": "Bánh ghép lập phương 8 bánh",
+    "description": "Set bánh ghép lập phương 8 bánh độc đáo và đẹp mắt.",
+    "image": "../images/product/avatar/20210719191233.jpg",
+    "hasFlavors": false,
+    "basePrice": 200000,
+    "variants": [
+      {
+        "variantId": "310-default",
+        "sku": "LAPPHUONG-8",
+        "price": 200000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 311,
+    "name": "Bánh ghép lập phương 27 bánh",
+    "description": "Bánh lập phương 27 bánh phù hợp cho tiệc lớn.",
+    "image": "../images/product/avatar/20210719191233.jpg",
+    "hasFlavors": false,
+    "basePrice": 650000,
+    "variants": [
+      {
+        "variantId": "311-default",
+        "sku": "LAPPHUONG-27",
+        "price": 650000,
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "productId": 312,
+    "name": "Bánh ghép tròn 12 bánh",
+    "description": "Bánh ghép tròn 12 bánh với thiết kế tròn đẹp và tiện lợi.",
+    "image": "../images/product/avatar/20210719191233.jpg",
+    "hasFlavors": false,
+    "basePrice": 270000,
+    "variants": [
+      {
+        "variantId": "312-default",
+        "sku": "GHEP-TRON-12",
+        "price": 270000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 313,
+    "name": "Mousse Socola (12cm)",
+    "description": "Bánh mousse socola size 12cm mềm mịn và thơm đậm vị cacao.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 250000,
+    "variants": [
+      {
+        "variantId": "313-default",
+        "sku": "MOUSSE-SOCOLA-12",
+        "price": 250000,
+        "stock": 18
+      }
+    ]
+  },
+  {
+    "productId": 314,
+    "name": "Mousse Socola (16cm)",
+    "description": "Bánh mousse socola size 16cm thích hợp cho buổi tiệc nhỏ.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 450000,
+    "variants": [
+      {
+        "variantId": "314-default",
+        "sku": "MOUSSE-SOCOLA-16",
+        "price": 450000,
+        "stock": 12
+      }
+    ]
+  },
+  {
+    "productId": 315,
+    "name": "Mousse Socola (20cm)",
+    "description": "Bánh mousse socola size 20cm phù hợp cho buổi tiệc đông người.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 600000,
+    "variants": [
+      {
+        "variantId": "315-default",
+        "sku": "MOUSSE-SOCOLA-20",
+        "price": 600000,
+        "stock": 8
+      }
+    ]
+  },
+  {
+    "productId": 316,
+    "name": "Mousse Dâu Tây (12cm)",
+    "description": "Bánh mousse dâu tây 12cm thanh mát với vị dâu tự nhiên.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 220000,
+    "variants": [
+      {
+        "variantId": "316-default",
+        "sku": "MOUSSE-DAU-12",
+        "price": 220000,
+        "stock": 16
+      }
+    ]
+  },
+  {
+    "productId": 317,
+    "name": "Mousse Dâu Tây (16cm)",
+    "description": "Bánh mousse dâu size 16cm mềm mịn và ngọt dịu.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 420000,
+    "variants": [
+      {
+        "variantId": "317-default",
+        "sku": "MOUSSE-DAU-16",
+        "price": 420000,
+        "stock": 11
+      }
+    ]
+  },
+  {
+    "productId": 318,
+    "name": "Mousse Dâu Tây (20cm)",
+    "description": "Bánh mousse dâu tây size 20cm phù hợp tiệc đông người.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 580000,
+    "variants": [
+      {
+        "variantId": "318-default",
+        "sku": "MOUSSE-DAU-20",
+        "price": 580000,
+        "stock": 7
+      }
+    ]
+  },
+  {
+    "productId": 319,
+    "name": "Mousse Caramel Táo (12cm)",
+    "description": "Mousse caramel táo 12cm với vị ngọt nhẹ và thơm đặc trưng.",
+    "image": "../images/product/avatar/20240629202418.png",
+    "hasFlavors": false,
+    "basePrice": 250000,
+    "variants": [
+      {
+        "variantId": "319-default",
+        "sku": "MOUSSE-CARAMEL-TAO-12",
+        "price": 250000,
+        "stock": 14
+      }
+    ]
+  },
+  {
+    "productId": 320,
+    "name": "Mousse Caramel Táo (16cm)",
+    "description": "Mousse caramel táo 16cm mềm mịn, hương vị độc đáo.",
+    "image": "../images/product/avatar/20240629202418.png",
+    "hasFlavors": false,
+    "basePrice": 450000,
+    "variants": [
+      {
+        "variantId": "320-default",
+        "sku": "MOUSSE-CARAMEL-TAO-16",
+        "price": 450000,
+        "stock": 12
+      }
+    ]
+  },
+  {
+    "productId": 321,
+    "name": "Mousse Caramel Táo (20cm)",
+    "description": "Mousse caramel táo size 20cm phù hợp tiệc đông người.",
+    "image": "../images/product/avatar/20240629202418.png",
+    "hasFlavors": false,
+    "basePrice": 600000,
+    "variants": [
+      {
+        "variantId": "321-default",
+        "sku": "MOUSSE-CARAMEL-TAO-20",
+        "price": 600000,
+        "stock": 8
+      }
+    ]
+  },
+  {
+    "productId": 322,
+    "name": "Mousse Chanh Leo (12cm)",
+    "description": "Mousse chanh leo 12cm với vị chua nhẹ và thơm mát.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 220000,
+    "variants": [
+      {
+        "variantId": "322-default",
+        "sku": "MOUSSE-CHANH-LEO-12",
+        "price": 220000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 323,
+    "name": "Mousse Chanh Leo (16cm)",
+    "description": "Mousse chanh leo 16cm mềm mịn và thanh mát.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 420000,
+    "variants": [
+      {
+        "variantId": "323-default",
+        "sku": "MOUSSE-CHANH-LEO-16",
+        "price": 420000,
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "productId": 324,
+    "name": "Mousse Chanh Leo (20cm)",
+    "description": "Mousse chanh leo 20cm phù hợp cho các buổi tiệc.",
+    "image": "../images/product/avatar/20240629203025.png",
+    "hasFlavors": false,
+    "basePrice": 580000,
+    "variants": [
+      {
+        "variantId": "324-default",
+        "sku": "MOUSSE-CHANH-LEO-20",
+        "price": 580000,
+        "stock": 7
+      }
+    ]
+  },
+  {
+    "productId": 401,
+    "name": "Combo sinh nhật 1",
+    "description": "Combo sinh nhật 1 gồm các món bánh được kết hợp hài hòa, phù hợp làm quà tặng.",
+    "image": "../images/product/avatar/20210404165249.jpg",
+    "hasFlavors": false,
+    "basePrice": 250000,
+    "variants": [
+      {
+        "variantId": "401-default",
+        "sku": "COMBO-SN-1",
+        "price": 250000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 402,
+    "name": "Combo sinh nhật 2",
+    "description": "Combo sinh nhật 2 bao gồm nhiều loại bánh hấp dẫn, trang trí đẹp mắt.",
+    "image": "../images/product/avatar/20210404165249.jpg",
+    "hasFlavors": false,
+    "basePrice": 320000,
+    "variants": [
+      {
+        "variantId": "402-default",
+        "sku": "COMBO-SN-2",
+        "price": 320000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 403,
+    "name": "Combo sinh nhật 3",
+    "description": "Combo sinh nhật 3 được phối hợp từ các loại bánh nổi bật và hương vị đặc trưng.",
+    "image": "../images/product/avatar/20210404165249.jpg",
+    "hasFlavors": false,
+    "basePrice": 320000,
+    "variants": [
+      {
+        "variantId": "403-default",
+        "sku": "COMBO-SN-3",
+        "price": 320000,
+        "stock": 12
+      }
+    ]
+  },
+  {
+    "productId": 404,
+    "name": "Combo sinh nhật 4",
+    "description": "Combo sinh nhật 4 lý tưởng làm quà tặng, hương vị phong phú và trình bày đẹp.",
+    "image": "../images/product/avatar/20210404165249.jpg",
+    "hasFlavors": false,
+    "basePrice": 320000,
+    "variants": [
+      {
+        "variantId": "404-default",
+        "sku": "COMBO-SN-4",
+        "price": 320000,
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "productId": 601,
+    "name": "Macaron Tết Hộp 6",
+    "description": "Set Macaron Tết hộp 6 với các hương vị truyền thống, thích hợp làm quà biếu.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 150000,
+    "variants": [
+      {
+        "variantId": "601-default",
+        "sku": "TET-BOX-6",
+        "price": 150000,
+        "stock": 30
+      }
+    ]
+  },
+  {
+    "productId": 602,
+    "name": "Macaron Tết Hộp 12",
+    "description": "Hộp 12 bánh Macaron sắc màu Tết, món quà ý nghĩa cho gia đình và bạn bè.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 280000,
+    "variants": [
+      {
+        "variantId": "602-default",
+        "sku": "TET-BOX-12",
+        "price": 280000,
+        "stock": 25
+      }
+    ]
+  },
+  {
+    "productId": 603,
+    "name": "Combo Tết Đỏ Lộc",
+    "description": "Combo Tết Đỏ Lộc với thiết kế sang trọng, phù hợp tặng doanh nghiệp.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 199000,
+    "variants": [
+      {
+        "variantId": "603-default",
+        "sku": "TET-DO-LOC",
+        "price": 199000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 604,
+    "name": "Set Quà Tết An Khang",
+    "description": "Set Tết An Khang mang ý nghĩa may mắn đầu năm mới.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 350000,
+    "variants": [
+      {
+        "variantId": "604-default",
+        "sku": "TET-AN-KHANG",
+        "price": 350000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 605,
+    "name": "Set Macaron Tết Đặc Biệt",
+    "description": "Set Macaron Tết phiên bản đặc biệt với nhiều màu sắc và kiểu trang trí độc đáo.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 420000,
+    "variants": [
+      {
+        "variantId": "605-default",
+        "sku": "TET-DB",
+        "price": 420000,
+        "stock": 10
+      }
+    ]
+  },
+  {
+    "productId": 606,
+    "name": "Macaron Đồng Xu Tết",
+    "description": "Bánh Macaron hình đồng xu mang lại may mắn trong năm mới.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 90000,
+    "variants": [
+      {
+        "variantId": "606-default",
+        "sku": "TET-DONG-XU",
+        "price": 90000,
+        "stock": 40
+      }
+    ]
+  },
+  {
+    "productId": 607,
+    "name": "Macaron Noel Cây Thông",
+    "description": "Macaron tạo hình cây thông Giáng Sinh đẹp mắt.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 180000,
+    "variants": [
+      {
+        "variantId": "607-default",
+        "sku": "NOEL-CAY-THONG",
+        "price": 180000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 608,
+    "name": "Macaron Người Tuyết",
+    "description": "Hình người tuyết đáng yêu, phù hợp cho trẻ nhỏ.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 190000,
+    "variants": [
+      {
+        "variantId": "608-default",
+        "sku": "NOEL-NGUOI-TUYET",
+        "price": 190000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 609,
+    "name": "Set Noel 6 Bánh",
+    "description": "Set Noel 6 bánh dành cho những bữa tiệc nhỏ.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 160000,
+    "variants": [
+      {
+        "variantId": "609-default",
+        "sku": "NOEL-SET-6",
+        "price": 160000,
+        "stock": 30
+      }
+    ]
+  },
+  {
+    "productId": 610,
+    "name": "Set Noel Premium 12 Bánh",
+    "description": "Set premium với thiết kế sang trọng cho Giáng Sinh.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 340000,
+    "variants": [
+      {
+        "variantId": "610-default",
+        "sku": "NOEL-PREMIUM-12",
+        "price": 340000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 611,
+    "name": "Combo Sweet Mood Noel",
+    "description": "Combo Sweet Mood với tông màu lễ hội ấm áp.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 270000,
+    "variants": [
+      {
+        "variantId": "611-default",
+        "sku": "NOEL-SWEET-MOOD",
+        "price": 270000,
+        "stock": 18
+      }
+    ]
+  },
+  {
+    "productId": 612,
+    "name": "Macaron Ông Già Noel",
+    "description": "Macaron tạo hình Ông Già Noel nổi bật.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 120000,
+    "variants": [
+      {
+        "variantId": "612-default",
+        "sku": "NOEL-ONG-GIA",
+        "price": 120000,
+        "stock": 25
+      }
+    ]
+  },
+  {
+    "productId": 613,
+    "name": "Set Macaron Trung Thu 4 Bánh",
+    "description": "Set 4 bánh Trung Thu với tạo hình trăng và thỏ ngọc.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 160000,
+    "variants": [
+      {
+        "variantId": "613-default",
+        "sku": "TRUNG-THU-SET-4",
+        "price": 160000,
+        "stock": 30
+      }
+    ]
+  },
+  {
+    "productId": 614,
+    "name": "Macaron Chú Cuội",
+    "description": "Bánh Macaron hình Chú Cuội độc đáo.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 90000,
+    "variants": [
+      {
+        "variantId": "614-default",
+        "sku": "TRUNG-THU-CHU-CUOI",
+        "price": 90000,
+        "stock": 40
+      }
+    ]
+  },
+  {
+    "productId": 615,
+    "name": "Set Macaron Trăng Tròn 8 Bánh",
+    "description": "Set 8 bánh với chủ đề vầng trăng rằm.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 250000,
+    "variants": [
+      {
+        "variantId": "615-default",
+        "sku": "TRUNG-THU-TRANG-TRON-8",
+        "price": 250000,
+        "stock": 25
+      }
+    ]
+  },
+  {
+    "productId": 616,
+    "name": "Combo Trung Thu Premium",
+    "description": "Combo premium dành cho gia đình và đối tác.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 390000,
+    "variants": [
+      {
+        "variantId": "616-default",
+        "sku": "TRUNG-THU-PREMIUM",
+        "price": 390000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 617,
+    "name": "Macaron Thỏ Ngọc",
+    "description": "Macaron thỏ ngọc dễ thương dành cho thiếu nhi.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 110000,
+    "variants": [
+      {
+        "variantId": "617-default",
+        "sku": "TRUNG-THU-THO-NGOC",
+        "price": 110000,
+        "stock": 35
+      }
+    ]
+  },
+  {
+    "productId": 618,
+    "name": "Set Quà Trung Thu Sweet Light",
+    "description": "Set quà nhẹ nhàng, sang trọng và tinh tế.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 300000,
+    "variants": [
+      {
+        "variantId": "618-default",
+        "sku": "TRUNG-THU-SWEET-LIGHT",
+        "price": 300000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 619,
+    "name": "Macaron Valentine Hộp 12",
+    "description": "Hộp Valentine 12 bánh màu đỏ - hồng lãng mạn.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 290000,
+    "variants": [
+      {
+        "variantId": "619-default",
+        "sku": "VALENTINE-12",
+        "price": 290000,
+        "stock": 30
+      }
+    ]
+  },
+  {
+    "productId": 620,
+    "name": "Macaron Trái Tim",
+    "description": "Macaron hình trái tim, món quà hoàn hảo cho người thương.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 120000,
+    "variants": [
+      {
+        "variantId": "620-default",
+        "sku": "VALENTINE-HEART",
+        "price": 120000,
+        "stock": 40
+      }
+    ]
+  },
+  {
+    "productId": 621,
+    "name": "Set Tình Yêu Ngọt Ngào",
+    "description": "Set gồm các bánh với tone màu đỏ ngọt.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 260000,
+    "variants": [
+      {
+        "variantId": "621-default",
+        "sku": "VALENTINE-SWEET-LOVE",
+        "price": 260000,
+        "stock": 25
+      }
+    ]
+  },
+  {
+    "productId": 622,
+    "name": "Valentine Premium Love Box",
+    "description": "Hộp Premium cho ngày lễ đầy cảm xúc.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 450000,
+    "variants": [
+      {
+        "variantId": "622-default",
+        "sku": "VALENTINE-PREMIUM",
+        "price": 450000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 623,
+    "name": "Combo Sweet Valentine 8 Bánh",
+    "description": "Combo gồm 8 bánh phù hợp cho buổi hẹn hò.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 200000,
+    "variants": [
+      {
+        "variantId": "623-default",
+        "sku": "VALENTINE-COMBO-8",
+        "price": 200000,
+        "stock": 35
+      }
+    ]
+  },
+  {
+    "productId": 624,
+    "name": "Macaron Hồng Đỏ",
+    "description": "Macaron màu đỏ và hồng – biểu tượng của tình yêu.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 130000,
+    "variants": [
+      {
+        "variantId": "624-default",
+        "sku": "VALENTINE-PINK-RED",
+        "price": 130000,
+        "stock": 45
+      }
+    ]
+  },
+  {
+    "productId": 625,
+    "name": "Set Quà 8/3 Premium",
+    "description": "Set quà tinh tế dành cho ngày Quốc Tế Phụ Nữ.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 320000,
+    "variants": [
+      {
+        "variantId": "625-default",
+        "sku": "WOMEN-83-PREMIUM",
+        "price": 320000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "productId": 626,
+    "name": "Macaron Hình Hoa",
+    "description": "Macaron hình bông hoa xinh xắn.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 140000,
+    "variants": [
+      {
+        "variantId": "626-default",
+        "sku": "WOMEN-FLOWER",
+        "price": 140000,
+        "stock": 40
+      }
+    ]
+  },
+  {
+    "productId": 627,
+    "name": "Set Macaron Nữ Tính 6 Bánh",
+    "description": "Set 6 bánh với tông màu nữ tính nhẹ nhàng.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 180000,
+    "variants": [
+      {
+        "variantId": "627-default",
+        "sku": "WOMEN-SOFT-6",
+        "price": 180000,
+        "stock": 30
+      }
+    ]
+  },
+  {
+    "productId": 628,
+    "name": "Combo Sweet Lady Box",
+    "description": "Combo sang trọng tôn vinh phái đẹp.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 350000,
+    "variants": [
+      {
+        "variantId": "628-default",
+        "sku": "WOMEN-SWEET-LADY",
+        "price": 350000,
+        "stock": 15
+      }
+    ]
+  },
+  {
+    "productId": 629,
+    "name": "Macaron Vương Miện",
+    "description": "Macaron hình vương miện tượng trưng cho nữ quyền.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 150000,
+    "variants": [
+      {
+        "variantId": "629-default",
+        "sku": "WOMEN-CROWN",
+        "price": 150000,
+        "stock": 35
+      }
+    ]
+  },
+  {
+    "productId": 630,
+    "name": "Set Quà Tôn Vinh Phái Đẹp",
+    "description": "Set quà cao cấp dành cho phụ nữ hiện đại.",
+    "image": "../images/product/avatar/20201107181352.jpg",
+    "hasFlavors": false,
+    "basePrice": 400000,
+    "variants": [
+      {
+        "variantId": "630-default",
+        "sku": "WOMEN-HONOR",
+        "price": 400000,
+        "stock": 12
+      }
+    ]
+  }
+]

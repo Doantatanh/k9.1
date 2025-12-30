@@ -1,0 +1,20 @@
+{
+  "contact": {
+    "aboutText": "Câu chuyện của La Rosette Macaron bắt đầu từ năm 2016, từ một bếp bánh cá nhân ở phố Tô Vĩnh Diện và sau một thời gian ngắn nghiên cứu thị trường và phát triển sản phẩm, giờ nhà mình đã trở thành đầu mối bánh macaron số một ở Hà Nội. Mục tiêu trong tương lai, La Rosette Macaron sẽ mở rộng thêm nhiều chi nhánh, trở thành chuỗi thương hiệu bánh macaron hàng đầu Việt Nam",
+
+    "openingHours": [
+      {
+        "days": "Thứ 2 – Thứ 6",
+        "hours": "9:00 – 21:00"
+      },
+      {
+        "days": "Thứ 7 - Chủ nhật",
+        "hours": "09:00 – 20:30"
+      }
+    ],
+
+    "address": "Số 107, B21 khu tập thể Kim Liên, ngõ 97 Phạm Ngọc Thạch, Đống Đa, Hà Nội",
+    "phone": "094 299 0312",
+    "email": "larosettemacaron@gmail.com"
+  }
+}

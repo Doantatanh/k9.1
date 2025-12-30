@@ -1,0 +1,233 @@
+<header class="main-header">
+  <!-- Menu Wave -->
+  <div class="menu_wave"></div>
+
+  <!-- Main box -->
+  <div class="main-box">
+    <div class="menu-box">
+      <div class="logo">
+        <a href="/">
+          <img src="/images/logo.png" alt="" title="" /></a>
+      </div>
+
+      <div class="nav-outer clearfix">
+        <nav class="main-menu navbar-expand-md navbar-light">
+          <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+            <ul class="navigation menu-left clearfix">
+              <li id="root" class="dropdown">
+                <a href="/macaron/menu.html">Menu</a>
+                <ul>
+
+                </ul>
+                <div class="dropdown-btn"><span class="fa fa-plus"></span></div>
+              </li>
+
+              <li id="gioi-thieu"><a href="/macaron/gioi-thieu.html" data-lang="header.nav_intro">Giới thiệu</a></li>
+              <li id="tin-tuc">
+                <a href="/macaron/tin-tuc.html" data-lang="header.nav_news">Tin Tức</a>
+              </li>
+            </ul>
+
+            <ul class="navigation menu-right clearfix">
+              <li id="tuyen-dung">
+                <a href="/macaron/tuyen-dung.html" data-lang="header.nav_recruitment">Tuyển Dụng</a>
+              </li>
+              <li id="franchise"><a href="/macaron/workshop-lop-hoc.html" data-lang="header.nav_workshop">Workshop/Lớp
+                  Học</a></li>
+              <li id="lien-he"><a href="/macaron/lien-he.html" data-lang="header.nav_contact">Liên hệ</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="outer-box clearfix">
+          <div class="cart-btn">
+            <a><i class="icon flaticon-commerce"></i><span class="count">0</span></a>
+            <div class="shopping-cart">
+              <ul class="shopping-cart-items">
+
+              </ul>
+              <div class="cart-empty-message" style="width: 150px" data-lang="header.cart_empty">No products yet</div>
+
+            </div>
+          </div>
+
+          <div class="search-box">
+            <button type="button" onclick="location.href='/macaron/lien-he.html'" class="search-btn">
+              <i class="fa fa-address-card"></i>
+            </button>
+          </div>
+
+          <div class="language-button">
+            <!-- Truyền 'lang-popover-desktop' vào hàm toggle -->
+            <button type="button" class="icon-button" onclick="toggleLangMenu('lang-popover-desktop', event)">
+              <!-- Đặt ID riêng là 'flag-desktop' -->
+              <img id="flag-desktop" src="../images/icons/vi_flag.svg" alt="current language">
+            </button>
+
+            <div class="popover" id="lang-popover-desktop">
+              <div class="menu-item" onclick="changeLang('en')">
+                <img src="../images/icons/uk_flag.svg" alt="English">
+              </div>
+              <div class="menu-item" onclick="changeLang('vi')">
+                <img src="../images/icons/vi_flag.svg" alt="Vietnamese">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Sticky Header  -->
+  <div class="sticky-header" style="position: fixed; width: 100%; top: 1px">
+    <div class="auto-container clearfix">
+      <!--Logo-->
+      <div class="logo">
+        <a href="/" title="Sticky Logo">
+          <img src="/images/logo-small.png" alt="Sticky Logo" /></a>
+      </div>
+
+      <div class="nav-outer">
+        <nav class="main-menu">
+          <!--Keep This Empty / Menu will come through Javascript-->
+
+          <div class="collapse navbar-collapse clearfix show" id="navbarSupportedContent">
+            <ul class="navigation menu-left clearfix">
+              <li id="root" class="dropdown">
+                <a href="/macaron/menu.html" data-lang="header.menu_main">Menu</a>
+                <ul>
+
+                </ul>
+                <div class="dropdown-btn"><span class="fa fa-plus"></span></div>
+              </li>
+
+              <li id="gioi-thieu"><a href="/macaron/gioi-thieu.html" data-lang="header.nav_intro">Giới thiệu</a></li>
+              <li id="tin-tuc">
+                <a href="/macaron/tin-tuc.html" data-lang="header.nav_news">Tin Tức</a>
+              </li>
+            </ul>
+
+            <ul class="navigation menu-right clearfix">
+              <li id="tuyen-dung">
+                <a href="/macaron/tuyen-dung.html" data-lang="header.nav_recruitment">Tuyển Dụng</a>
+              </li>
+              <li id="franchise"><a href="/macaron/workshop-lop-hoc.html" data-lang="header.nav_workshop">Workshop/Lớp
+                  Học</a></li>
+              <li id="lien-he"><a href="/macaron/lien-he.html" data-lang="header.nav_contact">Liên hệ</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="outer-box clearfix">
+          <div class="cart-btn">
+            <a><i class="icon flaticon-commerce"></i><span class="count">0</span></a>
+            <div class="shopping-cart">
+              <ul class="shopping-cart-items">
+
+              </ul>
+              <div class="cart-empty-message" style="width: 150px" data-lang="header.cart_empty">No products yet</div>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <button type="button" onclick="location.href='/macaron/lien-he.html'" class="search-btn">
+              <i class="fa fa-address-card"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Sticky Menu -->
+
+  <!-- Mobile Header -->
+  <div class="mobile-header">
+    <div class="logo">
+      <a href="/">
+        <img src="/images/logo-small.png" alt="" title="" /></a>
+    </div>
+
+    <!--Nav Box-->
+    <div class="nav-outer clearfix">
+      <!--Keep This Empty / Menu will come through Javascript-->
+      <div class="mobile-nav-toggler">
+        <span class="icon fa fa-bars"></span>
+      </div>
+
+      <div class="cart-btn">
+        <a><i class="icon flaticon-commerce"></i><span class="count">0</span></a>
+        <div class="shopping-cart">
+          <ul class="shopping-cart-items">
+          </ul>
+          <div class="cart-empty-message" style="width: 150px" data-lang="header.cart_empty"></div>
+
+        </div>
+      </div>
+
+      <div class="search-box">
+        <button type="button" onclick="location.href='/macaron/lien-he.html'" class="search-btn">
+          <i class="fa fa-address-card"></i>
+        </button>
+      </div>
+
+      <div class="language-button mobile-lang">
+        <!-- Truyền 'lang-popover-mobile' vào hàm toggle -->
+        <button type="button" class="icon-button" onclick="toggleLangMenu('lang-popover-mobile', event)">
+          <!-- Đặt ID riêng là 'flag-mobile' -->
+          <img id="flag-mobile" src="../images/icons/vi_flag.svg" alt="current language">
+        </button>
+
+        <div class="popover" id="lang-popover-mobile">
+          <div class="menu-item" onclick="changeLang('en')">
+            <img src="../images/icons/uk_flag.svg" alt="English">
+          </div>
+          <div class="menu-item" onclick="changeLang('vi')">
+            <img src="../images/icons/vi_flag.svg" alt="Vietnamese">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu  -->
+  <div class="mobile-menu">
+    <nav class="menu-box">
+      <div class="nav-logo">
+        <a href="/">
+          <img src="/images/logo-small.png" alt="" title="" /></a>
+      </div>
+      <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+
+      <div class="collapse navbar-collapse clearfix show" id="navbarSupportedContent">
+        <ul class="navigation menu-left clearfix">
+          <li id="root" class="dropdown">
+            <a href="/macaron/menu.html" data-lang="header.menu_main">Menu</a>
+            <ul>
+
+            </ul>
+            <div class="dropdown-btn"><span class="fa fa-plus"></span></div>
+          </li>
+
+          <li id="gioi-thieu"><a href="/macaron/gioi-thieu.html" data-lang="header.nav_intro">Giới thiệu</a></li>
+          <li id="tin-tuc"><a href="/macaron/tin-tuc.html" data-lang="header.nav_news">Tin Tức</a></li>
+        </ul>
+
+        <ul class="navigation menu-right clearfix">
+          <li id="tuyen-dung"><a href="/macaron/tuyen-dung.html" data-lang="header.nav_recruitment">Tuyển Dụng</a></li>
+          <li id="franchise"><a href="/macaron/workshop-lop-hoc.html" data-lang="header.nav_workshop">Workshop/Lớp
+              Học</a></li>
+          <li id="lien-he"><a href="/macaron/lien-he.html" data-lang="header.nav_contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="close-btn"><span class="icon fa fa-times"></span></div>
+  </div>
+  <!-- End Mobile Menu -->
+</header>

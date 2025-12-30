@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Macaron Truyền Thống",
+    "href": "/macaron/macaron-truyen-thong.html",
+    "lang": "header.menu_traditional"
+  },
+  {
+    "name": "Fatcaron",
+    "href": "/macaron/fatcaron.html",
+    "lang": "header.menu_fatcaron"
+  },
+  {
+    "name": "Bánh Sinh Nhật",
+    "href": "/macaron/banh-sinh-nhat.html",
+    "lang": "header.menu_birthday"
+  },
+  {
+    "name": "Combo Quà Tặng",
+    "href": "/macaron/combo-qua-tang.html",
+    "lang": "header.menu_gift"
+  },
+  {
+    "name": "Set Bánh Dịp Đặc Biệt",
+    "href": "/macaron/set-banh-dip-dac-biet.html",
+    "lang": "header.menu_special"
+  }
+]

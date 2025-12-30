@@ -1,0 +1,29 @@
+{
+  "menuItems": [
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Macaron Truyền Thống",
+      "link": "../macaron/macaron-truyen-thong.html"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Fatcaron",
+      "link": "../macaron/fatcaron.html"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Bánh Sinh Nhật",
+      "link": "../macaron/banh-sinh-nhat.html"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Combo Quà Tặng",
+      "link": "../macaron/combo-qua-tang.html"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Set Bánh Dịp Đặc Biệt",
+      "link": "../macaron/set-banh-dip-dac-biet.html"
+    }
+  ]
+}

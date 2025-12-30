@@ -1,0 +1,14 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Tuyển Nhân Viên Bán Bánh",
+      "slug": "tuyen-nhan-vien-ban-banh",
+      "location": "Hà Nội",
+      "salary": "7.000.000 - 9.000.000 VNĐ",
+      "image": "../images/article/20231031230921.png",
+      "type": "Full-time",
+      "deadline": "2025-12-30"
+    }
+  ]
+}

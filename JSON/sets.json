@@ -1,0 +1,29 @@
+{
+  "menuItems": [
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Set Tết",
+      "link": "../macaron/set.html?type=set-tet"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Set Noel",
+      "link": "../macaron/set.html?type=set-noel"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Set Trung Thu",
+      "link": "../macaron/set.html?type=set-trung-thu"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Set Valentine",
+      "link": "../macaron/set.html?type=set-valentine"
+    },
+    {
+      "image": "../images/product/avatar/20201107181352.jpg",
+      "title": "Set Quốc Tế Phụ Nữ",
+      "link": "../macaron/set.html?type=set-quoc-te-phu-nu"
+    }
+  ]
+}

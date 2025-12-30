@@ -1,0 +1,118 @@
+{
+  "header": {
+    "menu_main": "Menu",
+    "menu_traditional": "Traditional Macaron",
+    "menu_fatcaron": "Fatcaron",
+    "menu_birthday": "Birthday Cake",
+    "menu_gift": "Gift Combo",
+    "menu_special": "Special Occasion Set",
+    "nav_intro": "About Us",
+    "nav_news": "News",
+    "nav_recruitment": "Recruitment",
+    "nav_workshop": "Workshop/Classes",
+    "nav_contact": "Contact",
+    "cart_empty": "No products in cart"
+  },
+  "services-section": {
+    "product": "Products"
+  },
+  "team-section": {
+    "news": "News"
+  },
+  "page-title": {
+    "home": "Home",
+    "traditional_macarons": "Traditional Macaron",
+    "birthday": "Birthday Cake",
+    "gift": "Gift Combo",
+    "special": "Special Occasion Set",
+    "intro": "About Us",
+    "news": "News",
+    "recruitment": "Recruitment",
+    "workshop": "Workshop/Classes",
+    "contact": "Contact",
+    "shopping_cart": "Shopping cart",
+    "cart": "Cart"
+  },
+  "about-section-two": {
+    "title": "Macaron – A Masterpiece of French Pastry",
+    "subtitle": "French macarons, with their charming and colorful appearance, captivate diners at first sight. Once tasted, you will feel the crispiness of the delicate shell, the rich cream inside, and the gentle aroma of the filling. Macarons are the perfect harmony of Color – Aroma – Flavor, creating a delightful treat that represents the essence of French cuisine: rich, sweet, yet full of elegance. In the past, macarons were enjoyed only during the afternoon tea of French and European aristocrats, but today, the chefs at La Rosette have mastered and crafted them to perfection."
+  },
+  "contact-section": {
+    "title": "French-Style Luxury for Every Celebration",
+    "content": "La Rosette’s charming macarons are crafted from premium ingredients and meticulously measured to meet the highest standards. Our chefs carefully inspect each shell and filling to ensure that every macaron delivered to you carries the fragrant aroma of almonds, a gentle sweetness, a crisp bite, and a refined flavor profile.\n\nWhether it’s a wedding, birthday, corporate event, or a special gift for clients, these vibrant macarons will always be the highlight of any luxurious celebration. We offer a wide variety of options for you to choose from: macaron towers, macaron gift boxes, custom hand-painted macarons, macaron cupcakes, and more.",
+    "message": "Send a message"
+  },
+  "contact-form": {
+    "title": "Consultation",
+    "fullname": "Full Name *",
+    "phone": "Phone Number *",
+    "email": "Email *",
+    "time": "When do you need this product? *",
+    "brief": "Short description of your product requirements",
+    "submit": "Send"
+  },
+  "contact-form-email": {
+    "name": "Your Name *",
+    "email": "Email *",
+    "message": "Message",
+    "submit": "Send"
+  },
+  "about-section-event": {
+    "title": "Events",
+    "content": "A colorful macaron tower is always the center of attention at any party or event. La Rosette offers three tower sizes: small (5 tiers, 42 macarons), medium (7 tiers, 75 macarons), and large (10 tiers, 150 macarons), all decorated with flowers — a perfect choice for birthdays, weddings, or year-end parties. You can also request your company logo or customize colors to match your event theme.",
+    "button": "Get Consultation"
+  },
+  "about-section-hotel": {
+    "title": "Restaurants, Hotels, Tea & Coffee Shops",
+    "content": "La Rosette is currently a trusted supplier of macarons for hundreds of restaurants and beverage shops. Contact us and let us bring a touch of sweetness to your service menu!",
+    "button": "Get Consultation"
+  },
+  "about-section-business": {
+    "title": "Wholesale Business Collaborators",
+    "content": "Selling macarons is becoming increasingly popular, and many people are earning significant income from these colorful French treats. Contact us today to receive the best wholesale pricing and partnership offers.",
+    "button": "Get Consultation"
+  },
+  "cart-header": {
+    "name": "Product Name",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal"
+  },
+  "cart-summary": {
+    "title": "Checkout",
+    "total": "Total",
+    "submit": "Proceed to Payment"
+  },
+  "other-options": "Add to cart",
+  "subtotal_v1": "Subtotal:",
+  "order_information": "Information",
+  "product-other-types": "Other Varieties",
+  "checkout-info": {
+    "title": "Checkout",
+    "fullname_label": "Full Name *",
+    "fullname_placeholder": "Enter your full name",
+
+    "address_label": "Address *",
+    "address_placeholder": "Enter the correct delivery address",
+
+    "phone_label": "Phone Number",
+    "phone_placeholder": "Enter your phone number",
+
+    "time_label": "Delivery Time",
+    "time_placeholder": "Example: 9:30 AM on October 20th",
+
+    "note_label": "Order Notes",
+    "note_placeholder": "Additional notes if the customer wants extra flavors"
+  },
+  "cake-flavors": "Cake Flavors",
+  "amount": "Amount",
+  "checkout-shipping-note": "Please contact the shop to calculate the shipping fee",
+  "direct": "Direct",
+  "Pay_directly_upon_receipt": "Pay directly upon receipt",
+  "Pay_directly_at_the_restaurant": "Pay directly at the restaurant",
+  "btn_confirm": "Confirm",
+  "thank_you_message": "Thank you",
+  "thank_you_order": "Thank you for your order!",
+  "thank_you_info": "Our delivery team will contact you shortly -",
+  "back_home": "Back to Home"
+}

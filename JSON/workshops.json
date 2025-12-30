@@ -1,0 +1,28 @@
+{
+  "workshops": [
+    {
+      "id": 1,
+      "title": "Workshop Trang Trí Macaron Cho Người Mới",
+      "slug": "workshop-trang-tri-macaron",
+      "image": "../images/article/2023060123096.png"
+    },
+    {
+      "id": 2,
+      "title": "Lớp Học Làm Bánh Macaron Cơ Bản",
+      "slug": "lop-hoc-lam-banh-macaron-co-ban",
+      "image": "../images/article/2023060123096.png"
+    },
+    {
+      "id": 3,
+      "title": "Workshop Vẽ Hình Trên Macaron Cho Bé",
+      "slug": "workshop-ve-hinh-cho-be",
+      "image": "../images/article/2023060123096.png"
+    },
+    {
+      "id": 4,
+      "title": "Trải Nghiệm Làm Bánh Macaron 1 Buổi",
+      "slug": "trai-nghiem-lam-banh-macaron",
+      "image": "../images/article/2023060123096.png"
+    }
+  ]
+}

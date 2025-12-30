@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "GHÉ LA ROSETTE THAM GIA WORKSHOP TRANG TRÍ MACARON BẠN ƠI!",
+      "slug": "ghe-la-rosette-tham-gia-workshop-trang-tri-macaron-ban-oi",
+      "image": "../images/article/20231031230921.png"
+    },
+    {
+      "id": 2,
+      "title": "MACARON LÀ GÌ? NHỮNG ĐIỀU BẠN CHƯA BIẾT VỀ MACARON",
+      "slug": "macaron-la-gi-nhung-dieu-ban-chua-biet",
+      "image": "../images/article/2023071500268.jpg"
+    },
+    {
+      "id": 3,
+      "title": "TRẢI NGHIỆM TẠO HÌNH MACARON XINH XẮN TẠI SỰ KIỆN HỢP TÁC LA ROSETTE VS CHƯƠNG TRÌNH DU HỌC",
+      "slug": "trai-nghiem-tao-hinh-macaron-hop-tac-la-rosette-du-hoc",
+      "image": "../images/article/20230601234141.jpg"
+    },
+    {
+      "id": 4,
+      "title": "TRẢI NGHIỆM TẠO HÌNH MACARON XINH XẮN TẠI SỰ KIỆN HỢP TÁC LA ROSETTE VS CHƯƠNG TRÌNH DU HỌC",
+      "slug": "trai-nghiem-tao-hinh-macaron-hop-tac-la-rosette-du-hoc-2",
+      "image": "../images/article/20230601232645.jpg"
+    },
+    {
+      "id": 5,
+      "title": "WORKSHOP TẠO HÌNH NGHỆ THUẬT MACARON LÀ GÌ?",
+      "slug": "workshop-tao-hinh-nghe-thuat-macaron-la-gi",
+      "image": "../images/article/2023060123096.png"
+    },
+    {
+      "id": 6,
+      "title": "CHO BÉ THỎA SỨC THỂ HIỆN TÀI NĂNG NGHỆ THUẬT TẠI WORKSHOP VẼ HÌNH 1/6 TẾT THIẾU NHI",
+      "slug": "cho-be-thoa-suc-the-hien-1-6",
+      "image": "../images/article/20230505024338.png"
+    },
+    {
+      "id": 7,
+      "title": "ĐẠI DIỆN CHO ẨM THỰC PHÁP TẠI HỘI CHỢ EU 2022: LA ROSETTE MACARON",
+      "slug": "dai-dien-am-thuc-phap-hoi-cho-eu-2022",
+      "image": "../images/article/20230505015336.png"
+    },
+    {
+      "id": 8,
+      "title": "LA ROSETTE VS VIB - WORKSHOP TRANG TRÍ MACARON KẾT NỐI CÔNG TY VỚI KHÁCH HÀNG",
+      "slug": "la-rosette-vs-vib-workshop",
+      "image": "../images/article/20230505014710.png"
+    },
+    {
+      "id": 9,
+      "title": "THỬ TÀI HÓA TRANG CHO NHỮNG CHIẾC MACARON TẠI WORKSHOP VẼ HÌNH HALLOWEEN",
+      "slug": "workshop-ve-hinh-halloween",
+      "image": "../images/article/20230402205658.png"
+    },
+    {
+      "id": 10,
+      "title": "WORKSHOP VẼ HÌNH TRUNG THU - CÙNG BÉ TẠO NÊN MÂM CỖ CỦA MÌNH",
+      "slug": "workshop-ve-hinh-trung-thu",
+      "image": "../images/article/20230402193011.png"
+    },
+    {
+      "id": 11,
+      "title": "MACARON MẶN BACON & CHEESE THU HÚT NGAY TỪ MIẾNG CẮN ĐẦU TIÊN",
+      "slug": "macaron-man-bacon-cheese",
+      "image": "../images/article/20230103014927.png"
+    },
+    {
+      "id": 12,
+      "title": "MACARON MÈ ĐEN GỪNG ĐỘC LẠ HƯƠNG VỊ BÁNH TRÔI TÀU",
+      "slug": "macaron-me-den-gung-doc-la-huong-vi-banh-troi-tau",
+      "image": "../images/article/20230103012059.png"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+// ================================
+// RENDER GIỎ HÀNG TRANG gio-hang.html
+// ================================
+function renderCartPage() {
+  const cartItems = CartStore.getState();
+  const tbody = document.querySelector(".cart-table tbody");
+  const totalEl = document.querySelector(".total-price");
+
+  if (!tbody) return;
+
+  // Nếu giỏ hàng rỗng → chuyển về trang chủ
+  if (cartItems.length === 0) {
+    window.location.href = "../index.html";
+    return;
+  }
+
+  // Render danh sách sản phẩm
+  tbody.innerHTML = cartItems
+    .map((item, index) => {
+      const subtotal = item.price * item.quantity;
+      const itemId = item.uniqueId || item.id;
+      const displayName = item.flavor
+        ? `${item.name} - vị ${item.flavor}`
+        : item.name;
+
+      return `
+      <tr class="cart-item">
+        <td class="product-thumbnail">
+          <a>
+             <img src="${item.image}" alt="${displayName}">
+          </a>
+        </td>
+
+        <td class="product-name">
+          <a href="#">${displayName}</a>
+        </td>
+                                                
+        <td class="product-price">
+          <span> ${item.price.toLocaleString()}</span>
+        </td>
+                                                
+        <td class="product-quantity">
+          <div class="quantity" bis_skin_checked="1">
+            <input type="text" min="1"
+              value="${item.quantity}"
+              class="qty"
+              data-id="${itemId}">
+          </div>
+        </td>
+
+        <td class="product-subtotal">
+          <span class="amount">
+            <span>${subtotal.toLocaleString()}</span>
+          </span>
+        </td>
+
+        <td class="product-remove">
+            <button class="remove-item" data-id="${itemId}">
+                <span class="fa fa-times"></span>
+            </button>
+        </td>
+      </tr>
+    `;
+    })
+    .join("");
+
+  // Cập nhật tổng tiền
+  const total = cartItems.reduce((sum, i) => sum + i.price * i.quantity, 0);
+  if (totalEl) totalEl.innerText = total.toLocaleString() + " (VNĐ)";
+
+  attachCartPageEvents();
+}
+
+// ================================
+// EVENT: Update quantity + Remove item
+// ================================
+function attachCartPageEvents() {
+  // Update quantity
+  document.querySelectorAll(".qty").forEach((input) => {
+    input.addEventListener("change", (e) => {
+      const id = e.target.getAttribute("data-id");
+      const qty = parseInt(e.target.value);
+
+      if (qty > 0) {
+        CartStore.dispatch({
+          type: CART_ACTIONS.UPDATE_QUANTITY,
+          payload: { id, quantity: qty },
+        });
+      }
+    });
+  });
+
+  // Remove item
+  document.querySelectorAll(".remove-item").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const id = btn.dataset.id;
+
+      CartStore.dispatch(CartActions.removeFromCart(id));
+    });
+  });
+}
+
+// ================================
+// SAVE CHECKOUT INFO
+// ================================
+function getSavedCheckoutInfo() {
+  const data = localStorage.getItem("checkoutInfo");
+  return data ? JSON.parse(data) : null;
+}
+
+// ================================
+// SUBMIT ORDER (API)
+// ================================
+async function submitOrder() {
+  const cartItems = CartStore.getState();
+  const checkoutInfo = getCheckoutInfo();
+
+  if (!checkoutInfo) {
+    swal("Lỗi", "Chưa có thông tin thanh toán!", "error");
+    return;
+  }
+
+  if (cartItems.length === 0) {
+    swal("Lỗi", "Giỏ hàng trống!", "error");
+    return;
+  }
+
+  const orderPayload = {
+    customer: {
+      fullName: checkoutInfo.fullName,
+      phone: checkoutInfo.phone,
+      address: checkoutInfo.address,
+      timeGet: checkoutInfo.timeGet,
+      note: checkoutInfo.comment,
+    },
+    paymentMethod:
+      String(checkoutInfo.paymentMethod) === "1" ? "COD" : "PAY_AT_STORE",
+    items: cartItems.map((i) => ({
+      productId: i.productId,
+      variantId: i.variantId,
+      flavor: i.flavor,
+      quantity: i.quantity,
+      price: i.price,
+    })),
+    total: cartItems.reduce((s, i) => s + i.price * i.quantity, 0),
+  };
+
+  console.log("ORDER PAYLOAD:", orderPayload);
+
+  // =====================
+  // GỬI API (MỞ COMMENT KHI CÓ BACKEND)
+  // =====================
+  /*
+  await fetch("https://api.yourdomain.com/orders", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(orderPayload),
+  });
+  */
+
+  // Thành công
+  CartStore.dispatch(CartActions.clearCart());
+  localStorage.removeItem("checkoutInfo");
+
+  window.location.href = "../macaron/hoan-thanh-don-hang.html";
+}
+
+// ================================
+// INIT
+// ================================
+document.addEventListener("DOMContentLoaded", () => {
+  renderCartPage();
+  CartStore.subscribe(renderCartPage);
+
+  // NÚT CHUYỂN SANG TRANG THANH TOÁN
+  const paymentBtn = document.getElementById("btMovePayment");
+  if (paymentBtn) {
+    paymentBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "../macaron/thanh-toan.html";
+    });
+  }
+
+  const btBack = document.getElementById("btBack");
+  if (btBack) {
+    btBack.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "../macaron/thanh-toan.html";
+    });
+  }
+
+  const btComplete = document.getElementById("btCompleteCart");
+  if (btComplete) {
+    btComplete.addEventListener("click", (e) => {
+      e.preventDefault();
+      submitOrder();
+    });
+  }
+});

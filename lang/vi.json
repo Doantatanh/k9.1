@@ -1,0 +1,115 @@
+{
+  "header": {
+    "menu_main": "Menu",
+    "menu_traditional": "Macaron Truyền Thống",
+    "menu_fatcaron": "Fatcaron",
+    "menu_birthday": "Bánh Sinh Nhật",
+    "menu_gift": "Combo Quà Tặng",
+    "menu_special": "Set Bánh Dịp Đặc Biệt",
+    "nav_intro": "Giới thiệu",
+    "nav_news": "Tin Tức",
+    "nav_recruitment": "Tuyển Dụng",
+    "nav_workshop": "Workshop/Lớp Học",
+    "nav_contact": "Liên hệ",
+    "cart_empty": "Chưa có sản phẩm nào"
+  },
+  "services-section": {
+    "product": "Sản Phẩm"
+  },
+  "team-section": {
+    "news": "Tin Tức"
+  },
+  "page-title": {
+    "home": "Trang chủ",
+    "traditional_macarons": "Macaron Truyền Thống",
+    "birthday": "Bánh Sinh Nhật",
+    "gift": "Combo Quà Tặng",
+    "special": "Set Bánh Dịp Đặc Biệt",
+    "intro": "Giới thiệu",
+    "news": "Tin Tức",
+    "recruitment": "Tuyển Dụng",
+    "workshop": "Workshop/Lớp Học",
+    "contact": "Liên hệ",
+    "shopping_cart": "Giỏ Hàng",
+    "cart": "Giỏ Hàng"
+  },
+  "about-section-two": {
+    "title": "Macaron - Kiệt tác bánh Pháp",
+    "subtitle": "Bánh Macaron Pháp mang một vẻ ngoài xinh xắn, đầy màu sắc đã làm mê đắm bao thực khách ngay từ cái nhìn đầu tiên. Thưởng thức, thực khách sẽ cảm nhận được sự giòn tan của lớp vỏ bánh, vị béo ngậy của lớp kem bên trong cùng những mùi hương dịu nhẹ của nhân bánh. Macaron là sự kết hợp của Sắc – Hương – Vị, tạo nên một món bánh ngon tuyệt, đặc trưng cho ẩm thực Pháp, vừa đậm đà, ngọt ngào lại không kém phần tinh tế. Trước đây, bánh Macaron chỉ được dùng các buổi trà chiều của giới quý tộc Pháp và Châu Âu nhưng hiện nay, Macaron đã được các đầu bếp của La Rosette học hỏi và sản xuất."
+  },
+  "contact-section": {
+    "title": "Đẳng Cấp Tiệc Tùng Chuẩn Pháp",
+    "content": "Những chiếc bánh macaron xinh xắn của nhà La Rosette được làm từ những nguyên liệu hảo hạng và tính toán kỹ lưỡng theo tiêu chuẩn khắt khe. Các đầu bếp sẽ kiểm tra tỉ mỉ chất lượng vỏ bánh và nhân, đảm bảo mỗi chiếc bánh đến tay khách hàng đều thơm mùi hạnh nhân, vị ngọt nhẹ, độ giòn tan và rõ vị bánh.\n\nCho dù đó là đám cưới, sinh nhật, tiệc cơ quan hay quà tặng khách hàng, những chiếc bánh macaron đầy màu sắc sẽ luôn là trung tâm của sự \"sang chảnh\". Chúng tôi có nhiều mẫu mã đa dạng để bạn lựa chọn: tháp macaron, hộp quà tặng macaron, macaron vẽ hình theo yêu cầu, macaron cupcake...",
+    "message": "Gửi lời nhắn"
+  },
+  "contact-form": {
+    "title": "Tư vấn",
+    "fullname": "Họ và tên *",
+    "phone": "SĐT *",
+    "email": "Email *",
+    "time": "Thời gian bạn cần sản phẩm *",
+    "brief": "Sơ lược về yêu cầu sản phẩm",
+    "submit": "Gửi"
+  },
+  "contact-form-email": {
+    "name": "Tên của bạn *",
+    "email": "Email *",
+    "message": "Lời nhắn",
+    "submit": "Gửi"
+  },
+  "about-section-event": {
+    "title": "Sự kiện",
+    "content": "Một tháp bánh macaron nhiều sắc màu chính là tâm điểm thu hút mọi ánh mắt tại bất kỳ buổi tiệc hay sự kiện nào. La Rosette có 3 size tháp: nhỏ (5 tầng, 42 bánh), trung bình (7 tầng, 75 bánh) và lớn (10 tầng, 150 bánh) với hoa decor là lựa chọn hoàn hảo cho sinh nhật, đám cưới hay Year end party. Bạn có thể in logo công ty hoặc chọn màu cho phù hợp với tông của sự kiện.",
+    "button": "Tư vấn ngay"
+  },
+  "about-section-hotel": {
+    "title": "Nhà hàng, khách sạn, quán trà và cafe",
+    "content": "La Rosette hiện là đối tác cung cấp bánh macaron cho hàng trăm đối tác nhà hàng, quán giải khát. Hãy liên hệ với chúng tôi để thêm sự ngọt ngào cho menu phục vụ của quán bạn nào!"
+  },
+  "about-section-business": {
+    "title": "CTV kinh doanh sỉ",
+    "content": "Kinh doanh bánh macaron hiện đang được rất nhiều người ưa chuộng. Bạn có thể kiếm được cả chục triệu từ những chiếc bánh Pháp đầy màu sắc này đó. Hãy liên hệ với chúng tôi để nhận được báo giá tốt nhất nhé"
+  },
+  "cart-header": {
+    "name": "Tên sản phẩm",
+    "price": "Giá",
+    "quantity": "Số lượng",
+    "subtotal": "Tổng tiền"
+  },
+  "cart-summary": {
+    "title": "Thanh toán",
+    "total": "Tổng Cộng",
+    "submit": "Thanh toán"
+  },
+  "other-options": "Thêm vào giỏ hàng",
+  "subtotal_v1": "Tổng tiền:",
+  "order_information": "Thông tin",
+  "product-other-types": "Các loại khác",
+  "checkout-info": {
+    "fullname_label": "Họ tên *",
+    "fullname_placeholder": "Nhập chính xác Họ tên",
+
+    "address_label": "Địa chỉ *",
+    "address_placeholder": "Nhập chính xác địa chỉ nhận hàng",
+
+    "phone_label": "Điện thoại",
+    "phone_placeholder": "Nhập chính xác Điện thoại",
+
+    "time_label": "Thời gian nhận hàng",
+    "time_placeholder": "Ví dụ : 9h30 sáng ngày 20/10",
+
+    "note_label": "Ghi chú (Đơn hàng)",
+    "note_placeholder": "Thông tin ghi chú thêm nếu khách muốn đặt thêm vị"
+  },
+  "cake-flavors": "Các vị bánh",
+  "amount": "Số Tiền",
+  "checkout-shipping-note": "Vui lòng liên hệ quán để được tính phí ship",
+  "direct": "Trực tiếp",
+  "Pay_directly_upon_receipt": "Thanh toán trực tiếp khi nhận hàng",
+  "Pay_directly_at_the_restaurant": "Trả tiền trực tiếp tại quán",
+  "btn_confirm": "Xác Nhận",
+  "thank_you_message": "Cảm ơn",
+  "thank_you_order": "Cảm ơn bạn đã đặt hàng !",
+  "thank_you_info": "Bộ phận chuyển hàng sẽ liên lạc với bạn ngay sau đây - ",
+  "back_home": "Về trang chủ"
+}

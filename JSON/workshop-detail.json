@@ -1,0 +1,16 @@
+{
+  "workshops": [
+    {
+      "slug": "workshop-trang-tri-macaron",
+      "title": "Workshop Trang Trí Macaron Cho Người Mới",
+      "coverImage": "../images/article/2023060123096.png",
+      "contentHTML": "<p>Chào mừng bạn đến với workshop trang trí macaron. Đây là lớp học phù hợp cho cả người mới bắt đầu…</p><h2>Nội dung lớp học</h2><ul><li>Học cách cầm bút icing</li><li>Vẽ hình cơ bản</li><li>Trang trí nhân bánh</li></ul><h2>Thời gian</h2><p>Thứ 7 – Chủ nhật hàng tuần.</p>"
+    },
+    {
+      "slug": "lop-hoc-lam-banh-macaron-co-ban",
+      "title": "Lớp Học Làm Bánh Macaron Cơ Bản",
+      "coverImage": "../images/article/2023060123096.png",
+      "contentHTML": "<p>Đây là lớp học làm bánh macaron cơ bản dành cho người yêu bếp…</p>"
+    }
+  ]
+}
