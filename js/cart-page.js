@@ -40,13 +40,29 @@ function renderCartPage() {
         </td>
                                                 
         <td class="product-quantity">
-          <div class="quantity" bis_skin_checked="1">
-            <input type="text" min="1"
+          <div class="quantity">
+            <button 
+              class="qty-btn minus" 
+              data-id="${itemId}"
+              ${item.quantity === 1 ? "disabled" : ""}
+            >
+              -
+            </button>
+
+
+            <input
+              type="number"
+              min="1"
               value="${item.quantity}"
               class="qty"
-              data-id="${itemId}">
+              data-id="${itemId}"
+            >
+
+
+            <button class="qty-btn plus" data-id="${itemId}">+</button>
           </div>
         </td>
+
 
         <td class="product-subtotal">
           <span class="amount">
@@ -75,18 +91,33 @@ function renderCartPage() {
 // EVENT: Update quantity + Remove item
 // ================================
 function attachCartPageEvents() {
-  // Update quantity
+  document.querySelectorAll(".qty-btn.plus").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.id;
+
+      CartStore.dispatch(CartActions.changeQuantity(id, 1));
+    });
+  });
+
+  document.querySelectorAll(".qty-btn.minus").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.id;
+
+      CartStore.dispatch(CartActions.changeQuantity(id, -1));
+    });
+  });
+
   document.querySelectorAll(".qty").forEach((input) => {
     input.addEventListener("change", (e) => {
-      const id = e.target.getAttribute("data-id");
-      const qty = parseInt(e.target.value);
+      const id = e.target.dataset.id;
+      let value = parseInt(e.target.value);
 
-      if (qty > 0) {
-        CartStore.dispatch({
-          type: CART_ACTIONS.UPDATE_QUANTITY,
-          payload: { id, quantity: qty },
-        });
+      // Nếu nhập sai → reset về 1
+      if (isNaN(value) || value < 1) {
+        value = 1;
       }
+
+      CartStore.dispatch(CartActions.updateQuantity(id, value));
     });
   });
 

@@ -5,6 +5,7 @@ const CART_ACTIONS = {
   ADD_ITEM: "ADD_ITEM",
   REMOVE_ITEM: "REMOVE_ITEM",
   UPDATE_QUANTITY: "UPDATE_QUANTITY",
+  CHANGE_QUANTITY: "CHANGE_QUANTITY",
   CLEAR_CART: "CLEAR_CART",
   LOAD_CART: "LOAD_CART",
 };
@@ -31,6 +32,11 @@ const CartActions = {
   updateQuantity: (productId, quantity) => ({
     type: CART_ACTIONS.UPDATE_QUANTITY,
     payload: { id: productId, quantity: parseInt(quantity) },
+  }),
+
+  changeQuantity: (productId, delta) => ({
+    type: CART_ACTIONS.CHANGE_QUANTITY,
+    payload: { id: productId, delta },
   }),
 
   removeFromCart: (productId) => ({
@@ -88,6 +94,25 @@ function cartReducer(state = [], action) {
 
     case CART_ACTIONS.CLEAR_CART:
       return [];
+
+    case CART_ACTIONS.CHANGE_QUANTITY: {
+      const { id, delta } = action.payload;
+
+      return state.map((item) => {
+        const itemId = String(item.uniqueId || item.id);
+
+        if (itemId === String(id)) {
+          const newQty = item.quantity + delta;
+
+          return {
+            ...item,
+            quantity: newQty < 1 ? 1 : newQty, // ❗ không cho < 1
+          };
+        }
+
+        return item;
+      });
+    }
 
     default:
       return state;
