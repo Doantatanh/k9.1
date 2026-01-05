@@ -128,7 +128,8 @@ class ReduxStore {
     this.state = initialState;
     this.listeners = [];
 
-    this.loadFromLocalStorage();
+    // flag to indicate whether we've loaded persisted cart data
+    this.loadedFromStorage = false;
   }
 
   getState() {
@@ -153,9 +154,15 @@ class ReduxStore {
   loadFromLocalStorage() {
     const saved = localStorage.getItem("cart");
     if (saved) {
-      const items = JSON.parse(saved);
-      this.state = this.reducer(this.state, CartActions.loadCart(items));
+      try {
+        const items = JSON.parse(saved);
+        // Use dispatch to ensure listeners are notified and UI updates
+        this.dispatch(CartActions.loadCart(items));
+      } catch (err) {
+        console.error("Failed to parse cart from localStorage:", err);
+      }
     }
+    this.loadedFromStorage = true;
   }
 }
 
