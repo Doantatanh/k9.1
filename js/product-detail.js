@@ -173,10 +173,11 @@ function AddToCart() {
 
   CartStore.dispatch(CartActions.addToCart(cartItem));
 
-  // Cập nhật giao diện header ngay lập tức (không cần refresh trang)
-  if (typeof renderCartUI === "function") renderCartUI();
-
-  swal("Thành công", `Đã thêm ${quantity} sản phẩm vào giỏ hàng!`, "success");
+  swal(
+    "Thành công",
+    `Đã thêm ${quantity} sản phẩm vào giỏ hàng!`,
+    "success"
+  ).then(() => window.location.reload());
 }
 
 /* ========================
