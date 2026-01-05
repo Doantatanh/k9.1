@@ -10887,7 +10887,7 @@ iframe#gmap_canvas {
   position: relative;
   width: 100%;
   margin-bottom: 15px;
-  display: flex;
+  display: block;
 }
 
 .checkout-form .form-group .field-label {
