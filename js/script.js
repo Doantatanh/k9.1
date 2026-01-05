@@ -732,13 +732,6 @@
     wow.init();
   }
 
-  fetch("../header.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("header").innerHTML = data;
-      // Gọi sau khi header đã render
-    });
-
   /* ==========================================================================
    When document is Scrollig, do
    ========================================================================== */
