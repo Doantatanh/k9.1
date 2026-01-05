@@ -109,4 +109,13 @@ function initCart() {
 // ============================
 // CHỈ KHỞI TẠO SAU KHI HEADER LOAD XONG
 // ============================
-document.addEventListener("header:loaded", initCart, { once: true });
+// Nếu header đã load trước đó thì init ngay, nếu header được nhúng trực tiếp trong HTML
+// thì init ngay, còn không lắng nghe sự kiện header:loaded
+if (window.headerLoaded) {
+  initCart();
+} else if (document.querySelectorAll(".shopping-cart").length) {
+  // header có thể đã được nhúng trực tiếp trong HTML
+  initCart();
+} else {
+  document.addEventListener("header:loaded", initCart, { once: true });
+}

@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (headerContainer) headerContainer.innerHTML = html;
 
     // Báo hiệu rằng header đã load xong
+    window.headerLoaded = true;
     document.dispatchEvent(new Event("header:loaded"));
   } catch (err) {
     console.error("Lỗi fetch header:", err);
