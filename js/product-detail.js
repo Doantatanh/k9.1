@@ -173,22 +173,10 @@ function AddToCart() {
 
   CartStore.dispatch(CartActions.addToCart(cartItem));
 
-  // Cập nhật giao diện header ngay lập tức (chỉ tạm thời trước khi reload)
+  // Cập nhật giao diện header ngay lập tức (không cần refresh trang)
   if (typeof renderCartUI === "function") renderCartUI();
 
-  // Hiển thị thông báo thành công rồi reload trang để cập nhật lại toàn bộ giao diện
-  const alertResult = swal(
-    "Thành công",
-    `Đã thêm ${quantity} sản phẩm vào giỏ hàng!`,
-    "success"
-  );
-
-  if (alertResult && typeof alertResult.then === "function") {
-    alertResult.then(() => location.reload());
-  } else {
-    // fallback: nếu swal không trả về Promise, reload sau 800ms
-    setTimeout(() => location.reload(), 800);
-  }
+  swal("Thành công", `Đã thêm ${quantity} sản phẩm vào giỏ hàng!`, "success");
 }
 
 /* ========================

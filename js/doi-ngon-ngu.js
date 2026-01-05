@@ -157,14 +157,38 @@ function activeMenu() {
    3. KHỞI TẠO (MAIN FLOW)
    ========================================= */
 
-// Chạy khởi tạo ngôn ngữ/menu/giỏ hàng sau khi header đã load
-function onHeaderLoaded() {
-  const savedLang = localStorage.getItem("selectedLang") || CONFIG.defaultLang;
-  loadDynamicMenu();
-  loadLanguage(savedLang);
-  activeMenu();
-  if (typeof renderCartUI === "function") {
-    renderCartUI();
+document.addEventListener("DOMContentLoaded", async function () {
+  // 1) Xác định đường dẫn header
+  const headerPath = window.location.pathname.includes("/macaron/")
+    ? "../header.html"
+    : "header.html";
+
+  try {
+    // 2) Fetch header
+    const response = await fetch(headerPath);
+    const html = await response.text();
+
+    // 3) Đưa vào DOM
+    const headerContainer = document.getElementById("header");
+    if (headerContainer) headerContainer.innerHTML = html;
+
+    // 4) Lấy ngôn ngữ từ localStorage
+    const savedLang =
+      localStorage.getItem("selectedLang") || CONFIG.defaultLang;
+
+    // 5) Load ngôn ngữ
+    loadDynamicMenu();
+    loadLanguage(savedLang);
+    activeMenu();
+
+    // 6) Gắn sự kiện dropdown sau khi header được render
+
+    // 7) Cập nhật giỏ hàng sau khi header được load
+    if (typeof renderCartUI === "function") {
+      renderCartUI();
+    }
+    document.dispatchEvent(new Event("header:loaded"));
+  } catch (err) {
+    console.error("Lỗi fetch header:", err);
   }
-}
-document.addEventListener("header:loaded", onHeaderLoaded);
+});

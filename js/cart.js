@@ -109,27 +109,4 @@ function initCart() {
 // ============================
 // CHỈ KHỞI TẠO SAU KHI HEADER LOAD XONG
 // ============================
-// Trước khi initCart, đảm bảo CartStore đã nạp dữ liệu persist từ localStorage
-function ensureStoreLoadedThenInit() {
-  if (
-    window.CartStore &&
-    typeof window.CartStore.loadFromLocalStorage === "function" &&
-    !window.CartStore.loadedFromStorage
-  ) {
-    window.CartStore.loadFromLocalStorage();
-  }
-  initCart();
-}
-
-// Nếu header đã load trước đó thì init ngay (với việc nạp storage trước),
-// nếu header được nhúng trực tiếp trong HTML thì init ngay, còn không lắng nghe sự kiện header:loaded
-if (window.headerLoaded) {
-  ensureStoreLoadedThenInit();
-} else if (document.querySelectorAll(".shopping-cart").length) {
-  // header có thể đã được nhúng trực tiếp trong HTML
-  ensureStoreLoadedThenInit();
-} else {
-  document.addEventListener("header:loaded", ensureStoreLoadedThenInit, {
-    once: true,
-  });
-}
+document.addEventListener("header:loaded", initCart, { once: true });
