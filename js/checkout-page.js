@@ -77,35 +77,60 @@ function loadCheckoutInfo() {
 }
 
 const paymentConfirmationBtn = document.getElementById("btComplete");
+
+const messages = {
+  vi: {
+    missingInfoTitle: "Thiếu thông tin",
+    missingInfoText: "Vui lòng nhập đầy đủ!",
+    invalidPhoneTitle: "Sai định dạng",
+    invalidPhoneText: "Số điện thoại không hợp lệ!",
+    missingPayment: "Vui lòng chọn phương thức thanh toán!",
+    successTitle: "Thành công",
+    successText: "Thông tin hợp lệ! Đang chuyển trang...",
+  },
+
+  en: {
+    missingInfoTitle: "Missing information",
+    missingInfoText: "Please fill in all required fields!",
+    invalidPhoneTitle: "Invalid format",
+    invalidPhoneText: "Invalid phone number!",
+    missingPayment: "Please select a payment method!",
+    successTitle: "Success",
+    successText: "Information is valid. Redirecting...",
+  },
+};
+
+function t(key) {
+  const lang = localStorage.getItem("selectedLang") || "vi";
+  return messages[lang]?.[key] || key;
+}
+
 if (paymentConfirmationBtn) {
   paymentConfirmationBtn.addEventListener("click", (e) => {
     e.preventDefault();
     const info = getCheckoutInfo();
 
     if (!info.fullName || !info.address || !info.phone || !info.timeGet) {
-      swal("Thiếu thông tin", "Vui lòng nhập đầy đủ!", "error");
+      swal(t("missingInfoTitle"), t("missingInfoText"), "error");
+
       return;
     }
 
-    if (!/^[0-9]{9,12}$/.test(info.phone)) {
-      swal("Sai định dạng", "Số điện thoại không hợp lệ!", "error");
+    if (!/^(0|\+84)[0-9]{9}$/.test(info.phone)) {
+      swal(t("invalidPhoneTitle"), t("invalidPhoneText"), "error");
       return;
     }
 
     // Kiểm tra phương thức thanh toán
     if (!info.paymentMethod) {
-      swal("Thiếu thông tin", "Vui lòng chọn phương thức thanh toán!", "error");
+      swal(t("missingInfoTitle"), t("missingPayment"), "error");
       return;
     }
 
     // Lưu thông tin
     localStorage.setItem("checkoutInfo", JSON.stringify(info));
 
-    swal(
-      "Thành công",
-      "Thông tin hợp lệ! Đang chuyển trang...",
-      "success"
-    ).then(() => {
+    swal(t("successTitle"), t("successText"), "success").then(() => {
       window.location.href = "xac-nhan-don-hang.html";
     });
   });

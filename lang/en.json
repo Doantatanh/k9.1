@@ -104,6 +104,18 @@
     "note_label": "Order Notes",
     "note_placeholder": "Additional notes if the customer wants extra flavors"
   },
+  "checkout-page": {
+    "payment_confirmation": "Payment confirmation",
+    "order_code": "Order code : ",
+    "name_label": "Full Name : ",
+    "Address_label": "Address : ",
+    "Phone_label": "Phone Number : ",
+    "TimeGet_label": "Delivery time : ",
+    "Note_label": "Notes (Orders) : ",
+    "Payment_label": "Payment method: ",
+    "btn_back": "Go back",
+    "btn_pay": "Payment"
+  },
   "cake-flavors": "Cake Flavors",
   "amount": "Amount",
   "checkout-shipping-note": "Please contact the shop to calculate the shipping fee",

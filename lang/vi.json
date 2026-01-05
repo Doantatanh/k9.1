@@ -101,6 +101,18 @@
     "note_label": "Ghi chú (Đơn hàng)",
     "note_placeholder": "Thông tin ghi chú thêm nếu khách muốn đặt thêm vị"
   },
+  "checkout-page": {
+    "payment_confirmation": "Xác nhận thanh toán",
+    "order_code": "Mã đơn hàng: ",
+    "name_label": "Họ và tên: ",
+    "Address_label": "Địa chỉ: ",
+    "Phone_label": "Số điện thoại: ",
+    "TimeGet_label": "Thời gian nhận hàng: ",
+    "Note_label": "Ghi chú (đơn hàng): ",
+    "Payment_label": "Phương thức thanh toán: ",
+    "btn_back": "Quay lại",
+    "btn_pay": "Thanh toán"
+  },
   "cake-flavors": "Các vị bánh",
   "amount": "Số Tiền",
   "checkout-shipping-note": "Vui lòng liên hệ quán để được tính phí ship",
