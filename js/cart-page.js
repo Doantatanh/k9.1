@@ -146,7 +146,7 @@ function getSavedCheckoutInfo() {
 // ================================
 async function submitOrder() {
   const cartItems = CartStore.getState();
-  const checkoutInfo = getCheckoutInfo();
+  const checkoutInfo = getSavedCheckoutInfo();
 
   if (!checkoutInfo) {
     swal("Lỗi", "Chưa có thông tin thanh toán!", "error");

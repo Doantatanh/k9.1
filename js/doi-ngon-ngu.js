@@ -127,13 +127,13 @@ function toggleLangMenu(menuId, event) {
 }
 
 // Đóng menu khi click ra ngoài
-// window.addEventListener("click", function (event) {
-//   if (!event.target.closest(".icon-button")) {
-//     document
-//       .querySelectorAll(".popover")
-//       .forEach((p) => p.classList.remove("show"));
-//   }
-// });
+window.addEventListener("click", function (event) {
+  if (!event.target.closest(".icon-button")) {
+    document
+      .querySelectorAll(".popover")
+      .forEach((p) => p.classList.remove("show"));
+  }
+});
 
 //lvtien add
 function activeMenu() {
