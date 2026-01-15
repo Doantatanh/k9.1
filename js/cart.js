@@ -18,6 +18,7 @@ function renderCartItemHTML(item) {
           color: #ff0000;
           font-weight: bold;
           padding: 0 5px;
+          font-size: 25px;
       " title="Xóa sản phẩm">&times;</span>
     </li>
   `;
