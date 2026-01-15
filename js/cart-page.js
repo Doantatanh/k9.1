@@ -178,7 +178,9 @@ async function submitOrder() {
     total: cartItems.reduce((s, i) => s + i.price * i.quantity, 0),
   };
 
-  console.log("ORDER PAYLOAD:", orderPayload);
+  console.log("----- MÔ PHỎNG GỬI API -----");
+  console.log("Dữ liệu sẽ gửi đi:", orderPayload);
+  console.log("----------------------------");
 
   // =====================
   // GỬI API (MỞ COMMENT KHI CÓ BACKEND)
@@ -192,10 +194,11 @@ async function submitOrder() {
   */
 
   // Thành công
-  CartStore.dispatch(CartActions.clearCart());
-  localStorage.removeItem("checkoutInfo");
+  // CartStore.dispatch(CartActions.clearCart());
+  // localStorage.removeItem("checkoutInfo");
 
-  window.location.href = "../macaron/hoan-thanh-don-hang.html";
+  // Tạm thời comment chuyển trang để xem log
+  // window.location.href = "../macaron/hoan-thanh-don-hang.html";
 }
 
 // ================================

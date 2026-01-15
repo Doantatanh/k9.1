@@ -3,11 +3,22 @@
 // ============================
 function renderCartItemHTML(item) {
   const name = item.flavor ? `${item.name} - vị ${item.flavor}` : item.name;
+  const itemId = item.uniqueId || item.id;
+
   return `
-    <li class="cart-item">
+    <li class="cart-item" style="position: relative;">
       <img src="${item.image}" alt="${name}" class="thumb" />
-      <span class="item-name">${name}</span>
+      <span class="item-name" style="padding-right: 20px;">${name}</span>
       <span class="item-quantity"><span class="item-amount">${item.price.toLocaleString()}</span> (VNĐ)</span>
+      <span class="remove-mini-cart-item" data-id="${itemId}" style="
+          position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer;
+          color: #ff0000;
+          font-weight: bold;
+          padding: 0 5px;
+      " title="Xóa sản phẩm">&times;</span>
     </li>
   `;
 }
@@ -56,7 +67,20 @@ function renderMiniCart(cartItems, total) {
       cartItems.forEach((item) => {
         itemsHTML += renderCartItemHTML(item);
       });
-      if (ul) ul.innerHTML = itemsHTML;
+      if (ul) {
+        ul.innerHTML = itemsHTML;
+
+        // --- ADDED: Event listener cho nút xóa ---
+        ul.querySelectorAll(".remove-mini-cart-item").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const id = btn.dataset.id;
+            CartStore.dispatch(CartActions.removeFromCart(id));
+          });
+        });
+        // -----------------------------------------
+      }
 
       // Cập nhật nội dung Footer (Tổng tiền & Nút)
       footer.innerHTML = `
