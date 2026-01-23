@@ -14,7 +14,7 @@
     "cart_empty": "Chưa có sản phẩm nào"
   },
   "services-section": {
-    "product": "Sản Phẩm"
+    "product": "Sản Phẩm đã mua"
   },
   "team-section": {
     "news": "Tin Tức"
@@ -74,7 +74,8 @@
     "name": "Tên sản phẩm",
     "price": "Giá",
     "quantity": "Số lượng",
-    "subtotal": "Tổng tiền"
+    "total": "Tổng tiền",
+    "subtotal": "Thành tiền"
   },
   "cart-summary": {
     "title": "Thanh toán",
@@ -82,18 +83,18 @@
     "submit": "Thanh toán"
   },
   "other-options": "Thêm vào giỏ hàng",
-  "subtotal_v1": "Tổng tiền:",
+  "total_v1": "Tổng tiền:",
   "order_information": "Thông tin",
   "product-other-types": "Các loại khác",
   "checkout-info": {
     "fullname_label": "Họ tên *",
-    "fullname_placeholder": "Nhập chính xác Họ tên",
+    "fullname_placeholder": "Họ tên",
 
     "address_label": "Địa chỉ *",
-    "address_placeholder": "Nhập chính xác địa chỉ nhận hàng",
+    "address_placeholder": "Địa chỉ nhận hàng",
 
     "phone_label": "Điện thoại",
-    "phone_placeholder": "Nhập chính xác Điện thoại",
+    "phone_placeholder": "Số điện thoại",
 
     "time_label": "Thời gian nhận hàng",
     "time_placeholder": "Ví dụ : 9h30 sáng ngày 20/10",
@@ -115,7 +116,7 @@
   },
   "cake-flavors": "Các vị bánh",
   "amount": "Số Tiền",
-  "checkout-shipping-note": "Vui lòng liên hệ quán để được tính phí ship",
+  "checkout-shipping-note": "(Vui lòng liên hệ quán để được tính phí ship)",
   "direct": "Trực tiếp",
   "Pay_directly_upon_receipt": "Thanh toán trực tiếp khi nhận hàng",
   "Pay_directly_at_the_restaurant": "Trả tiền trực tiếp tại quán",

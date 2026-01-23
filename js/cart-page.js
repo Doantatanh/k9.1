@@ -1,3 +1,12 @@
+/* ========================
+   Prevent non-numeric input
+======================== */
+document.addEventListener("input", function (e) {
+  if (e.target.classList.contains("qty")) {
+    e.target.value = e.target.value.replace(/[eE+-]/g, "");
+  }
+});
+
 // ================================
 // RENDER GIỎ HÀNG TRANG gio-hang.html
 // ================================
@@ -194,11 +203,11 @@ async function submitOrder() {
   */
 
   // Thành công
-  // CartStore.dispatch(CartActions.clearCart());
-  // localStorage.removeItem("checkoutInfo");
+  CartStore.dispatch(CartActions.clearCart());
+  localStorage.removeItem("checkoutInfo");
 
   // Tạm thời comment chuyển trang để xem log
-  // window.location.href = "../macaron/hoan-thanh-don-hang.html";
+  window.location.href = "../macaron/hoan-thanh-don-hang.html";
 }
 
 // ================================
@@ -229,7 +238,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (btComplete) {
     btComplete.addEventListener("click", (e) => {
       e.preventDefault();
-      submitOrder();
+      Swal.fire({
+        title: "Xác nhận đơn hàng",
+        text: "Bạn có chắc chắn muốn đặt hàng?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Đặt hàng",
+        cancelButtonText: "Hủy",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          submitOrder();
+        }
+      });
     });
   }
 });

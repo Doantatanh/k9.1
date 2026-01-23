@@ -14,7 +14,7 @@
     "cart_empty": "No products in cart"
   },
   "services-section": {
-    "product": "Products"
+    "product": "Purchased Products"
   },
   "team-section": {
     "news": "News"
@@ -76,6 +76,7 @@
     "name": "Product Name",
     "price": "Price",
     "quantity": "Quantity",
+    "total": "Total",
     "subtotal": "Subtotal"
   },
   "cart-summary": {
@@ -84,19 +85,19 @@
     "submit": "Proceed to Payment"
   },
   "other-options": "Add to cart",
-  "subtotal_v1": "Subtotal:",
+  "total_v1": "Total:",
   "order_information": "Information",
   "product-other-types": "Other Varieties",
   "checkout-info": {
     "title": "Checkout",
     "fullname_label": "Full Name *",
-    "fullname_placeholder": "Enter your full name",
+    "fullname_placeholder": "Full Name",
 
     "address_label": "Address *",
-    "address_placeholder": "Enter the correct delivery address",
+    "address_placeholder": "Shipping Address",
 
     "phone_label": "Phone Number",
-    "phone_placeholder": "Enter your phone number",
+    "phone_placeholder": "Phone Number",
 
     "time_label": "Delivery Time",
     "time_placeholder": "Example: 9:30 AM on October 20th",
@@ -118,7 +119,7 @@
   },
   "cake-flavors": "Cake Flavors",
   "amount": "Amount",
-  "checkout-shipping-note": "Please contact the shop to calculate the shipping fee",
+  "checkout-shipping-note": "(Please contact the shop to calculate the shipping fee)",
   "direct": "Direct",
   "Pay_directly_upon_receipt": "Pay directly upon receipt",
   "Pay_directly_at_the_restaurant": "Pay directly at the restaurant",

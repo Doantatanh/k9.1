@@ -86,7 +86,7 @@ function renderMiniCart(cartItems, total) {
       // Cập nhật nội dung Footer (Tổng tiền & Nút)
       footer.innerHTML = `
         <div class="shopping-cart-total">
-            <strong data-lang="subtotal_v1">Tổng tiền:</strong>
+            <strong data-lang="total_v1">Tổng tiền:</strong>
             <span class="cart-total-amount">${total.toLocaleString()}</span> (VNĐ)
         </div>
         <div class="cart-buttons" style="display: flex; gap: 5px; margin-top: 10px;">
@@ -110,7 +110,7 @@ function renderCartUI() {
   renderMiniCart(cartItems, total);
 
   const countEls = document.querySelectorAll(
-    ".main-header .cart-btn .count, .sticky-header .cart-btn .count, .mobile-header .cart-btn .count, .cart-count"
+    ".main-header .cart-btn .count, .sticky-header .cart-btn .count, .mobile-header .cart-btn .count, .cart-count",
   );
   countEls.forEach((el) => (el.textContent = totalCount));
 }

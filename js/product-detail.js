@@ -52,7 +52,7 @@ function renderVariants(product) {
       <option 
         value="${v.variantId}" 
         data-price="${v.price}">
-        ${label} - ${v.price.toLocaleString("vi-VN")}đ
+        ${label}
       </option>`;
     })
     .join("");
@@ -66,7 +66,7 @@ function renderVariants(product) {
         ${optionsHTML}
       </select>
     </div>
-  `
+  `,
   );
 
   document
@@ -100,7 +100,7 @@ async function loadProductDetail() {
     const products = await res.json();
 
     const product = products.find(
-      (p) => String(p.productId) === String(productId)
+      (p) => String(p.productId) === String(productId),
     );
 
     if (!product) {
@@ -128,9 +128,22 @@ async function loadProductDetail() {
   }
 }
 
+function showCartToast(message, type = "success") {
+  const toast = $("#cartToast");
+  const header = toast.find(".toast-header");
+
+  header.removeClass("bg-success bg-danger bg-warning bg-info");
+  header.addClass(`bg-${type}`);
+
+  $("#cartToastBody").text(message);
+
+  toast.toast("show");
+}
+
 /* ========================
    Add to cart handler
 ======================== */
+let isAddingToCart = false;
 
 function AddToCart() {
   const qtyInput = document.getElementById("txtQuantity");
@@ -140,6 +153,12 @@ function AddToCart() {
     swal("Lỗi", "Số lượng phải lớn hơn 0!", "error");
     return;
   }
+
+  if (isAddingToCart) return;
+  isAddingToCart = true;
+
+  const btn = document.getElementById("btAdd");
+  if (btn) btn.disabled = true;
 
   if (!window.currentProduct) {
     swal("Lỗi", "Chưa tải được dữ liệu sản phẩm!", "error");
@@ -153,7 +172,7 @@ function AddToCart() {
   if (variantSelect) {
     const variantId = variantSelect.value;
     selectedVariant = window.currentProduct.variants.find(
-      (v) => v.variantId === variantId
+      (v) => v.variantId === variantId,
     );
   }
 
@@ -173,11 +192,17 @@ function AddToCart() {
 
   CartStore.dispatch(CartActions.addToCart(cartItem));
 
-  swal(
-    "Thành công",
-    `Đã thêm ${quantity} sản phẩm vào giỏ hàng!`,
-    "success"
-  ).then(() => window.location.reload());
+  showCartToast(`Đã thêm ${quantity} sản phẩm vào giỏ hàng`, "success");
+
+  setTimeout(() => resetAddToCart(btn), 1000);
+}
+
+/* ========================
+   Reset add to cart handler
+======================== */
+function resetAddToCart(btn) {
+  isAddingToCart = false;
+  if (btn) btn.disabled = false;
 }
 
 /* ========================

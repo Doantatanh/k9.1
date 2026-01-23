@@ -10,7 +10,7 @@ const CONFIG = {
 
 const notyf = new Notyf({
   duration: 2500,
-  position: { x: "center", y: "top" },
+  position: { x: "right", y: "top" },
 });
 
 // Danh sách message theo ngôn ngữ

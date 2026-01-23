@@ -25,10 +25,9 @@ function renderCheckoutPage() {
 
       return `
             <tr class="cart-item">
-                <td class="product-name">
-                    ${displayName}        
-                    <strong class="product-quantity">× ${item.quantity}</strong>
-                </td>
+                <td class="product-name">${displayName}</td>
+
+                <td class="product-quantity">${item.quantity}</td>
 
                 <td class="product-total">
                     <span class="woocommerce-Price-amount amount">${subtotal.toLocaleString()}</span>
@@ -70,7 +69,7 @@ function loadCheckoutInfo() {
   // Phương thức thanh toán
   if (saved.paymentMethod) {
     const radio = document.querySelector(
-      `input[name='paymentgroup'][value='${saved.paymentMethod}']`
+      `input[name='paymentgroup'][value='${saved.paymentMethod}']`,
     );
     if (radio) radio.checked = true;
   }
@@ -116,11 +115,6 @@ if (paymentConfirmationBtn) {
       return;
     }
 
-    if (!/^(0|\+84)[0-9]{9}$/.test(info.phone)) {
-      swal(t("invalidPhoneTitle"), t("invalidPhoneText"), "error");
-      return;
-    }
-
     // Kiểm tra phương thức thanh toán
     if (!info.paymentMethod) {
       swal(t("missingInfoTitle"), t("missingPayment"), "error");
@@ -130,9 +124,7 @@ if (paymentConfirmationBtn) {
     // Lưu thông tin
     localStorage.setItem("checkoutInfo", JSON.stringify(info));
 
-    swal(t("successTitle"), t("successText"), "success").then(() => {
-      window.location.href = "xac-nhan-don-hang.html";
-    });
+    window.location.href = "xac-nhan-don-hang.html";
   });
 }
 

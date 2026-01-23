@@ -25,24 +25,23 @@ async function loadArticleDetail() {
 
     // 4. Render bài viết ra HTML
     container.innerHTML = `
-            <div class="inner-box">         
+      <div class="inner-box">         
                                                                               
-                                            <h3 class="quote_text"><a href="/tin-tuc/">Tin tức</a> | <a href="article.html?slug=${article.slug}">${article.title}</a></h3>                                            
-                                     
+        <h3 class="quote_text"><a href="/tin-tuc/">Tin tức</a> | <a href="article.html?slug=${article.slug}">${article.title}</a></h3>                                                                
 
-                                    <div class="image-column">
-                                        <div class="inner-column">
-                                            <figure class="image"><img src="${article.coverImage}"></figure>                                            
-                                        </div>
-                                    </div>
-                                    <div class="content-column">
-                                        <div class="inner-column">   
-                                            ${article.contentHTML}
-                                        </div>
-                                    </div>
+        <div class="image-column">
+          <div class="inner-column">
+            <figure class="image"><img src="${article.coverImage}"></figure>                                            
+          </div>
+        </div>
+        <div class="content-column">
+          <div class="inner-column">   
+            ${article.contentHTML}
+          </div>
+        </div>
                                   
-                                    <div class="devider"><img src="../images/icons/icon-devider-gray.png" alt=""></div>
-                                </div>
+        <div class="devider"><img src="../images/icons/icon-devider-gray.png" alt=""></div>
+  </div>
         `;
   } catch (error) {
     console.error("Lỗi load bài viết:", error);
