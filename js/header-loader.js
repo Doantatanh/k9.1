@@ -1,5 +1,7 @@
 const CONFIGG = {
-  menuDir: "/json/menu.json",
+  menuDir: window.location.pathname.includes("/macaron/")
+    ? "../JSON/menu.json"
+    : "/JSON/menu.json",
 };
 
 async function loadDynamicMenu() {
