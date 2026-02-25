@@ -75,6 +75,23 @@ function loadCheckoutInfo() {
   }
 }
 
+function generateOrderNumber() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let randomStr = "";
+  for (let i = 0; i < 6; i++) {
+    randomStr += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+
+  return `${year}-${month}-${day}-${randomStr}`;
+}
+
+document.getElementById("txtOrderNumber").textContent = generateOrderNumber();
+
 const paymentConfirmationBtn = document.getElementById("btComplete");
 
 const messages = {

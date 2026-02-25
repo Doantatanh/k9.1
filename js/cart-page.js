@@ -167,7 +167,11 @@ async function submitOrder() {
     return;
   }
 
+  const orderNumberEl = document.getElementById("txtOrderNumber");
+  const orderCode = orderNumberEl ? orderNumberEl.textContent : "";
+
   const orderPayload = {
+    orderCode: orderCode,
     customer: {
       fullName: checkoutInfo.fullName,
       phone: checkoutInfo.phone,
@@ -203,11 +207,11 @@ async function submitOrder() {
   */
 
   // Thành công
-  CartStore.dispatch(CartActions.clearCart());
-  localStorage.removeItem("checkoutInfo");
+  // CartStore.dispatch(CartActions.clearCart());
+  // localStorage.removeItem("checkoutInfo");
 
   // Tạm thời comment chuyển trang để xem log
-  window.location.href = "../macaron/hoan-thanh-don-hang.html";
+  // window.location.href = "../macaron/hoan-thanh-don-hang.html";
 }
 
 // ================================

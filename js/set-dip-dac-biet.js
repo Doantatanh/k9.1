@@ -1,42 +1,73 @@
 async function loadSetProducts() {
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get("type"); // ví dụ: set-tet
+  try {
+    const apiUrl =
+      "http://macaron.a.csoftlife.com/api/v1/CoreProduct/list?categoryId=5&domainId=1&pageIndex=1&pageSize=20";
 
-  // Đọc file chứa toàn bộ sản phẩm & danh mục
-  const res = await fetch("../JSON/products-category.json");
-  const data = await res.json();
+    const response = await axios.get(apiUrl);
+    const result = response.data;
 
-  // Tìm đúng category theo slug
-  const category = data.categories.find((c) => c.slug === slug);
+    if (!result.success) {
+      console.error("API trả về lỗi hoặc không thành công");
+      return;
+    }
 
-  // Render sản phẩm
-  let html = "";
-  category.products.forEach((p) => {
-    const detailLink = `product-detail.html?id=${p.productId}`;
-    html += `
-      <div class="shop-item col-lg-4 col-md-6 col-sm-12">
+    const products = result.data || [];
+
+    // Render danh sách sản phẩm
+    const list = document.getElementById("product-list-set");
+    if (!list) return;
+    list.innerHTML = "";
+
+    if (products.length === 0) {
+      list.innerHTML = `
+        <div class="col-12 text-center py-5">
+            <h3 style="color: #666;">Hiện tại chưa có sản phẩm nào trong danh mục này.</h3>
+            <p>Vui lòng quay lại sau hoặc tham khảo các danh mục khác!</p>
+        </div>
+      `;
+      return;
+    }
+
+    products.forEach((p) => {
+      const productId = p.coreProductId;
+      const name = p.productName || "";
+      const image = p.avatar
+        ? `http://macaron.a.csoftlife.com${p.avatar}`
+        : "../images/resource/products/1.jpg";
+      const price = p.basePrice || 0;
+
+      const detailLink = `product-detail.html?id=${productId}`;
+
+      list.innerHTML += `
+                <div class="shop-item col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image">
                                 <a href="${detailLink}">
-                                    <img src="${p.image}" alt="${p.name}">
+                                    <img src="${image}" alt="${name}">
                                 </a>
                             </figure>
                         </div>
                         <div class="lower-content">
                             <h4 class="name">
                                 <a href="${detailLink}">
-                                    ${p.name}
+                                    ${name}
                                 </a>
                             </h4>
-                            <div class="price">${p.basePrice.toLocaleString()} VNĐ</div>
+                            <div class="price">${price.toLocaleString()} VNĐ</div>
                         </div>
                     </div>
                 </div>
-    `;
-  });
-
-  document.getElementById("product-list-set").innerHTML = html;
+            `;
+    });
+  } catch (err) {
+    console.error("Lỗi load Set Dịp Đặc Biệt từ API:", err);
+  }
 }
 
-loadSetProducts();
+// Gọi hàm khi trang đã tải xong
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadSetProducts);
+} else {
+  loadSetProducts();
+}

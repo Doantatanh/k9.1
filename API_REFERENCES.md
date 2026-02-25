@@ -57,4 +57,53 @@ const data = await res.json();
 // Nếu data từ API không khớp format cũ, cần map lại:
 // const products = data.map(item => ({ ... }))
 renderProducts(data);
+
+
+
+
+
+Cách 1: Gỡ bỏ hoàn toàn (Khuyên dùng)
+Đây là cách sạch nhất. Bạn chỉ cần thực hiện 2 bước:
+
+Xóa file: Xóa file
+js/api-auth.js
+ khỏi thư mục dự án.
+Gỡ liên kết trong HTML: Tìm và xóa dòng <script src=".../js/api-auth.js"></script> trong tất cả các file HTML (
+index.html
+,
+menu.html
+,
+lien-he.html
+,
+gioi-thieu.html
+).
+Khi không còn script này, Axios sẽ chạy như bình thường mà không đính kèm bất kỳ Header Authorization nào vào request.
+
+Cách 2: Vô hiệu hóa nhanh (Tạm thời)
+Nếu bạn không muốn sửa nhiều file HTML, bạn có thể chỉ cần vào file
+js/api-auth.js
+ và comment (vô hiệu hóa) phần thiết lập interceptor.
+
+Bạn chỉ cần comment đoạn code từ dòng axios.interceptors.request.use trở đi:
+
+javascript
+/* Comment đoạn này lại
+axios.interceptors.request.use(async (config) => {
+    ...
+});
+axios.interceptors.response.use(
+    ...
+);
+*/
+Một số lưu ý quan trọng:
+Không cần sửa code gọi API: Trong các file như
+macaron-menu-loader.js
+, bạn không cần phải sửa bất cứ thứ gì. Vì chúng ta dùng Axios Interceptor, nên việc có token hay không là do file
+api-auth.js
+ quyết định, logic gọi dữ liệu vẫn giữ nguyên.
+Hiệu năng: Việc gỡ bỏ file
+api-auth.js
+ (Cách 1) sẽ giúp trang web tải nhanh hơn một chút vì không phải thực hiện thêm một request đăng nhập chạy ngầm mỗi khi người dùng truy cập.
+Lời khuyên: Khi API đã ổn định và không cần bảo mật bằng token cho các tác vụ xem dữ liệu (Public API), bạn nên dùng Cách 1 để code của dự án trở nên nhẹ nhàng và chuyên nghiệp hơn.
+
 ```

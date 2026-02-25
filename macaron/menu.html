@@ -146,47 +146,9 @@
             });
     </script>
 
-    <script>
-        async function loadMacaronMenu() {
-            try {
-                const res = await fetch("../JSON/menu-element.json");
-                const data = await res.json();
-
-                const menu = document.getElementById("macaron-element");
-                menu.innerHTML = "";
-
-                data.menuItems.forEach(item => {
-                    menu.innerHTML += `
-                                <div class="shop-item col-lg-4 col-md-6 col-sm-12">
-                                    <div class="inner-box">
-                                        <div class="image-box">
-                                            <figure class="image">
-                                                <a href="${item.link}">
-                                                    <img src="${item.image}"
-                                                        alt="">
-                                                </a>
-                                                &nbsp;
-                                            </figure>
-
-                                        </div>
-                                        <div class="lower-content">
-                                            <h4 class="name">
-                                                <a href="${item.link}">${item.title}</a>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                </div>
-      `;
-                });
-
-            } catch (err) {
-                console.error("Lỗi load menu JSON:", err);
-            }
-        }
-
-        loadMacaronMenu();
-
-    </script>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/api-auth.js"></script>
+    <script src="../js/macaron-menu-loader.js"></script>
 
     <script src="../js/jquery.js"></script>
     <!-- <script src="../js/popper.min.js"></script> -->
