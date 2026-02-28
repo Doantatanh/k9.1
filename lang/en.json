@@ -14,7 +14,8 @@
     "cart_empty": "No products in cart"
   },
   "services-section": {
-    "product": "Purchased Products"
+    "product": "Products",
+    "purchased_product": "Sản Phẩm đã mua"
   },
   "team-section": {
     "news": "News"
@@ -57,6 +58,13 @@
     "message": "Message",
     "submit": "Send"
   },
+  "contact_section": {
+    "contact_We": "We",
+    "contact_Opening_Hours": "Opening hours",
+    "contact_Contact": "Contact",
+    "Monday_Friday": "Monday - Friday",
+    "Saturday_Sunday": "Saturday - Sunday"
+  },
   "about-section-event": {
     "title": "Events",
     "content": "A colorful macaron tower is always the center of attention at any party or event. La Rosette offers three tower sizes: small (5 tiers, 42 macarons), medium (7 tiers, 75 macarons), and large (10 tiers, 150 macarons), all decorated with flowers — a perfect choice for birthdays, weddings, or year-end parties. You can also request your company logo or customize colors to match your event theme.",
@@ -92,16 +100,12 @@
     "title": "Checkout",
     "fullname_label": "Full Name *",
     "fullname_placeholder": "Full Name",
-
     "address_label": "Address *",
     "address_placeholder": "Shipping Address",
-
     "phone_label": "Phone Number",
     "phone_placeholder": "Phone Number",
-
     "time_label": "Delivery Time",
     "time_placeholder": "Example: 9:30 AM on October 20th",
-
     "note_label": "Order Notes",
     "note_placeholder": "Additional notes if the customer wants extra flavors"
   },
@@ -126,6 +130,6 @@
   "btn_confirm": "Confirm",
   "thank_you_message": "Thank you",
   "thank_you_order": "Thank you for your order !",
-  "thank_you_info": "Your order has been successfully confirmed. Your cakes are being carefully prepared and will be delivered to you as soon as possible.",
+  "thank_you_info": "Your order <span id=\"displayOrderCode\" style=\"font-weight: bold; color: #d63384;\"></span> has been successfully confirmed. Your cakes are being carefully prepared and will be delivered to you as soon as possible.",
   "back_home": "Back to Home"
 }

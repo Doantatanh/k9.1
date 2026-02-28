@@ -15,14 +15,20 @@ async function loadMacaronMenu() {
     menu.innerHTML = "";
 
     // Xử lý dữ liệu trả về từ API
-    const menuItems = data.data || (Array.isArray(data) ? data : []);
+    const rawItems = data.data || (Array.isArray(data) ? data : []);
+
+    // Chỉ lấy các danh mục cha (parentId là null)
+    const menuItems = rawItems.filter((item) => item.parentId === null);
 
     menuItems.forEach((item) => {
       // Mapping theo các trường mới của API CoreCategory
       const title = item.categoryName || "";
-      const image = item.avatar || "images/product/avatar/20201107181352.jpg";
+      const image =
+        config.getImgUrl(item.avatar) ||
+        "images/product/avatar/20201107181352.jpg";
+
       const link = item.categoryAlias
-        ? `macaron/${item.categoryAlias}.html`
+        ? `${item.categoryAlias}.html`
         : "#";
 
       menu.innerHTML += `

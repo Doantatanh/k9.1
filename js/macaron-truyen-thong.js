@@ -36,7 +36,7 @@ async function loadMacaronTruyenThong() {
       const image = p.avatar
         ? config
           ? config.getImgUrl(p.avatar)
-          : `http://macaron.a.csoftlife.com${p.avatar}`
+          : `http://macaron.a.csoftlife.com/data/upload/${p.avatar}`
         : "../images/product/avatar/20201107180549.jpg";
       const price = p.basePrice || 0;
 

@@ -80,7 +80,8 @@
                     </div>
                     <div class="info-thank">
                         <h2 data-lang="thank_you_order">Cảm ơn bạn đã đặt hàng</h2>
-                        <p data-lang="thank_you_info">Đơn hàng đã được xác nhận thành công.
+                        <p data-lang="thank_you_info">Đơn hàng <span id="displayOrderCode"
+                                style="font-weight: bold; color: #d63384;">...</span> đã được xác nhận thành công.
                             Bánh sẽ được chuẩn bị cẩn thận và giao đến bạn trong thời gian sớm nhất.</p>
                         <button class="btn-thank">
                             <a href="/">
@@ -136,7 +137,7 @@
         </svg>
         <span class="fa fa-angle-up"></span>
     </div>
-
+    <script src="../js/axios.min.js"></script>
     <script src="../js/notyf.min.js"></script>
     <script src="../js/doi-ngon-ngu.js"></script>
     <script src="../js/header-loader.js"></script>
@@ -174,7 +175,26 @@
     <script src="../js/checkout-page.js"></script>
     <script src="../js/cart.js"></script>
     <script src="../js/cart-page.js"></script>
+    <script src="../js/footer-loader.js"></script>
     <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const orderCode = params.get('orderCode');
+            if (orderCode) {
+                // Kiểm tra liên tục vì script đổi ngôn ngữ có thể ghi đè lại nội dung
+                const checkInterval = setInterval(() => {
+                    const el = document.getElementById('displayOrderCode');
+                    if (el && el.textContent !== orderCode) {
+                        el.textContent = orderCode;
+                    }
+                }, 100);
+
+                // Dừng kiểm tra sau 5 giây để tiết kiệm tài nguyên
+                setTimeout(() => clearInterval(checkInterval), 5000);
+            }
+        });
+    </script>
 </body>
 
 </html>

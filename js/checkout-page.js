@@ -44,12 +44,17 @@ function renderCheckoutPage() {
 }
 
 function getCheckoutInfo() {
+  const getVal = (id) => {
+    const el = document.getElementById(id);
+    return el ? el.value.trim() : "";
+  };
+
   return {
-    fullName: document.getElementById("txtFullName").value.trim(),
-    address: document.getElementById("txtAddress").value.trim(),
-    phone: document.getElementById("txtPhone").value.trim(),
-    timeGet: document.getElementById("txtTimeGet").value.trim(),
-    comment: document.getElementById("txtComment").value.trim(),
+    fullName: getVal("txtFullName"),
+    address: getVal("txtAddress"),
+    phone: getVal("txtPhone"),
+    timeGet: getVal("txtTimeGet"),
+    comment: getVal("txtComment"),
     paymentMethod: document.querySelector("input[name='paymentgroup']:checked")
       ? document.querySelector("input[name='paymentgroup']:checked").value
       : null,
@@ -60,11 +65,18 @@ function loadCheckoutInfo() {
   const saved = JSON.parse(localStorage.getItem("checkoutInfo"));
   if (!saved) return;
 
-  document.getElementById("txtFullName").value = saved.fullName || "";
-  document.getElementById("txtAddress").value = saved.address || "";
-  document.getElementById("txtPhone").value = saved.phone || "";
-  document.getElementById("txtTimeGet").value = saved.timeGet || "";
-  document.getElementById("txtComment").value = saved.comment || "";
+  const fields = {
+    txtFullName: "fullName",
+    txtAddress: "address",
+    txtPhone: "phone",
+    txtTimeGet: "timeGet",
+    txtComment: "comment",
+  };
+
+  for (const [id, key] of Object.entries(fields)) {
+    const el = document.getElementById(id);
+    if (el) el.value = saved[key] || "";
+  }
 
   // Phương thức thanh toán
   if (saved.paymentMethod) {
@@ -90,7 +102,10 @@ function generateOrderNumber() {
   return `${year}-${month}-${day}-${randomStr}`;
 }
 
-document.getElementById("txtOrderNumber").textContent = generateOrderNumber();
+const orderNumberEl = document.getElementById("txtOrderNumber");
+if (orderNumberEl) {
+  orderNumberEl.textContent = generateOrderNumber();
+}
 
 const paymentConfirmationBtn = document.getElementById("btComplete");
 

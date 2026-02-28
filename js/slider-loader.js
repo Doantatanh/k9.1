@@ -13,9 +13,11 @@ async function updateSlider() {
       return;
     }
 
-    const slidesData = (result.data || []).filter(
-      (item) => item.type === "slider",
-    );
+    const slidesData = (result.data || []).filter((item) => {
+      if (!item.type) return false;
+      const type = item.type.toLowerCase();
+      return type === "slider" || type === "banner";
+    });
     const sliderUl = document.querySelector("#rev_slider_one ul");
 
     if (!sliderUl) {
@@ -66,11 +68,28 @@ async function updateSlider() {
     sliderUl.innerHTML = html;
 
     // Khởi tạo Revolution Slider sau khi đã tạo xong HTML các slide
-    if (typeof initMainSlider === "function") {
-      initMainSlider();
-    } else {
-      console.error("Hàm initMainSlider không tồn tại!");
-    }
+    const checkAndInitSlider = () => {
+      if (typeof initMainSlider === "function") {
+        initMainSlider();
+      } else {
+        // Nếu chưa có hàm initMainSlider (có thể do file js chưa load xong), thử lại sau 100ms
+        console.warn("Đang đợi hàm initMainSlider...");
+        let attempts = 0;
+        const interval = setInterval(() => {
+          attempts++;
+          if (typeof initMainSlider === "function") {
+            initMainSlider();
+            clearInterval(interval);
+          } else if (attempts > 50) {
+            // Thử tối đa 5 giây
+            console.error("Hàm initMainSlider không tồn tại sau 5 giây!");
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+    };
+
+    checkAndInitSlider();
   } catch (err) {
     console.error("Lỗi load slider từ API:", err);
   }

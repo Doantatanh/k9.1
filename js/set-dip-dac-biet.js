@@ -1,7 +1,12 @@
 async function loadSetProducts() {
   try {
-    const apiUrl =
-      "http://macaron.a.csoftlife.com/api/v1/CoreProduct/list?categoryId=5&domainId=1&pageIndex=1&pageSize=20";
+    const config = window.API_CONFIG;
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryId = urlParams.get("categoryId") || "5";
+
+    const apiUrl = config
+      ? `${config.getUrl("PRODUCT_LIST")}?categoryId=${categoryId}&domainId=1&pageIndex=1&pageSize=20`
+      : `http://macaron.a.csoftlife.com/api/v1/CoreProduct/list?categoryId=${categoryId}&domainId=1&pageIndex=1&pageSize=20`;
 
     const response = await axios.get(apiUrl);
     const result = response.data;
@@ -32,8 +37,10 @@ async function loadSetProducts() {
       const productId = p.coreProductId;
       const name = p.productName || "";
       const image = p.avatar
-        ? `http://macaron.a.csoftlife.com${p.avatar}`
-        : "../images/resource/products/1.jpg";
+        ? config
+          ? config.getImgUrl(p.avatar)
+          : `http://macaron.a.csoftlife.com/data/upload/${p.avatar}`
+        : "../images/product/avatar/20201107180549.jpg";
       const price = p.basePrice || 0;
 
       const detailLink = `product-detail.html?id=${productId}`;

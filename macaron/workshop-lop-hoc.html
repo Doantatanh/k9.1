@@ -77,6 +77,11 @@
                 <div class="row" id="workshop-list">
                     <!-- News articles will be loaded here dynamically -->
                 </div>
+                <div class="pagination-wrapper">
+                    <button id="prev-page" class="nav-btn">←</button> <!-- Nút lùi lại -->
+                    <div id="pagination-numbers" class="page-numbers"></div> <!-- Nơi chứa số 1, 2, 3... -->
+                    <button id="next-page" class="nav-btn">→</button> <!-- Nút tiến lên -->
+                </div>
             </div>
         </section>
 
@@ -133,7 +138,11 @@
             });
     </script>
 
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/api-config.js"></script>
+
     <script src="../js/workshops-list.js"></script>
+    <script src="../js/footer-loader.js"></script>
     <script src="../js/jquery.js"></script>
     <!-- <script src="../js/popper.min.js"></script> -->
     <script src="../js/bootstrap.min.js"></script>

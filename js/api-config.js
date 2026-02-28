@@ -12,10 +12,15 @@ const API_CONFIG = {
     CATEGORY: "/api/v1/CoreCategory",
     PRODUCT_LIST: "/api/v1/CoreProduct/list",
     PRODUCT_DETAIL: "/api/v1/CoreProduct/detail",
+    NEWS_LIST: "/api/v1/CmsArticle/list",
+    NEWS_DETAIL: "/api/v1/CmsArticle",
+    JOBS_LIST: "/api/v1/PartnerRecruitment/paged",
+    JOBS_DETAIL: "/api/v1/PartnerRecruitment",
+    ORDER: "/api/v1/CoreOrder",
   },
 
   // Tiền tố cho ảnh (nếu ảnh trả về dạng đường dẫn tương đối /products/...)
-  IMAGE_BASE_URL: "http://macaron.a.csoftlife.com",
+  IMAGE_BASE_URL: "http://macaron.a.csoftlife.com/data/upload",
 
   // Hàm helper để lấy URL đầy đủ
   getUrl(key) {
@@ -26,7 +31,9 @@ const API_CONFIG = {
   getImgUrl(path) {
     if (!path) return "";
     if (path.startsWith("http")) return path;
-    return `${this.IMAGE_BASE_URL}${path}`;
+    // Bổ sung dấu / nếu thiếu
+    const fullPath = path.startsWith("/") ? path : `/${path}`;
+    return `${this.IMAGE_BASE_URL}${fullPath}`;
   },
 };
 

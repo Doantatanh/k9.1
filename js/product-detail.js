@@ -40,7 +40,7 @@ function renderBasicInfo(product) {
   if (nameEl) nameEl.textContent = product.productName || "";
 
   // Ưu tiên variant giá đầu tiên nếu có, không thì lấy basePrice
-  const price = product.variants?.[0]?.basePrice || product.basePrice || 0;
+  const price = product.variants?.[0]?.price || product.basePrice || 0;
   if (priceEl) priceEl.textContent = formatPrice(price);
 }
 
@@ -59,7 +59,11 @@ function renderVariants(product) {
     if (parentContainer) parentContainer.remove();
   }
 
-  if (!product.variants || product.variants.length === 0) return;
+  // Theo yêu cầu: nếu isAttribute = true thì mới là có vị (hiển thị dropdown)
+  // Nếu isAttribute = false thì không hiển thị chọn vị
+  if (!product.isAttribute || !product.variants || product.variants.length === 0) {
+    return;
+  }
 
   const infoCol = document.querySelector(".info-column");
   if (!infoCol) return;
@@ -69,9 +73,9 @@ function renderVariants(product) {
       const label =
         v.attributes && v.attributes.length > 0
           ? v.attributes.map((attr) => attr.attributeValue).join(" - ")
-          : v.variantName || `Phân loại ${v.coreProductVariantId}`;
+          : v.variantName || v.sku || `Vị ${v.coreProductVariantId}`;
 
-      const vPrice = v.price || v.basePrice || product.basePrice || 0;
+      const vPrice = v.price || product.basePrice || 0;
       return `
       <option 
         value="${v.coreProductVariantId}" 
@@ -85,7 +89,7 @@ function renderVariants(product) {
     "beforeend",
     `
     <div class="item-option" style="margin-top:20px">
-      <label style="font-weight:bold">Lựa chọn:</label>
+      <label style="font-weight:bold">Vị / Lựa chọn:</label>
       <select id="variantSelect" class="form-control" style="max-width:300px">
         ${optionsHTML}
       </select>
@@ -93,13 +97,21 @@ function renderVariants(product) {
   `,
   );
 
-  document
-    .getElementById("variantSelect")
-    .addEventListener("change", function () {
+  const vSelect = document.getElementById("variantSelect");
+  if (vSelect) {
+    vSelect.addEventListener("change", function () {
       const price = Number(this.selectedOptions[0].dataset.price);
       const priceEl = document.getElementById("detail-price");
       if (priceEl) priceEl.textContent = formatPrice(price);
     });
+
+    // Cập nhật giá hiển thị theo variant đầu tiên trong dropdown
+    if (vSelect.selectedOptions && vSelect.selectedOptions.length > 0) {
+      const firstPrice = Number(vSelect.selectedOptions[0].dataset.price);
+      const priceEl = document.getElementById("detail-price");
+      if (priceEl) priceEl.textContent = formatPrice(firstPrice);
+    }
+  }
 }
 
 function renderBreadcrumb(product) {
@@ -134,20 +146,7 @@ async function loadProductDetail() {
 
     // Load Related Products (nếu có hàm này từ related-products.js)
     if (typeof loadRelatedProducts === "function") {
-      try {
-        const catId =
-          product.categories && product.categories.length > 0
-            ? product.categories[0].coreCategoryId
-            : 1;
-        const resList = await axios.get(
-          `${config.getUrl("PRODUCT_LIST")}?categoryId=${catId}&pageIndex=1&pageSize=4`,
-        );
-        if (resList.data.success) {
-          loadRelatedProducts(resList.data.data, product);
-        }
-      } catch (e) {
-        console.warn("Không thể load liên quan:", e);
-      }
+      loadRelatedProducts(product);
     }
 
     renderBasicInfo(product);
@@ -215,12 +214,15 @@ function AddToCart() {
     selectedVariant = window.currentProduct.variants.find(
       (v) => String(v.coreProductVariantId) === String(vId),
     );
+  } else if (window.currentProduct.variants?.length > 0) {
+    // Nếu không có dropdown (isAttribute = false), lấy variant đầu tiên làm mặc định
+    selectedVariant = window.currentProduct.variants[0];
   }
 
   const productId = window.currentProduct.coreProductId;
   const variantId = selectedVariant ? selectedVariant.coreProductVariantId : 0;
   const price = selectedVariant
-    ? (vPrice = selectedVariant.basePrice || window.currentProduct.basePrice)
+    ? (selectedVariant.price || window.currentProduct.basePrice)
     : window.currentProduct.basePrice;
 
   const cartItem = {
@@ -236,8 +238,8 @@ function AddToCart() {
     flavor: selectedVariant
       ? selectedVariant.attributes && selectedVariant.attributes.length > 0
         ? selectedVariant.attributes
-            .map((attr) => attr.attributeValue)
-            .join(" - ")
+          .map((attr) => attr.attributeValue)
+          .join(" - ")
         : selectedVariant.variantName || ""
       : "",
   };

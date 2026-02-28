@@ -76,6 +76,11 @@
                 <div class="row" id="news-list">
                     <!-- News articles will be loaded here dynamically -->
                 </div>
+                <div class="pagination-wrapper">
+                    <button id="prev-page" class="nav-btn">←</button>
+                    <div id="pagination-numbers" class="page-numbers"></div>
+                    <button id="next-page" class="nav-btn">→</button>
+                </div>
             </div>
         </section>
 
@@ -120,10 +125,12 @@
         <span class="fa fa-angle-up"></span>
     </div>
 
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/api-config.js"></script>
+
     <script src="../js/notyf.min.js"></script>
     <script src="../js/doi-ngon-ngu.js"></script>
     <script src="../js/header-loader.js"></script>
-
     <script>
         fetch("../footer.html")
             .then((response) => response.text())
@@ -131,7 +138,6 @@
                 document.getElementById("footer").innerHTML = data;
             });
     </script>
-
     <script src="../js/news-list.js"></script>
     <script src="../js/jquery.js"></script>
     <!-- <script src="../js/popper.min.js"></script> -->
@@ -158,6 +164,7 @@
     <script src="../js/checkout-page.js"></script>
     <script src="../js/cart.js"></script>
     <script src="../js/cart-page.js"></script>
+    <script src="../js/footer-loader.js"></script>
     <script src="../js/script.js"></script>
 </body>
 

@@ -14,7 +14,8 @@
     "cart_empty": "Chưa có sản phẩm nào"
   },
   "services-section": {
-    "product": "Sản Phẩm đã mua"
+    "product": "Sản Phẩm",
+    "purchased_product": "Sản Phẩm đã mua"
   },
   "team-section": {
     "news": "Tin Tức"
@@ -57,6 +58,13 @@
     "message": "Lời nhắn",
     "submit": "Gửi"
   },
+  "contact_section": {
+    "contact_We": "Chúng tôi",
+    "contact_Opening_Hours": "Giờ mở cửa",
+    "contact_Contact": "Liên hệ",
+    "Monday_Friday": "Thứ 2 - Thứ 6",
+    "Saturday_Sunday": "Thứ 7 - Chủ nhật"
+  },
   "about-section-event": {
     "title": "Sự kiện",
     "content": "Một tháp bánh macaron nhiều sắc màu chính là tâm điểm thu hút mọi ánh mắt tại bất kỳ buổi tiệc hay sự kiện nào. La Rosette có 3 size tháp: nhỏ (5 tầng, 42 bánh), trung bình (7 tầng, 75 bánh) và lớn (10 tầng, 150 bánh) với hoa decor là lựa chọn hoàn hảo cho sinh nhật, đám cưới hay Year end party. Bạn có thể in logo công ty hoặc chọn màu cho phù hợp với tông của sự kiện.",
@@ -89,16 +97,12 @@
   "checkout-info": {
     "fullname_label": "Họ tên *",
     "fullname_placeholder": "Họ tên",
-
     "address_label": "Địa chỉ *",
     "address_placeholder": "Địa chỉ nhận hàng",
-
     "phone_label": "Điện thoại",
     "phone_placeholder": "Số điện thoại",
-
     "time_label": "Thời gian nhận hàng",
     "time_placeholder": "Ví dụ : 9h30 sáng ngày 20/10",
-
     "note_label": "Ghi chú (Đơn hàng)",
     "note_placeholder": "Thông tin ghi chú thêm nếu khách muốn đặt thêm vị"
   },
@@ -123,6 +127,6 @@
   "btn_confirm": "Xác Nhận",
   "thank_you_message": "Cảm ơn",
   "thank_you_order": "Cảm ơn bạn đã đặt hàng !",
-  "thank_you_info": "Đơn hàng đã được xác nhận thành công. Bánh sẽ được chuẩn bị cẩn thận và giao đến bạn trong thời gian sớm nhất.",
+  "thank_you_info": "Đơn hàng <span id=\"displayOrderCode\" style=\"font-weight: bold; color: #d63384;\"></span> đã được xác nhận thành công. Bánh sẽ được chuẩn bị cẩn thận và giao đến bạn trong thời gian sớm nhất.",
   "back_home": "Về trang chủ"
 }

@@ -158,60 +158,85 @@ async function submitOrder() {
   const checkoutInfo = getSavedCheckoutInfo();
 
   if (!checkoutInfo) {
-    swal("Lỗi", "Chưa có thông tin thanh toán!", "error");
+    Swal.fire("Lỗi", "Chưa có thông tin thanh toán!", "error");
     return;
   }
 
   if (cartItems.length === 0) {
-    swal("Lỗi", "Giỏ hàng trống!", "error");
+    Swal.fire("Lỗi", "Giỏ hàng trống!", "error");
     return;
   }
 
-  const orderNumberEl = document.getElementById("txtOrderNumber");
-  const orderCode = orderNumberEl ? orderNumberEl.textContent : "";
-
+  // Chuyển cấu trúc dữ liệu theo yêu cầu API
   const orderPayload = {
-    orderCode: orderCode,
-    customer: {
-      fullName: checkoutInfo.fullName,
-      phone: checkoutInfo.phone,
-      address: checkoutInfo.address,
-      timeGet: checkoutInfo.timeGet,
-      note: checkoutInfo.comment,
-    },
-    paymentMethod:
-      String(checkoutInfo.paymentMethod) === "1" ? "COD" : "PAY_AT_STORE",
-    items: cartItems.map((i) => ({
-      productId: i.productId,
-      variantId: i.variantId,
-      flavor: i.flavor,
-      quantity: i.quantity,
-      price: i.price,
+    fullName: checkoutInfo.fullName,
+    phone: checkoutInfo.phone,
+    email: checkoutInfo.email || "",
+    address: checkoutInfo.address,
+    generalNote: checkoutInfo.comment || "",
+    corePaymentMethodId: parseInt(checkoutInfo.paymentMethod) || 1,
+    coreShipUnitId: 1, // Mặc định 1
+    deliveryTime: checkoutInfo.timeGet || "",
+    orderNote: checkoutInfo.comment || "",
+    orderItems: cartItems.map((item) => ({
+      variantId: item.variantId || 0,
+      qty: item.quantity,
     })),
-    total: cartItems.reduce((s, i) => s + i.price * i.quantity, 0),
+    createdBy: 1,
+    domainId: 1,
   };
 
-  console.log("----- MÔ PHỎNG GỬI API -----");
-  console.log("Dữ liệu sẽ gửi đi:", orderPayload);
-  console.log("----------------------------");
+  // Vẫn in log để bạn theo dõi thông tin gửi đi
+  console.log("=== DỮ LIỆU ĐẶT HÀNG (PAYLOAD) ===");
+  console.log(orderPayload);
+  console.log("==================================");
 
-  // =====================
-  // GỬI API (MỞ COMMENT KHI CÓ BACKEND)
-  // =====================
-  /*
-  await fetch("https://api.yourdomain.com/orders", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(orderPayload),
+  // Hiển thị loading
+  Swal.fire({
+    title: "Đang gửi đơn hàng...",
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    },
   });
-  */
 
-  // Thành công
-  // CartStore.dispatch(CartActions.clearCart());
-  // localStorage.removeItem("checkoutInfo");
+  try {
+    const config = window.API_CONFIG;
+    const apiUrl = config
+      ? config.getUrl("ORDER")
+      : "http://macaron.a.csoftlife.com/api/v1/CoreOrder";
 
-  // Tạm thời comment chuyển trang để xem log
-  // window.location.href = "../macaron/hoan-thanh-don-hang.html";
+    const response = await axios.post(apiUrl, orderPayload);
+    const result = response.data;
+
+    if (result.success) {
+      // Thành công: Xoá giỏ hàng và thông tin tạm
+      CartStore.dispatch(CartActions.clearCart());
+      localStorage.removeItem("checkoutInfo");
+
+      // Lấy mã đơn hàng từ response (nếu có trường coreOrderId)
+      const orderId = result.data?.coreOrderId || "";
+
+      Swal.fire({
+        title: "Thành công!",
+        text: "Đơn hàng của bạn đã được gửi thành công.",
+        icon: "success",
+        confirmButtonText: "Đóng",
+      }).then(() => {
+        // Chuyển hướng sang trang hoàn tất
+        window.location.href = `../macaron/hoan-thanh-don-hang.html?id=${orderId}`;
+      });
+    } else {
+      Swal.fire("Lỗi", result.message || "Không thể gửi đơn hàng", "error");
+    }
+  } catch (err) {
+    console.error("Lỗi gửi đơn hàng:", err);
+    Swal.fire(
+      "Lỗi",
+      "Đã có lỗi xảy ra khi kết nối tới máy chủ. Vui lòng thử lại!",
+      "error",
+    );
+  }
 }
 
 // ================================

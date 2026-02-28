@@ -1,52 +1,91 @@
+/**
+ * File này xử lý việc tải và hiển thị chi tiết tin tức từ API
+ */
+
 async function loadArticleDetail() {
-  // 1. Lấy slug từ URL
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get("slug");
-
-  const container = document.getElementById("article-container");
-
-  if (!slug) {
-    container.innerHTML = "<p>Không tìm thấy bài viết.</p>";
-    return;
-  }
-
   try {
-    // 2. Load file article-detail.json
-    const res = await fetch("../JSON/article-detail.json");
-    const data = await res.json();
-
-    // 3. Tìm bài viết theo slug
-    const article = data.articles.find((a) => a.slug === slug);
-
-    if (!article) {
-      container.innerHTML = "<p>Bài viết không tồn tại.</p>";
+    const config = window.API_CONFIG;
+    if (!config) {
+      console.error("API_CONFIG không tìm thấy!");
       return;
     }
 
-    // 4. Render bài viết ra HTML
-    container.innerHTML = `
-      <div class="inner-box">         
-                                                                              
-        <h3 class="quote_text"><a href="/tin-tuc/">Tin tức</a> | <a href="article.html?slug=${article.slug}">${article.title}</a></h3>                                                                
+    // Lấy ID từ URL (vd: article.html?id=3)
+    const params = new URLSearchParams(window.location.search);
+    const articleId = params.get("id");
 
-        <div class="image-column">
-          <div class="inner-column">
-            <figure class="image"><img src="${article.coverImage}"></figure>                                            
-          </div>
+    if (!articleId) {
+      console.error("Không tìm thấy ID bài viết trong URL");
+      return;
+    }
+
+    const apiUrl = `${config.getUrl("NEWS_DETAIL")}/${articleId}`;
+
+    const response = await axios.get(apiUrl);
+    const result = response.data;
+
+    if (!result.success || !result.data) {
+      console.error("API trả về lỗi hoặc không có dữ liệu bài viết");
+      return;
+    }
+
+    const article = result.data;
+    const container = document.getElementById("article-container");
+
+    if (!container) return;
+
+    const titleSize = "32px";
+    const date = article.createdAt
+      ? new Date(article.createdAt).toLocaleDateString("vi-VN")
+      : "";
+    const image = config.getImgUrl(article.presentationImage);
+
+    container.innerHTML = `
+      <div class="upper-box">
+          <ul class="post-meta" style="display: flex; list-style: none; padding: 0; margin-bottom: 10px; color: #999; font-size: 14px;">
+              <li style="margin-right: 20px;"><span class="icon fa fa-calendar"></span> ${date}</li>
+              <li><span class="icon fa fa-user"></span> ${article.author || "La Rosette Macaron"}</li>
+          </ul >
+      <h2 style="font-size: ${titleSize}; color: #333; margin-bottom: 20px; font-weight: bold;">${article.title || ""}</h2>
+      </div >
+
+      ${image
+        ? `
+      <div class="image-box" style="margin-bottom: 30px;">
+          <figure class="image">
+              <img src="${image}" alt="${article.title}" style="width: 100%; border-radius: 8px;">
+          </figure>
+      </div>`
+        : ""
+      }
+
+    <div class="lower-content">
+      <div class="text">
+        <div class="lead-text" style="font-weight: 500; font-size: 18px; line-height: 1.6; color: #555; margin-bottom: 25px;">
+          ${article.lead || ""}
         </div>
-        <div class="content-column">
-          <div class="inner-column">   
-            ${article.contentHTML}
-          </div>
+        <div class="content-text" style="line-height: 1.8; color: #666; font-size: 16px;">
+          ${article.detail || ""}
         </div>
-                                  
-        <div class="devider"><img src="../images/icons/icon-devider-gray.png" alt=""></div>
-  </div>
-        `;
-  } catch (error) {
-    console.error("Lỗi load bài viết:", error);
-    container.innerHTML = "<p>Không thể tải bài viết.</p>";
+      </div>
+      <div class="devider"><img src="../images/icons/icon-devider-gray.png" alt=""></div>
+    </div>
+    `;
+
+    // Cập nhật SEO nếu cần
+    if (article.seoTitle) document.title = article.seoTitle;
+  } catch (err) {
+    console.error("Lỗi khi tải chi tiết bài viết:", err);
+    const container = document.getElementById("article-container");
+    if (container) {
+      container.innerHTML = `< div class="alert alert-danger" > Không thể tải nội dung bài viết.Vui lòng thử lại sau.</div > `;
+    }
   }
 }
 
-loadArticleDetail();
+// Khởi chạy khi DOM đã sẵn sàng
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadArticleDetail);
+} else {
+  loadArticleDetail();
+}
