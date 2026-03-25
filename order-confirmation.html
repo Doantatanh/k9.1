@@ -30,7 +30,6 @@
 </head>
 
 <body class="theme-color-5">
-
     <!-- Loader Start -->
     <div class="fullpage-loader">
         <span></span>
@@ -411,7 +410,7 @@
                         </li>
                         <li class="breadcrumb-item active">
                             <a href="#">
-                                Quên mật khẩu
+                                Xác nhận đơn hàng
                             </a>
                         </li>
                     </ol>
@@ -421,47 +420,174 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- log in section start -->
-    <section class="log-in-section section-b-space forgot-section">
-        <div class="container-fluid-lg w-100">
-            <div class="row">
-                <div class="col-xxl-6 col-xl-5 col-lg-6 d-lg-block d-none ms-auto">
-                    <div class="image-contain">
-                        <img src="../assets/images/inner-page/forgot.png" class="img-fluid" alt="Quên mật khẩu">
+    <!-- Checkout section Start -->
+    <section class="checkout-section-2 section-b-space">
+        <div class="container-fluid-lg">
+            <div class="row g-sm-4 g-3">
+                <div class="col-lg-8">
+                    <div class="left-sidebar-checkout">
+                        <div class="checkout-detail-box">
+                            <ul>
+                                <li>
+                                    <div class="checkout-icon">
+                                        <lord-icon target=".nav-item" src="https://cdn.lordicon.com/ggihhudh.json"
+                                            trigger="loop-on-hover"
+                                            colors="primary:#121331,secondary:#646e78,tertiary:#0baf9a"
+                                            class="lord-icon">
+                                        </lord-icon>
+                                    </div>
+                                    <div class="checkout-box">
+                                        <div class="checkout-title">
+                                            <h4>Thông tin nhận hàng</h4>
+                                        </div>
+
+                                        <div class="checkout-detail">
+                                            <div class="delivery-address-box active">
+                                                <div>
+                                                    <div class="label">
+                                                        <label>Địa chỉ mặc định</label>
+                                                    </div>
+
+                                                    <ul class="delivery-address-detail">
+                                                        <li>
+                                                            <h4 class="fw-500">Nguyễn Văn A</h4>
+                                                        </li>
+
+                                                        <li>
+                                                            <p class="text-content"><span class="text-title">Địa chỉ:
+                                                                </span>Số 3, Ngõ 49 Huỳnh Thúc Kháng, Láng Hạ, Đống Đa,
+                                                                Hà Nội</p>
+                                                        </li>
+
+                                                        <li>
+                                                            <h6 class="text-content"><span
+                                                                    class="text-title">Email:</span>
+                                                                abc@gmail.com</h6>
+                                                        </li>
+
+                                                        <li>
+                                                            <h6 class="text-content mb-0"><span class="text-title">Điện
+                                                                    thoại:</span> +84 788 335 558</h6>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="checkout-icon">
+                                        <lord-icon target=".nav-item" src="https://cdn.lordicon.com/oaflahpk.json"
+                                            trigger="loop-on-hover" colors="primary:#0baf9a" class="lord-icon">
+                                        </lord-icon>
+                                    </div>
+                                    <div class="checkout-box">
+                                        <div class="checkout-title">
+                                            <h4>Phương thức giao hàng</h4>
+                                        </div>
+
+                                        <div class="checkout-detail">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="delivery-option">
+                                                        <div class="delivery-category">
+                                                            <div class="shipment-detail">
+                                                                <h5 class="fw-bold theme-color mb-1">Giao hàng vào ngày
+                                                                    hẹn</h5>
+                                                                <p class="text-content mb-0">Dự kiến nhận hàng: 27 Tháng
+                                                                    03, 2026</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="checkout-icon">
+                                        <lord-icon target=".nav-item" src="https://cdn.lordicon.com/qmcsqnle.json"
+                                            trigger="loop-on-hover" colors="primary:#0baf9a,secondary:#0baf9a"
+                                            class="lord-icon">
+                                        </lord-icon>
+                                    </div>
+                                    <div class="checkout-box">
+                                        <div class="checkout-title">
+                                            <h4>Phương thức thanh toán</h4>
+                                        </div>
+
+                                        <div class="checkout-detail" id="payment-summary-box">
+                                            <div class="delivery-option">
+                                                <div class="delivery-category">
+                                                    <div class="shipment-detail">
+                                                        <h5 class="fw-bold theme-color mb-1">Thanh toán khi nhận hàng
+                                                            (COD)</h5>
+                                                        <p class="text-content mb-0">Quý khách sẽ thanh toán tiền mặt
+                                                            cho nhân viên giao hàng sau khi kiểm tra sản phẩm.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-xxl-4 col-xl-5 col-lg-6 col-sm-8 mx-auto">
-                    <div class="d-flex align-items-center justify-content-center h-100">
-                        <div class="log-in-box">
-                            <div class="log-in-title">
-                                <h3>Chào mừng đến với THE FADED</h3>
-                                <h4>Quên mật khẩu của bạn</h4>
+                <div class="col-lg-4">
+                    <div class="right-side-summery-box">
+                        <div class="summery-box-2">
+                            <div class="summery-header">
+                                <h3>Đơn hàng của bạn</h3>
                             </div>
 
-                            <div class="input-box">
-                                <form class="row g-4">
-                                    <div class="col-12">
-                                        <div class="form-floating theme-form-floating log-in-form">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Địa chỉ Email">
-                                            <label for="email">Địa chỉ Email</label>
-                                        </div>
-                                    </div>
+                            <ul class="summery-contain">
+                                <li>
+                                    <img src="../assets/images/product/sp1.jpg"
+                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
+                                    <h4>Áo thun Cotton Premium <span>X 1</span></h4>
+                                    <h4 class="price">250.000 VNĐ</h4>
+                                </li>
 
-                                    <div class="col-12">
-                                        <button class="btn btn-animation w-100" type="submit">Gửi yêu cầu khôi
-                                            phục</button>
-                                    </div>
-                                </form>
-                            </div>
+                                <li>
+                                    <img src="../assets/images/product/sp2.jpg"
+                                        class="img-fluid blur-up lazyloaded checkout-image" alt="">
+                                    <h4>Quần Jean Slimfit Nam <span>X 3</span></h4>
+                                    <h4 class="price">1.350.000 VNĐ</h4>
+                                </li>
+                            </ul>
+
+                            <ul class="summery-total">
+                                <li>
+                                    <h4>Tạm tính</h4>
+                                    <h4 class="price">1.600.000 VNĐ</h4>
+                                </li>
+
+                                <li>
+                                    <h4>Phí vận chuyển</h4>
+                                    <h4 class="price">30.000 VNĐ</h4>
+                                </li>
+
+                                <li class="list-total">
+                                    <h4>Tổng cộng</h4>
+                                    <h4 class="price">1.630.000 VNĐ</h4>
+                                </li>
+                            </ul>
                         </div>
+
+                        <a href="order-success.html" id="confirm-order-link"><button
+                                class="btn theme-bg-color text-white btn-md w-100 mt-4 fw-bold">Xác nhận & Đặt
+                                hàng</button></a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- log in section end -->
+    <!-- Checkout section End -->
 
     <!-- Footer Section Start -->
     <footer class="section-t-space footer-section-2 footer-color-3">
@@ -651,27 +777,69 @@
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
 
+    <!-- jquery ui-->
+    <script src="../assets/js/jquery-ui.min.js"></script>
+
+    <!-- Lord-icon Js -->
+    <script src="../assets/js/lusqsztk.js"></script>
+
     <!-- Bootstrap js-->
     <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/bootstrap/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap-notify.min.js"></script>
 
     <!-- feather icon js-->
     <script src="../assets/js/feather/feather.min.js"></script>
     <script src="../assets/js/feather/feather-icon.js"></script>
 
-    <!-- Slick js-->
-    <script src="../assets/js/slick/slick.js"></script>
-    <script src="../assets/js/slick/slick-animation.min.js"></script>
-    <script src="../assets/js/slick/custom_slick.js"></script>
-
     <!-- Lazyload Js -->
     <script src="../assets/js/lazysizes.min.js"></script>
 
+    <!-- Delivery Option js -->
+    <script src="../assets/js/delivery-option.js"></script>
+
+    <!-- Slick js-->
+    <script src="../assets/js/slick/slick.js"></script>
+    <script src="../assets/js/slick/custom_slick.js"></script>
+
+    <!-- Quantity js -->
+    <script src="../assets/js/quantity.js"></script>
+
     <!-- script js -->
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const paymentBox = document.getElementById('payment-summary-box');
+            const confirmLink = document.getElementById('confirm-order-link');
+            const selectedMethod = localStorage.getItem('selected_payment_method') || 'cash';
 
-    <!-- theme setting js -->
-    <script src="../assets/js/theme-setting.js"></script>
+            if (selectedMethod === 'banking' || selectedMethod.startsWith('bank')) {
+                paymentBox.innerHTML = `
+                    <div class="delivery-option">
+                        <div class="delivery-category">
+                            <div class="shipment-detail">
+                                <h5 class="fw-bold theme-color mb-1">Ngân hàng trực tuyến (Internet Banking)</h5>
+                                <p class="text-content mb-0">Quý khách sẽ thực hiện quét mã QR thanh toán ở bước tiếp theo.</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                confirmLink.href = 'payment-qr.html';
+            } else {
+                paymentBox.innerHTML = `
+                    <div class="delivery-option">
+                        <div class="delivery-category">
+                            <div class="shipment-detail">
+                                <h5 class="fw-bold theme-color mb-1">Thanh toán khi nhận hàng (COD)</h5>
+                                <p class="text-content mb-0">Quý khách sẽ thanh toán tiền mặt cho nhân viên giao hàng sau khi kiểm tra sản phẩm.</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                confirmLink.href = 'order-success.html';
+            }
+        });
+    </script>
 </body>
 
 </html>

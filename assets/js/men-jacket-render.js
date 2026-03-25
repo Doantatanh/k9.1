@@ -1,11 +1,11 @@
 /**=====================
-    Men's Shirt Render JS (ES6+)
+    Men's Jacket Render JS (ES6+)
     Using shared utilities from product-common.js
 ==========================**/
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('men-shirt-row');
+    const container = document.getElementById('men-jacket-row');
     const jsonPath = '../assets/data/products.json';
-    const targetCategory = "Áo sơ mi nam";
+    const targetCategory = "Áo khoác nam";
 
     let allProducts = [];
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 checkboxes.forEach(cb => cb.checked = false);
                 if (searchInput) searchInput.value = '';
                 // Check các nút 'Tất cả'
-                ['sh-all', 'sz-all', 'form-all', 'cond-all', 'price-all', 'discount-all'].forEach(id => {
+                ['cat-all', 'sz-all', 'color-all', 'cond-all', 'price-all', 'discount-all'].forEach(id => {
                     const el = document.getElementById(id);
                     if (el) el.checked = true;
                 });
@@ -120,25 +120,16 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         }
 
-        // 2. Lọc theo Loại sản phẩm (Sub-category - Shirt type)
-        const activeTypeFilters = Array.from(document.querySelectorAll('.category-list input[id^="sh-"]:checked'))
-            .filter(cb => cb.id !== 'sh-all')
+        // 2. Lọc theo Loại sản phẩm (Sub-category)
+        const activeSubCatFilters = Array.from(document.querySelectorAll('.category-list input[id^="cat-"]:checked'))
+            .filter(cb => cb.id !== 'cat-all')
             .map(cb => cb.nextElementSibling.innerText.trim());
 
-        if (activeTypeFilters.length > 0) {
-            filtered = filtered.filter(p => p.subCategory && p.subCategory.some(sc => activeTypeFilters.includes(sc)));
+        if (activeSubCatFilters.length > 0) {
+            filtered = filtered.filter(p => p.subCategory && p.subCategory.some(sc => activeSubCatFilters.includes(sc)));
         }
 
-        // 3. Lọc theo Form áo
-        const activeFormFilters = Array.from(document.querySelectorAll('.category-list input[id^="form-"]:checked'))
-            .filter(cb => cb.id !== 'form-all')
-            .map(cb => cb.nextElementSibling.innerText.trim());
-
-        if (activeFormFilters.length > 0) {
-            filtered = filtered.filter(p => p.form && p.form.some(f => activeFormFilters.includes(f)));
-        }
-
-        // 4. Lọc theo Giá (Price)
+        // 3. Lọc theo Giá (Price)
         const activePriceFilters = Array.from(document.querySelectorAll('.category-list input[id^="price-"]:checked'))
             .filter(cb => cb.id !== 'price-all')
             .map(cb => cb.id);
@@ -157,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 5. Lọc theo Kích thước (Size)
+        // 4. Lọc theo Kích thước (Size)
         const activeSizeFilters = Array.from(document.querySelectorAll('.category-list input[id^="sz-"]:checked'))
             .filter(cb => cb.id !== 'sz-all')
             .map(cb => cb.id.replace('sz-', '').toUpperCase());
@@ -166,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filtered = filtered.filter(p => p.size && p.size.some(s => activeSizeFilters.includes(s.toUpperCase())));
         }
 
-        // 6. Lọc theo Màu sắc (Color)
+        // 5. Lọc theo Màu sắc (Color)
         const activeColorFilters = Array.from(document.querySelectorAll('.category-list input[id^="color-"]:checked'))
             .filter(cb => cb.id !== 'color-all')
             .map(cb => cb.id.replace('color-', ''));
@@ -175,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filtered = filtered.filter(p => p.color && p.color.some(c => activeColorFilters.includes(c.toLowerCase())));
         }
 
-        // 7. Lọc theo Tình trạng (Condition)
+        // 6. Lọc theo Tình trạng (Condition)
         const activeCondFilters = Array.from(document.querySelectorAll('.category-list input[id^="cond-"]:checked'))
             .filter(cb => cb.id !== 'cond-all')
             .map(cb => cb.id);
@@ -195,26 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 8. Lọc theo Giảm giá (Discount)
-        const activeDiscFilters = Array.from(document.querySelectorAll('.category-list input[id^="discount-"]:checked'))
-            .filter(cb => cb.id !== 'discount-all')
-            .map(cb => cb.id);
-
-        if (activeDiscFilters.length > 0) {
-            filtered = filtered.filter(p => {
-                const discount = p.originalPrice ? ((p.originalPrice - p.price) / p.originalPrice * 100) : 0;
-                return activeDiscFilters.some(id => {
-                    if (id === 'discount-none') return discount === 0;
-                    if (id === 'discount-5-10') return discount >= 5 && discount <= 10;
-                    if (id === 'discount-10-15') return discount > 10 && discount <= 15;
-                    if (id === 'discount-15-20') return discount > 15 && discount <= 20;
-                    if (id === 'discount-over-20') return discount > 20;
-                    return false;
-                });
-            });
-        }
-
-        // 9. Sắp xếp (Sort)
+        // 7. Sắp xếp (Sort)
         if (sType === 'low') filtered.sort((a, b) => a.price - b.price);
         else if (sType === 'high') filtered.sort((a, b) => b.price - a.price);
         else if (sType === 'off') {

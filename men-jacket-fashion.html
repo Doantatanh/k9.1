@@ -56,6 +56,39 @@
             max-height: 300px;
             overflow-y: auto;
         }
+
+        .out-of-stock-box {
+            opacity: 0.7;
+            position: relative;
+        }
+
+        .out-of-stock-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.9);
+            color: #d93939;
+            padding: 5px 15px;
+            font-weight: bold;
+            border: 2px solid #d93939;
+            z-index: 2;
+            pointer-events: none;
+            text-transform: uppercase;
+            border-radius: 4px;
+        }
+
+        .btn-cart-dynamic.disabled {
+            background-color: #ccc !important;
+            border-color: #ccc !important;
+            cursor: not-allowed;
+        }
+
+        /* Hover fix for dropdown items */
+        .top-filter-menu .dropdown-item:hover {
+            background-color: var(--theme-color) !important;
+            color: #fff !important;
+        }
     </style>
 </head>
 
@@ -157,7 +190,7 @@
                                     <i class="fa-solid fa-bars"></i>
                                 </span>
                             </button>
-                            <a href="index.html" class="web-logo nav-logo">
+                            <a href="index-6.html" class="web-logo nav-logo">
                                 <img src="../assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
 
                                 <img src="../assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo"
@@ -405,7 +438,7 @@
     <div class="mobile-menu d-md-none d-block mobile-cart">
         <ul>
             <li class="active">
-                <a href="index.html">
+                <a href="index-6.html">
                     <i class="fa-solid fa-house"></i>
                     <span>Trang chủ</span>
                 </a>
@@ -429,25 +462,23 @@
     <!-- mobile fix menu end -->
 
     <!-- Breadcrumb Section Start -->
-    <section class="breadcrumb-section pt-0"
-        style="background-image: url(../assets/images/banner/breadcrumb_bg_3.jpg);">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-contain">
-                        <h2>Thời trang áo khoác nam</h2>
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item">
-                                    <a href="index.html">
-                                        <i class="fa-solid fa-house"></i>
-                                    </a>
-                                </li>
-                                <li class="breadcrumb-item active">Thời trang áo khoác nam</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg border-nav">
+            <div class="breadcrumb-contain">
+                <nav>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index-6.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#">
+                                Thời trang áo khoác nam
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
@@ -570,40 +601,16 @@
                                 <h3><i class="fa-solid fa-arrow-left"></i> Trở lại</h3>
                             </div>
 
-                            <!-- <div class="filter-category">
-                                <div class="filter-title">
-                                    <h2>Filters</h2>
-                                    <a href="javascript:void(0)">Clear All</a>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0)">Vegetable</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Fruit</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Fresh</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Milk</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">Meat</a>
-                                    </li>
-                                </ul>
-                            </div> -->
-
                             <div class="accordion custom-accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne">
                                             <span>Danh mục sản phẩm</span>
                                         </button>
                                     </h2>
 
-                                    <div id="collapseOne" class="accordion-collapse collapse show">
+                                    <div id="collapseOne" class="accordion-collapse collapse">
                                         <div class="accordion-body">
 
                                             <!-- Search -->
@@ -753,65 +760,59 @@
                                             <span>Size</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                                    <div id="collapseTwo" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox" id="veget">
-                                                        <label class="form-check-label" for="veget">
+                                                        <input class="checkbox_animated" type="checkbox" id="sz-all">
+                                                        <label class="form-check-label" for="sz-all">
                                                             <span class="name">Tất cả</span>
-                                                            <span class="number">(88)</span>
                                                         </label>
                                                     </div>
                                                 </li>
 
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox" id="non">
-                                                        <label class="form-check-label" for="non">
+                                                        <input class="checkbox_animated" type="checkbox" id="sz-xs">
+                                                        <label class="form-check-label" for="sz-xs">
                                                             <span class="name">XS</span>
-                                                            <span class="number">(09)</span>
                                                         </label>
                                                     </div>
                                                 </li>
 
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox" id="non">
-                                                        <label class="form-check-label" for="non">
+                                                        <input class="checkbox_animated" type="checkbox" id="sz-s">
+                                                        <label class="form-check-label" for="sz-s">
                                                             <span class="name">S</span>
-                                                            <span class="number">(09)</span>
                                                         </label>
                                                     </div>
                                                 </li>
 
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox" id="non">
-                                                        <label class="form-check-label" for="non">
+                                                        <input class="checkbox_animated" type="checkbox" id="sz-m">
+                                                        <label class="form-check-label" for="sz-m">
                                                             <span class="name">M</span>
-                                                            <span class="number">(09)</span>
                                                         </label>
                                                     </div>
                                                 </li>
 
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox" id="non">
-                                                        <label class="form-check-label" for="non">
+                                                        <input class="checkbox_animated" type="checkbox" id="sz-l">
+                                                        <label class="form-check-label" for="sz-l">
                                                             <span class="name">L</span>
-                                                            <span class="number">(09)</span>
                                                         </label>
                                                     </div>
                                                 </li>
 
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox" id="non">
-                                                        <label class="form-check-label" for="non">
+                                                        <input class="checkbox_animated" type="checkbox" id="sz-xl">
+                                                        <label class="form-check-label" for="sz-xl">
                                                             <span class="name">XL</span>
-                                                            <span class="number">(09)</span>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -827,7 +828,7 @@
                                             <span>Tình trạng đã bán</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse show">
+                                    <div id="collapseThree" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
                                                 <li>
@@ -861,14 +862,13 @@
                                             <span>Tình trạng</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse show">
+                                    <div id="collapseFour" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox"
-                                                            id="all-condition">
-                                                        <label class="form-check-label" for="all-condition">
+                                                        <input class="checkbox_animated" type="checkbox" id="cond-all">
+                                                        <label class="form-check-label" for="cond-all">
                                                             <span class="name">Tất cả</span>
                                                         </label>
                                                     </div>
@@ -983,7 +983,7 @@
                                         </button>
                                     </h2>
 
-                                    <div id="collapseFive" class="accordion-collapse collapse show">
+                                    <div id="collapseFive" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
 
@@ -1070,7 +1070,7 @@
                                         </button>
                                     </h2>
 
-                                    <div id="collapseSix" class="accordion-collapse collapse show">
+                                    <div id="collapseSix" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
 
@@ -1157,46 +1157,84 @@
                             </div>
                         </div>
 
-                        <div class="top-filter-menu">
-                            <div class="category-dropdown">
-                                <h5 class="text-content">Sắp xếp theo :</h5>
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown">
-                                        <span>Phổ biến nhất</span> <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" id="pop" href="javascript:void(0)">Phổ biến</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="low" href="javascript:void(0)">Giá: Thấp -
-                                                Cao</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="high" href="javascript:void(0)">Giá: Cao -
-                                                Thấp</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="rating" href="javascript:void(0)">Đánh giá cao
-                                                nhất</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="aToz" href="javascript:void(0)">Tên: A - Z</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="zToa" href="javascript:void(0)">Tên: Z - A</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="off" href="javascript:void(0)">% Giảm giá nhiều
-                                                nhất</a>
-                                        </li>
-                                    </ul>
+                        <div class="top-filter-menu d-flex align-items-center justify-content-between">
+                            <div class="d-flex flex-row gap-2 gap-md-3 w-100 w-md-auto">
+                                <div
+                                    class="category-dropdown d-flex flex-column flex-md-row align-items-start align-items-md-center flex-grow-1 flex-md-grow-0 w-md-auto gap-1 gap-md-2">
+                                    <h5 class="text-content mb-0 text-nowrap">Sắp xếp :</h5>
+                                    <div class="dropdown w-100 w-md-auto">
+                                        <button
+                                            class="dropdown-toggle d-flex align-items-center justify-content-between justify-content-md-start w-100 w-md-auto py-1 px-2"
+                                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                                            <span class="d-block d-md-inline text-truncate">Phổ biến nhất</span> <i
+                                                class="fa-solid fa-angle-down ms-2"></i>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 w-md-auto">
+                                            <li>
+                                                <a class="dropdown-item" id="pop" href="javascript:void(0)">Phổ biến</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="low" href="javascript:void(0)">Giá: Thấp -
+                                                    Cao</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="high" href="javascript:void(0)">Giá: Cao -
+                                                    Thấp</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="rating" href="javascript:void(0)">Đánh giá
+                                                    cao
+                                                    nhất</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="aToz" href="javascript:void(0)">Tên: A -
+                                                    Z</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="zToa" href="javascript:void(0)">Tên: Z -
+                                                    A</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="off" href="javascript:void(0)">% Giảm giá
+                                                    nhiều
+                                                    nhất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="category-dropdown d-flex flex-column flex-md-row align-items-start align-items-md-center flex-grow-1 flex-md-grow-0 w-md-auto gap-1 gap-md-2">
+                                    <h5 class="text-content mb-0 text-nowrap">Kho hàng :</h5>
+                                    <div class="dropdown w-100 w-md-auto">
+                                        <button
+                                            class="dropdown-toggle d-flex align-items-center justify-content-between justify-content-md-start w-100 w-md-auto py-1 px-2"
+                                            type="button" id="dropdownStockStatus" data-bs-toggle="dropdown">
+                                            <span class="d-block d-md-inline text-truncate">Tất cả</span> <i
+                                                class="fa-solid fa-angle-down ms-2"></i>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 w-md-auto">
+                                            <li>
+                                                <a class="dropdown-item" id="stock-all-top"
+                                                    href="javascript:void(0)">Tất
+                                                    cả</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="stock-in-top" href="javascript:void(0)">Còn
+                                                    hàng</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="stock-out-top"
+                                                    href="javascript:void(0)">Hết
+                                                    hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="grid-option d-none d-md-block">
-                                <ul>
+                            <div class="grid-option d-none d-md-flex align-items-center">
+                                <ul class="d-flex flex-row flex-nowrap align-items-center gap-2 mb-0 list-unstyled">
                                     <li class="three-grid">
                                         <a href="javascript:void(0)">
                                             <img src="https://themes.pixelstrap.com/fastkart/assets/svg/grid-3.svg"
@@ -1222,720 +1260,9 @@
                         </div>
                     </div>
 
-                    <div
-                        class="row g-sm-4 g-3 row-cols-xl-4 row-cols-lg-2 row-cols-md-3 row-cols-2 product-list-section">
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="product-box-4 h-100 wow fadeInUp">
-                                <div class="product-header">
-                                    <div class="product-image">
-                                        <a href="#">
-                                            <img src="../assets/images/product/sp1.jpg" class="img-fluid" alt="">
-                                        </a>
-
-                                        <ul class="option">
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                data-bs-original-title="Xem nhanh">
-                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                    data-bs-target="#view">
-                                                    <i class="fa-regular fa-eye"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Yêu thích">
-                                                <a href="javascript:void(0)" class="notifi-wishlist">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </a>
-                                            </li>
-
-                                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                                <a href="compare.html">
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="javascript:void(0)" class="add-to-cart-btn btn-cart">
-                                            <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="product-footer">
-                                    <div class="product-detail">
-                                        <span class="span-name-tag">Áo Sơ mi</span>
-                                        <a href="product-left-thumbnail.html">
-                                            <h5 class="name">Stretch Mesh Polo Shirt – Ombre</h5>
-                                        </a>
-                                        <h5 class="price theme-color"><strong>1.250.000 VNĐ</strong><del>1.500.000
-                                                VNĐ</del></h5>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row g-sm-4 g-3 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-2 product-list-section"
+                        id="men-jacket-row">
+                        <!-- Sản phẩm sẽ được render động từ men-jacket-render.js -->
                     </div>
 
                     <nav class="custom-pagination">
@@ -1973,8 +1300,9 @@
             <div class="main-footer">
                 <div class="row g-md-4 gy-sm-5">
                     <div class="col-xxl-3 col-xl-4 col-sm-6">
-                        <a href="../front-end/index.html" class="foot-logo theme-logo">
-                            <img src="../assets/images/logo/7.svg" class="img-fluid blur-up lazyload" alt="logo">
+                        <a href="index-6.html" class="foot-logo theme-logo">
+                            <img src="../assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload"
+                                alt="logo">
                         </a>
                         <p class="information-text information-text-2">Cửa hàng thời trang tại Hà Nội chuyên cung cấp
                             quần áo nam, nữ và unisex theo xu hướng mới nhất
@@ -2274,6 +1602,10 @@
 
     <!-- script js -->
     <script src="../assets/js/script.js"></script>
+
+    <!-- dynamic render js -->
+    <script src="../assets/js/product-common.js"></script>
+    <script src="../assets/js/men-jacket-render.js"></script>
 
 </body>
 

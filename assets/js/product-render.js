@@ -82,12 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <i class="fa-regular fa-heart"></i>
                                 </a>
                             </li>
-
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="So sánh">
-                                <a href="compare.html">
-                                    <i class="fa-solid fa-right-left"></i>
-                                </a>
-                            </li>
                         </ul>
 
                         <a href="javascript:void(0)" class="add-to-cart-btn btn-cart-dynamic" data-id="${product.id}">

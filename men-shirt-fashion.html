@@ -56,6 +56,39 @@
             max-height: 300px;
             overflow-y: auto;
         }
+
+        .out-of-stock-box {
+            opacity: 0.7;
+            position: relative;
+        }
+
+        .out-of-stock-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.9);
+            color: #d93939;
+            padding: 5px 15px;
+            font-weight: bold;
+            border: 2px solid #d93939;
+            z-index: 2;
+            pointer-events: none;
+            text-transform: uppercase;
+            border-radius: 4px;
+        }
+
+        .btn-cart-dynamic.disabled {
+            background-color: #ccc !important;
+            border-color: #ccc !important;
+            cursor: not-allowed;
+        }
+
+        /* Hover fix for dropdown items */
+        .top-filter-menu .dropdown-item:hover {
+            background-color: var(--theme-color) !important;
+            color: #fff !important;
+        }
     </style>
 </head>
 
@@ -157,7 +190,7 @@
                                     <i class="fa-solid fa-bars"></i>
                                 </span>
                             </button>
-                            <a href="index.html" class="web-logo nav-logo">
+                            <a href="index-6.html" class="web-logo nav-logo">
                                 <img src="../assets/images/logo/logo1.svg" class="img-fluid main-logo" alt="logo">
 
                                 <img src="../assets/images/logo/logo2-white.svg" class="img-fluid sticky-logo"
@@ -405,7 +438,7 @@
     <div class="mobile-menu d-md-none d-block mobile-cart">
         <ul>
             <li class="active">
-                <a href="index.html">
+                <a href="index-6.html">
                     <i class="fa-solid fa-house"></i>
                     <span>Trang chủ</span>
                 </a>
@@ -429,29 +462,23 @@
     <!-- mobile fix menu end -->
 
     <!-- Breadcrumb Section Start -->
-    <section class="breadcrumb-section pt-0"
-        style="background-image: url(../assets/images/banner/breadcrumb_bg_3.jpg);">
-        <div class="container-fluid-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb-contain">
-                        <h2>Thời trang áo sơ mi nam</h2>
-                        <nav>
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item">
-                                    <a href="index.html">
-                                        <i class="fa-solid fa-house"></i>
-                                    </a>
-                                </li>
-                                <li class="breadcrumb-item active">
-                                    <a href="#">
-                                        Thời trang áo sơ mi nam
-                                    </a>
-                                </li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg border-nav">
+            <div class="breadcrumb-contain">
+                <nav>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index-6.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#">
+                                Thời trang áo sơ mi nam
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
@@ -607,12 +634,12 @@
                                 <!-- Danh mục Sơ mi -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne">
                                             <span>Sơ mi</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show">
+                                    <div id="collapseOne" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <div class="form-floating theme-form-floating-2 search-box">
                                                 <input type="search" class="form-control" id="search"
@@ -764,7 +791,7 @@
                                             <span>Size</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                                    <div id="collapseTwo" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
                                                 <li>
@@ -821,7 +848,7 @@
                                             <span>Form</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse show">
+                                    <div id="collapseThree" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
                                                 <li>
@@ -863,14 +890,13 @@
                                             <span>Tình trạng</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse show">
+                                    <div id="collapseFour" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
                                                 <li>
                                                     <div class="form-check ps-0 m-0 category-list-box">
-                                                        <input class="checkbox_animated" type="checkbox"
-                                                            id="all-condition">
-                                                        <label class="form-check-label" for="all-condition">
+                                                        <input class="checkbox_animated" type="checkbox" id="cond-all">
+                                                        <label class="form-check-label" for="cond-all">
                                                             <span class="name">Tất cả</span>
                                                         </label>
                                                     </div>
@@ -985,7 +1011,7 @@
                                         </button>
                                     </h2>
 
-                                    <div id="collapseFive" class="accordion-collapse collapse show">
+                                    <div id="collapseFive" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
 
@@ -1072,7 +1098,7 @@
                                         </button>
                                     </h2>
 
-                                    <div id="collapseSix" class="accordion-collapse collapse show">
+                                    <div id="collapseSix" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding">
 
@@ -1154,7 +1180,7 @@
                                             <span>Màu sắc</span>
                                         </button>
                                     </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse show">
+                                    <div id="collapseSeven" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="category-list custom-padding custom-height">
                                                 <li>
@@ -1439,52 +1465,90 @@
 
                 <div class="col-custom- wow fadeInUp">
                     <div class="show-button">
-                        <div class="filter-button-group mt-0">
+                        <div class="filter-button-group">
                             <div class="filter-button d-inline-block d-lg-none">
                                 <a><i class="fa-solid fa-filter"></i> Bộ lọc</a>
                             </div>
                         </div>
 
-                        <div class="top-filter-menu">
-                            <div class="category-dropdown">
-                                <h5 class="text-content">Sắp xếp theo :</h5>
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown">
-                                        <span>Phổ biến nhất</span> <i class="fa-solid fa-angle-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" id="pop" href="javascript:void(0)">Phổ biến</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="low" href="javascript:void(0)">Giá: Thấp -
-                                                Cao</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="high" href="javascript:void(0)">Giá: Cao -
-                                                Thấp</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="rating" href="javascript:void(0)">Đánh giá cao
-                                                nhất</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="aToz" href="javascript:void(0)">Tên: A - Z</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="zToa" href="javascript:void(0)">Tên: Z - A</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" id="off" href="javascript:void(0)">% Giảm giá nhiều
-                                                nhất</a>
-                                        </li>
-                                    </ul>
+                        <div class="top-filter-menu d-flex align-items-center justify-content-between">
+                            <div class="d-flex flex-row gap-2 gap-md-3 w-100 w-md-auto">
+                                <div
+                                    class="category-dropdown d-flex flex-column flex-md-row align-items-start align-items-md-center flex-grow-1 flex-md-grow-0 w-md-auto gap-1 gap-md-2">
+                                    <h5 class="text-content mb-0 text-nowrap">Sắp xếp :</h5>
+                                    <div class="dropdown w-100 w-md-auto">
+                                        <button
+                                            class="dropdown-toggle d-flex align-items-center justify-content-between justify-content-md-start w-100 w-md-auto py-1 px-2"
+                                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                                            <span class="d-block d-md-inline text-truncate">Phổ biến nhất</span> <i
+                                                class="fa-solid fa-angle-down ms-2"></i>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 w-md-auto">
+                                            <li>
+                                                <a class="dropdown-item" id="pop" href="javascript:void(0)">Phổ biến</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="low" href="javascript:void(0)">Giá: Thấp -
+                                                    Cao</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="high" href="javascript:void(0)">Giá: Cao -
+                                                    Thấp</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="rating" href="javascript:void(0)">Đánh giá
+                                                    cao
+                                                    nhất</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="aToz" href="javascript:void(0)">Tên: A -
+                                                    Z</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="zToa" href="javascript:void(0)">Tên: Z -
+                                                    A</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="off" href="javascript:void(0)">% Giảm giá
+                                                    nhiều
+                                                    nhất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="category-dropdown d-flex flex-column flex-md-row align-items-start align-items-md-center flex-grow-1 flex-md-grow-0 w-md-auto gap-1 gap-md-2">
+                                    <h5 class="text-content mb-0 text-nowrap">Kho hàng :</h5>
+                                    <div class="dropdown w-100 w-md-auto">
+                                        <button
+                                            class="dropdown-toggle d-flex align-items-center justify-content-between justify-content-md-start w-100 w-md-auto py-1 px-2"
+                                            type="button" id="dropdownStockStatus" data-bs-toggle="dropdown">
+                                            <span class="d-block d-md-inline text-truncate">Tất cả</span> <i
+                                                class="fa-solid fa-angle-down ms-2"></i>
+                                        </button>
+                                        <ul class="dropdown-menu w-100 w-md-auto">
+                                            <li>
+                                                <a class="dropdown-item" id="stock-all-top"
+                                                    href="javascript:void(0)">Tất
+                                                    cả</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="stock-in-top" href="javascript:void(0)">Còn
+                                                    hàng</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" id="stock-out-top"
+                                                    href="javascript:void(0)">Hết
+                                                    hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="grid-option d-none d-md-block">
-                                <ul>
+                            <div class="grid-option d-none d-md-flex align-items-center">
+                                <ul class="d-flex flex-row flex-nowrap align-items-center gap-2 mb-0 list-unstyled">
                                     <li class="three-grid">
                                         <a href="javascript:void(0)">
                                             <img src="https://themes.pixelstrap.com/fastkart/assets/svg/grid-3.svg"
@@ -1550,8 +1614,9 @@
             <div class="main-footer">
                 <div class="row g-md-4 gy-sm-5">
                     <div class="col-xxl-3 col-xl-4 col-sm-6">
-                        <a href="../front-end/index.html" class="foot-logo theme-logo">
-                            <img src="../assets/images/logo/7.svg" class="img-fluid blur-up lazyload" alt="logo">
+                        <a href="index-6.html" class="foot-logo theme-logo">
+                            <img src="../assets/images/logo/logo2-white.svg" class="img-fluid blur-up lazyload"
+                                alt="logo">
                         </a>
                         <p class="information-text information-text-2">Cửa hàng thời trang tại Hà Nội chuyên cung cấp
                             quần áo nam, nữ và unisex theo xu hướng mới nhất
