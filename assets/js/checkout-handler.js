@@ -111,7 +111,7 @@
 
         const html = `
             <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6">
-                <div class="address-box ${isSelected ? 'active' : ''}" data-address='${JSON.stringify(data)}'>
+                <div class="address-box ${isSelected ? 'active' : ''}">
                     <div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="addressSelect" id="${id}" ${isSelected ? 'checked' : ''}>
@@ -163,6 +163,7 @@
 
         // Xử lý sự kiện click để chọn địa chỉ (Active State)
         const box = DOM.addressList.lastElementChild.querySelector('.address-box');
+        box.dataset.address = JSON.stringify(data); // Lưu dữ liệu an toàn tại đây
         box.addEventListener('click', () => {
             document.querySelectorAll('.address-box').forEach(b => b.classList.remove('active'));
             box.classList.add('active');
