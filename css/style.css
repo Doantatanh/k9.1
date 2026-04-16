@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+  background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%);
+}
+
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.6rem 0;
+}
+.navbar .brand-logo {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+.navbar .brand-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+.navbar .brand-text span {
+  color: #0ea5e9;
+}
+.navbar .nav-link {
+  color: #0f172a;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  position: relative;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #0ea5e9;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #0ea5e9;
+}
+.navbar .nav-link:hover::after, .navbar .nav-link.active::after {
+  width: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  .navbar .navbar-collapse {
+    padding: 1.5rem 0;
+  }
+  .navbar .nav-link {
+    padding: 0.8rem 0;
+    margin: 0;
+  }
+  .navbar .nav-link::after {
+    display: none;
+  }
+  .navbar .btn-primary {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,146 @@
+[
+    {
+        "id": "fe-master",
+        "name": "Frontend Master",
+        "img": "images/LUMINIA.png",
+        "tag": "Basic",
+        "featured": false,
+        "prices": {
+            "monthly": 499000,
+            "halfyear": 2490000,
+            "yearly": 4490000
+        },
+        "benefits": [
+            "HTML5, CSS3 & SASS",
+            "JavaScript & GSAP",
+            "ReactJS & Next.js",
+            "Hỗ trợ Mentor 24/7"
+        ]
+    },
+    {
+        "id": "fs-ninja",
+        "name": "Fullstack Ninja",
+        "img": "images/LUMINIA.png",
+        "tag": "Popular",
+        "featured": true,
+        "prices": {
+            "monthly": 899000,
+            "halfyear": 4500000,
+            "yearly": 7990000
+        },
+        "benefits": [
+            "Toàn bộ lộ trình Frontend",
+            "Node.js & Database",
+            "System Design",
+            "Cam kết việc làm"
+        ]
+    },
+    {
+        "id": "ai-data",
+        "name": "AI & Data Science",
+        "img": "images/LUMINIA.png",
+        "tag": "Advanced",
+        "featured": false,
+        "prices": {
+            "monthly": 699000,
+            "halfyear": 3500000,
+            "yearly": 6200000
+        },
+        "benefits": [
+            "Python Foundation",
+            "Machine Learning",
+            "Deep Learning",
+            "AI Projects"
+        ]
+    },
+    {
+        "id": "mobile-flutter",
+        "name": "Mobile App (Flutter)",
+        "img": "images/LUMINIA.png",
+        "tag": "New",
+        "featured": false,
+        "prices": {
+            "monthly": 550000,
+            "halfyear": 2700000,
+            "yearly": 4900000
+        },
+        "benefits": [
+            "Dart Language",
+            "Flutter Framework",
+            "Firebase Integration",
+            "App Store Deployment"
+        ]
+    },
+    {
+        "id": "be-arch",
+        "name": "Backend Architecture",
+        "img": "images/LUMINIA.png",
+        "tag": "High Demand",
+        "featured": false,
+        "prices": {
+            "monthly": 600000,
+            "halfyear": 2900000,
+            "yearly": 5500000
+        },
+        "benefits": [
+            "Node.js & Go Language",
+            "Microservices Architecture",
+            "SQL & NoSQL Databases",
+            "Redis & Message Queues"
+        ]
+    },
+    {
+        "id": "devops-cloud",
+        "name": "DevOps & Cloud",
+        "img": "images/LUMINIA.png",
+        "tag": "Expert",
+        "featured": true,
+        "prices": {
+            "monthly": 850000,
+            "halfyear": 4200000,
+            "yearly": 7500000
+        },
+        "benefits": [
+            "Docker & Kubernetes (K8s)",
+            "AWS / Azure Cloud",
+            "CI/CD Pipeline Automation",
+            "Infrastructure as Code"
+        ]
+    },
+    {
+        "id": "data-pro",
+        "name": "Data Analysis Pro",
+        "img": "images/LUMINIA.png",
+        "tag": "Trending",
+        "featured": false,
+        "prices": {
+            "monthly": 500000,
+            "halfyear": 2400000,
+            "yearly": 4200000
+        },
+        "benefits": [
+            "SQL for Data Science",
+            "Python (Pandas, Numpy)",
+            "Power BI & Tableau",
+            "Thống kê & Dự báo dữ liệu"
+        ]
+    },
+    {
+        "id": "ui-ux",
+        "name": "UI/UX Design",
+        "img": "images/LUMINIA.png",
+        "tag": "Creative",
+        "featured": false,
+        "prices": {
+            "monthly": 450000,
+            "halfyear": 2200000,
+            "yearly": 3900000
+        },
+        "benefits": [
+            "Tư duy Design Thinking",
+            "Figma & Adobe XD Master",
+            "Wireframing & Prototyping",
+            "Tối ưu trải nghiệm người dùng"
+        ]
+    }
+]

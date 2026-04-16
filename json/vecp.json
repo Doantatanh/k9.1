@@ -1,0 +1,1064 @@
+{
+  "menu": {
+    "home": {
+      "vi": "Trang chủ",
+      "en": "Home",
+      "ja": "ホーム"
+    },
+    "exam": {
+      "vi": "Tính năng",
+      "en": "Features",
+      "ja": "特徴"
+    },
+    "courses": {
+      "vi": "Giải pháp",
+      "en": "Solutions",
+      "ja": "ソリューション"
+    },
+    "cus_partner": {
+      "vi": "Dịch vụ",
+      "en": "Support",
+      "ja": "サポート"
+    },
+    "price_table": {
+      "vi": "Bảng giá",
+      "en": "Price list",
+      "ja": "価格表"
+    },
+    "category_menu": {
+      "vi": "Danh mục",
+      "en": "Category",
+      "ja": "カテゴリ"
+    },
+    "try": {
+      "vi": "Dùng thử",
+      "en": "Try it out",
+      "ja": "試してみてください"
+    },
+    "contact": {
+      "vi": "Liên hệ",
+      "en": "Contact",
+      "ja": "連絡先"
+    },
+    "submenu": {
+      "company_profile": {
+        "vi": "Hồ sơ công ty",
+        "en": "Company Profile",
+        "ja": "会社概要"
+      },
+      "vision_mission": {
+        "vi": "Tầm nhìn & Sứ mệnh",
+        "en": "Vision & Mission",
+        "ja": "ビジョンとミッション"
+      },
+      "board_of_directors": {
+        "vi": "Hội đồng quản trị",
+        "en": "Board of Directors",
+        "ja": "取締役会"
+      },
+      "executive_board": {
+        "vi": "Ban điều hành",
+        "en": "Executive Board",
+        "ja": "経営陣"
+      },
+      "policy_compliance": {
+        "vi": "Tuân thủ chính sách",
+        "en": "Policy Compliance",
+        "ja": "ポリシー遵守"
+      },
+      "community_responsibility": {
+        "vi": "Trách nhiệm cộng đồng",
+        "en": "Community Responsibility",
+        "ja": "社会的責任"
+      }
+    }
+  },
+  "topbar": {
+    "search_placeholder": {
+      "vi": "Tìm kiếm...",
+      "en": "Search...",
+      "ja": "検索..."
+    },
+    "language": {
+      "vi": "Tiếng Việt",
+      "en": "English",
+      "ja": "日本語"
+    }
+  },
+  "header": {
+    "home": {
+      "vi": "Trang chủ",
+      "en": "Home",
+      "ja": "ホーム"
+    },
+    "about_kpf": {
+      "vi": "về kpf",
+      "en": "About KPF",
+      "ja": "KPFについて"
+    },
+    "subsidiaries": {
+      "vi": "Công ty con",
+      "en": "Subsidiaries",
+      "ja": "子会社"
+    },
+    "shareholder_relations": {
+      "vi": "Quan hệ cổ đông",
+      "en": "Shareholder Relations",
+      "ja": "株主関係"
+    },
+    "news": {
+      "vi": "Tin tức",
+      "en": "News",
+      "ja": "ニュース"
+    },
+    "recruitment": {
+      "vi": "Tuyển dụng",
+      "en": "Recruitment",
+      "ja": "採用"
+    },
+    "contact": {
+      "vi": "Liên hệ",
+      "en": "Contact",
+      "ja": "連絡先"
+    }
+  },
+  "logo_partner": {
+    "items": [
+      {
+        "logo_image": "images/logo_partner2.png"
+      },
+      {
+        "logo_image": "images/logo_partner4.png"
+      },
+      {
+        "logo_image": "images/logo_partner5.png"
+      },
+      {
+        "logo_image": "images/logo_partner6.png"
+      },
+      {
+        "logo_image": "images/logo_partner3.png"
+      },
+      {
+        "logo_image": "images/logo_partner1.png"
+      },
+      {
+        "logo_image": "images/logo_partner8.png"
+      },
+      {
+        "logo_image": "images/logo_partner7.png"
+      },
+      {
+        "logo_image": "images/vhd.png"
+      },
+      {
+        "logo_image": "images/csoft_login.svg"
+      },
+      {
+        "logo_image": "images/logo_flc.png"
+      }
+    ]
+  },
+  "slider": {
+    "slider_title": {
+      "vi": "LÀM CHỦ KỸ NĂNG LẬP TRÌNH CÙNG LUMINIA – LỘ TRÌNH CHUẨN CHO DEVELOPER TƯƠNG LAI",
+      "en": "MASTER PROGRAMMING SKILLS WITH LUMINIA – A COMPLETE ROADMAP FOR FUTURE DEVELOPERS",
+      "ja": "LUMINIAでプログラミングスキルを習得 – 未来のデベロッパーのための完全ロードマップ"
+    },
+    "slider_description": {
+      "vi": "Luminia là nền tảng học tập thông minh dành cho người yêu thích lập trình và công nghệ. Hệ thống cung cấp lộ trình học rõ ràng từ cơ bản đến nâng cao, kết hợp môi trường thực hành code online giúp bạn viết và chạy chương trình ngay trên trình duyệt. Đồng thời, cộng đồng IT năng động hỗ trợ trao đổi kiến thức và chia sẻ kinh nghiệm, giúp bạn học nhanh hơn và tự tin phát triển sự nghiệp Developer.",
+      "en": "Luminia is a smart learning platform for those passionate about programming and technology. It offers a clear learning roadmap from beginner to advanced levels, combined with an online coding environment that allows you to write and run code directly in your browser. In addition, a dynamic IT community supports knowledge sharing and collaboration, helping you learn faster and confidently build your career as a developer.",
+      "ja": "Luminiaは、プログラミングとテクノロジーに情熱を持つ人のためのスマートな学習プラットフォームです。初心者から上級者までの明確な学習ロードマップを提供し、ブラウザ上で直接コードを書いて実行できるオンライン実習環境を備えています。さらに、活発なITコミュニティが知識共有や交流をサポートし、より速く学び、デベロッパーとして自信を持ってキャリアを築くことができます。"
+    },
+    "button": {
+      "vi": "Tìm hiểu thêm",
+      "en": "Learn More",
+      "ja": "さらに詳しく"
+    },
+    "btn_route": {
+      "vi": "Khám phá lộ trình",
+      "en": "Explore the roadmap",
+      "ja": "ロードマップを探索する"
+    },
+    "btn_video": {
+      "vi": "Xem video giới thiệu",
+      "en": "Watch intro video",
+      "ja": "紹介ビデオを見る"
+    }
+  },
+  "intro": {
+    "company_introduction": {
+      "title": {
+        "vi": "GIỚI THIỆU VỀ CÔNG TY ĐẦU TƯ TÀI CHÍNH HOÀNG MINH",
+        "en": "INTRODUCTION TO HOANG MINH FINANCIAL INVESTMENT COMPANY",
+        "ja": "ホアンミンファイナンシャルインベストメント会社の紹介"
+      },
+      "link_text": {
+        "vi": "Tìm hiểu thêm",
+        "en": "Learn More",
+        "ja": "さらに詳しく"
+      }
+    },
+    "vision_mission": {
+      "title": {
+        "vi": "TẦM NHÌN VÀ SỨ MỆNH CỦA CHÚNG TÔI",
+        "en": "OUR VISION AND MISSION",
+        "ja": "私たちのビジョンとミッション"
+      },
+      "link_text": {
+        "vi": "Tìm hiểu thêm",
+        "en": "Learn More",
+        "ja": "さらに詳しく"
+      }
+    }
+  },
+  "price_table": {
+    "price_title": {
+      "vi": "BẢNG GIÁ PHẦN MỀM QUẢN LÝ BÁN HÀNG",
+      "en": "SALES MANAGEMENT SOFTWARE PRICING",
+      "ja": "销售管理软件价格表 "
+    },
+    "items": [
+      {
+        "icon": "icon-coins",
+        "ser_image": "images/post_service.png",
+        "title_packages": {
+          "vi": "Khởi Nghiệp",
+          "en": "Startup ",
+          "ja": "起動する"
+        },
+        "description": {
+          "vi": "Quản lý sản phẩm, đơn hàng, khách hàng. Giao diện dễ sử dụng. Tạo hóa đơn bán hàng. Theo dõi doanh thu hàng ngày. Tích hợp thanh toán phổ biến.",
+          "en": "Product, order, customer management. Easy-to-use interface. Invoice creation support. Daily revenue tracking. Popular payment integration.",
+          "ja": "商品・注文・顧客を管理。使いやすい画面。請求書作成を支援。売上を毎日追跡。決済方法と連携。"
+        }
+      },
+      {
+        "icon": "icon-weather-sun-wind",
+        "ser_image": "images/suggestion_service.png",
+        "title_packages": {
+          "vi": "Chuyên Nghiệp",
+          "en": "Professional",
+          "ja": "プレミアム"
+        },
+        "description": {
+          "vi": "Bao gồm gói Phát Triển. CRM quản lý khách hàng. Tích hợp kế toán và ERP. Phân tích dữ liệu nâng cao. Hỗ trợ kỹ thuật 24/7.",
+          "en": "Includes Growth Plan features. CRM for customer management. Integrated with accounting and ERP. Advanced analytics. 24/7 tech support.",
+          "ja": "成長プランをすべて含む。CRMで顧客管理。会計・ERPと連携。高度な分析に対応。24時間サポート。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/automatic_service.png",
+        "title_packages": {
+          "vi": "Tùy Chỉnh",
+          "en": "Growth",
+          "ja": "エリート"
+        },
+        "description": {
+          "vi": "Tùy chỉnh theo yêu cầu. Tích hợp hệ thống hiện có. Giải pháp toàn diện. Hỗ trợ triển khai và đào tạo. Báo cáo & phân tích riêng.",
+          "en": "Customizable functions. Integration with current system. End-to-end solution. Deployment and training support. Tailored reports and insights.",
+          "ja": "機能を自由に調整。既存システムと統合。一括ソリューション。導入と研修を支援。専用レポート提供。"
+        }
+      }
+    ]
+  },
+  "services": {
+    "title": {
+      "vi": "NỀN TẢNG TỐT NHẤT ĐỂ VẬN HÀNH BÁN HÀNG HIỆU QUẢ",
+      "en": "THE BEST PLATFORM FOR SALES OPERATIONS",
+      "ja": "高效销售运营的最佳平台"
+    },
+    "items": [
+      {
+        "icon": "icon-coins",
+        "ser_image": "images/book.svg",
+        "titles": {
+          "vi": "Đơn hàng thông minh",
+          "en": "Smart Order",
+          "ja": "スマート注文"
+        },
+        "description": {
+          "vi": "Tạo đơn nhanh với gợi ý sản phẩm, định giá tự động và kiểm kho tức thì để xử lý đơn hiệu quả.",
+          "en": "Create orders fast with product suggestions, auto-pricing and instant stock check.",
+          "ja": "商品提案・自動価格・即時在庫確認で 素早く注文処理を行います。"
+        }
+      },
+      {
+        "icon": "icon-weather-sun-wind",
+        "ser_image": "images/ser_1.svg",
+        "titles": {
+          "vi": "Video sản phẩm",
+          "en": "Product Video",
+          "ja": "商品動画"
+        },
+        "description": {
+          "vi": "Tải lên, chỉnh sửa và hiển thị video sản phẩm giúp khách hiểu rõ tính năng, chất lượng nhanh.",
+          "en": "Upload, edit, and show videos clearly to help customers understand features and quality.",
+          "ja": "動画を編集・表示し、商品の特徴と 品質をわかりやすく伝えます。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/ser_3.png",
+        "titles": {
+          "vi": "Danh mục sản phẩm",
+          "en": "Product Categories",
+          "ja": "商品カテゴリ"
+        },
+        "description": {
+          "vi": "Phân loại theo nhóm, nhãn, chủ đề để quản lý và tìm kiếm sản phẩm nhanh, chính xác hơn.",
+          "en": "Categorize by tags, groups, topics for better management and quick search.",
+          "ja": "グループやタグで分類し、商品管理と 検索を効率化します。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/report_service.png",
+        "titles": {
+          "vi": "Khuyến mãi linh hoạt",
+          "en": "Flexible Promotion",
+          "ja": "柔軟なプロモーション"
+        },
+        "description": {
+          "vi": "Tạo khuyến mãi theo sản phẩm, thời gian, nhóm giúp tăng doanh số và thu hút khách hiệu quả.",
+          "en": "Run flexible promotions by product, time or customer group to boost sales.",
+          "ja": "商品・時間・顧客別に柔軟な プロモーションを実施します。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/ser_5.svg",
+        "titles": {
+          "vi": "Doanh thu, chi phí",
+          "en": "Revenue & Cost",
+          "ja": "収益とコスト"
+        },
+        "description": {
+          "vi": "Theo dõi thu – chi theo thời gian thực dễ dàng giúp quyết định chính xác và minh bạch hơn.",
+          "en": "Monitor revenue and cost in real time for clear and timely decisions.",
+          "ja": "収支をリアルタイムで管理し、 正確な判断を支援します。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/ser_2.png",
+        "titles": {
+          "vi": "Lịch bán hàng",
+          "en": "Sales Schedule",
+          "ja": "販売スケジュール"
+        },
+        "description": {
+          "vi": "Lập kế hoạch, phân bổ nguồn lực theo ngày, tuần hoặc chiến dịch để bán hàng hiệu quả hơn.",
+          "en": "Plan and assign sales tasks by date, week or campaign to improve efficiency.",
+          "ja": "日・週・キャンペーン単位で 販売計画を立てます。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/ser_4.png",
+        "titles": {
+          "vi": "Hiển thị tối ưu",
+          "en": "Responsive Display",
+          "ja": "最適な表示"
+        },
+        "description": {
+          "vi": "Tự điều chỉnh giao diện trên mọi thiết bị giúp trải nghiệm mượt mà, không gián đoạn nội dung.",
+          "en": "Auto-adjust UI for all devices, offering a seamless browsing experience.",
+          "ja": "すべての端末に最適化されたUIで スムーズな体験を提供します。"
+        }
+      },
+      {
+        "icon": "icon-office",
+        "ser_image": "images/ser_6.png",
+        "titles": {
+          "vi": "Thông báo hệ thống",
+          "en": "System Alerts",
+          "ja": "システム通知"
+        },
+        "description": {
+          "vi": "Tự động gửi báo đơn mới, hàng tồn thấp hoặc bài viết mới cần duyệt giúp xử lý kịp thời.",
+          "en": "Auto alerts for new orders, low stock or pending approvals to speed up work.",
+          "ja": "新規注文・在庫・承認通知を 自動で送信します。"
+        }
+      }
+    ]
+  },
+  "intro_tabs": {
+    "items": [
+      {
+        "titles": {
+          "vi": "LỘ TRÌNH",
+          "en": "LEARNING PATH",
+          "ja": "学習ロードマップ"
+        },
+        "description": {
+          "vi": "Hệ thống tự động phân tích trình độ và gợi ý lộ trình học tối ưu. Chia nhỏ kiến thức thành các module dễ tiếp thu học đến đâu chắc đến đó. Theo dõi tiến độ học tập trực quan với biểu đồ kỹ năng chuyên sâu. Lộ trình được cập nhật liên tục theo yêu cầu tuyển dụng của doanh nghiệp. Định hướng rõ ràng các kỹ năng cần thiết cho Frontend và Backend. Giúp học viên nắm vững kiến thức nền tảng trước khi đi vào thực tế. Tiết kiệm thời gian nghiên cứu và tập trung vào những kiến thức trọng tâm. Đảm bảo học viên luôn đi đúng hướng trên con đường phát triển sự nghiệp.",
+          "en": "Automatically analyzes levels and suggests optimal learning paths. Content is divided into easy-to-absorb modules for solid progress. Visually track learning progress with in-depth skill charts. Roadmaps are constantly updated based on enterprise recruitment needs. Clear orientation of essential skills for both Frontend and Backend. Helps students master foundational knowledge before practical application. Saves research time and focuses on core specialized knowledge. Ensures students stay on the right track for their career development.",
+          "ja": "レベルを自動分析し最適な学習ロードマップを提案。吸収しやすいモジュール単位で着実な進歩を実現。詳細なスキルチャートで学習進捗を直感的に追跡。企業の採用ニーズに合わせてロードマップを随時更新。フロントエンドとバックエンドの必須スキルを明確に提示。実践前に基礎知識をしっかりと習得できるようサポート。調査時間を短縮し核となる専門知識に集中できる環境。キャリア発展に向けた正しい方向性を常に保証。"
+        },
+        "icon": "fa-solid fa-newspaper",
+        "ser_image": "./images/HANDS-ON_PRACTICE.png"
+      },
+      {
+        "titles": {
+          "vi": "THỰC HÀNH",
+          "en": "HANDS-ON PRACTICE",
+          "ja": "実践トレーニング"
+        },
+        "description": {
+          "vi": "Trình giả lập code online hỗ trợ hơn 20 ngôn ngữ lập trình phổ biến. Thực hành ngay trên trình duyệt mà không cần cài đặt môi trường phức tạp. Hệ thống bài tập thực tế được xây dựng từ các dự án doanh nghiệp thật. Chấm điểm và gợi ý tối ưu mã nguồn tự động bằng công nghệ AI. Kho bài tập đa dạng từ thuật toán cơ bản đến xây dựng ứng dụng. Giúp học viên rèn luyện tư duy lập trình và kỹ năng giải quyết vấn đề. Giao diện soạn thảo mã nguồn trực quan sinh động và dễ thao tác. Phản hồi kết quả chạy code tức thì giúp sửa lỗi nhanh chóng và hiệu quả.",
+          "en": "Online code editor supports over 20 popular programming languages. Practice directly in the browser without complex environment setup. Real-world practice tasks built from actual corporate projects. AI technology provides automatic scoring and code optimization tips. Diverse exercises from basic algorithms to full application building. Helps students improve logical thinking and problem-solving skills. Intuitive source code editor interface that's easy to operate. Instant code execution feedback for quick and effective debugging.",
+          "ja": "20以上の主要言語に対応したオンラインコードエディタ。複雑な環境設定なしでブラウザ上で直接練習が可能。実際の企業プロジェクトから作成された実践的な課題。AI技術による自動採点とコード最適化のアドバイス。基礎アルゴリズムからアプリ開発まで多様な課題。プログラミング思考と問題解決能力の向上を支援。直感的で操作しやすいソースコードエディタ画面。即時のコード実行フィードバックで迅速なデバッグを実現。"
+        },
+        "icon": "fa-solid fa-lightbulb",
+        "ser_image": "./images/function2.jpg"
+      },
+      {
+        "titles": {
+          "vi": "MENTOR 24/7",
+          "en": "24/7 MENTOR SUPPORT",
+          "ja": "24時間メンターサポート"
+        },
+        "description": {
+          "vi": "Đội ngũ chuyên gia giàu kinh nghiệm sẵn sàng hỗ trợ giải đáp 24/7. Giải quyết mọi lỗi code và logic lập trình phức tạp trong thời gian ngắn. Review mã nguồn chi tiết giúp học viên làm quen với chuẩn Clean Code. Hỗ trợ trực tiếp qua video call cho các đồ án và dự án thực tế. Hệ thống câu hỏi thường gặp FAQ đầy đủ và hướng dẫn tận tình. Cam kết phản hồi nhanh chóng và đồng hành cùng học viên mỗi ngày. Chia sẻ kinh nghiệm thực chiến và mẹo xử lý vấn đề của chuyên gia. Tạo môi trường học tập an tâm và đầy cảm hứng cho mọi học viên.",
+          "en": "Experienced experts available for 24/7 support and answers. Quickly resolve all complex coding bugs and programming logic. Detailed code reviews help students learn Clean Code standards. Direct video call support for capstone and real-world projects. Comprehensive FAQ system and dedicated instructions provided. Commitment to fast response and daily student companionship. Sharing real-world experience and expert troubleshooting tips. Creating a safe and inspiring learning environment for every student.",
+          "ja": "経験豊富な専門家が24時間体制で質問や相談に対応。複雑なエラーやロジックを短時間で迅速に解決。詳細なコードレビューでクリーンコードの習得を支援。プロジェクトや実戦課題向けの直接ビデオ通話サポート。充実したFAQシステムと丁寧なガイダンスを提供。迅速な対応と毎日の学習サポートを全力で約束。実戦経験に基づいた専門的なトラブル解決法を共有。全ての受講生に安心とインスピレーションを与える環境。"
+        },
+        "icon": "fa-solid fa-rss",
+        "ser_image": "./images/function3.jpg"
+      },
+      {
+        "titles": {
+          "vi": "CỘNG ĐỒNG",
+          "en": "IT COMMUNITY",
+          "ja": "ITコミュニティ"
+        },
+        "description": {
+          "vi": "Kết nối mạng lưới hàng ngàn học viên và chuyên gia công nghệ toàn cầu. Tham gia các cộng đồng học tập năng động theo từng chuyên ngành cụ thể. Chia sẻ kiến thức kinh nghiệm và cùng nhau giải quyết các bài toán khó. Hệ thống diễn đàn thảo luận sôi nổi hỗ trợ giải đáp thắc mắc mỗi ngày. Cơ hội tham gia các dự án mã nguồn mở và xây dựng sản phẩm thực tế. Tổ chức các buổi thảo luận nhóm giúp cải thiện kỹ năng giao tiếp và làm việc. Tìm kiếm đồng đội cùng chung chí hướng để thực hiện các ý tưởng khởi nghiệp. Mở rộng mối quan hệ trong ngành IT giúp gia tăng cơ hội việc làm nhanh chóng.",
+          "en": "Connect with a global network of thousands of students and tech experts. Join dynamic learning communities tailored to specific specialized fields. Share knowledge and experiences while solving difficult problems together. Vibrant discussion forums provide daily support for all your inquiries. Opportunities to join open-source projects and build real-world products. Group discussions organized to improve communication and teamwork skills. Find like-minded teammates to turn startup ideas into reality. Expand IT industry relationships to quickly increase career opportunities.",
+          "ja": "数千人の受講生やIT専門家とつながるグローバルなネットワーク。各専門分野に特化した活発な学習コミュニティに参加可能。知識や経験を共有し合い困難な課題を共に解決する環境。毎日の疑問を解消できる活気あるディスカッションフォーラム。オープンソースプロジェクトや実戦的な製品開発への参加機会。コミュニケーション力とチームワークを磨くグループ討議を定期開催。スタートアップのアイデアを共に実現する志の高い仲間との出会い。IT業界のネットワークを広げキャリアの可能性を迅速に拡大。"
+        },
+        "icon": "fa-solid fa-coins",
+        "ser_image": "./images/function5.jpg"
+      },
+      {
+        "titles": {
+          "vi": "CHỨNG CHỈ",
+          "en": "CERTIFICATION",
+          "ja": "認定証"
+        },
+        "description": {
+          "vi": "Cấp chứng chỉ hoàn thành khóa học có giá trị xác thực chuyên nghiệp. Tích hợp mã QR tra cứu hồ sơ năng lực trực tuyến cho nhà tuyển dụng. Khẳng định trình độ chuyên môn và nỗ lực bền bỉ của học viên. Chứng chỉ được bảo chứng bởi đội ngũ chuyên gia công nghệ hàng đầu. Hỗ trợ xây dựng hồ sơ Portfolio ấn tượng từ các dự án thực hành. Tăng khả năng cạnh tranh và cơ hội việc làm tại các công ty lớn. Thành quả xứng đáng cho quá trình học tập nghiêm túc và hiệu quả. Lưu trữ chứng chỉ số vĩnh viễn trên nền tảng của Luminia.",
+          "en": "Issued certificates of completion with professional verification. Integrated QR codes for employers to verify profiles online. Confirms professional proficiency and the student's persistence. Certificates are endorsed by top technology experts in the field. Supports building an impressive Portfolio from practical projects. Increases competitiveness and job opportunities at major firms. A worthy achievement for serious and effective learning progress. Digital certificates are stored permanently on Luminia's platform.",
+          "ja": "専門的な検証機能を備えた修了証明書を発行。雇用主がオンラインで実績を確認できるQRコード搭載。専門的な習熟度と受講生の粘り強い努力を証明。業界トップクラスの技術者による認定証明書。実践プロジェクトを通じた魅力的なポートフォリオ作成。大手企業への就職機会と競争力を大幅に向上。真剣かつ効果的な学習プロセスに対する正当な成果。デジタル証明書はLuminiaプラットフォームに永久保存。"
+        },
+        "icon": "fa-solid fa-robot",
+        "ser_image": "./images/function4.jpg"
+      }
+    ]
+  },
+  "projects_demo": {
+    "prj_title": {
+      "vi": "LỢI ÍCH KHI DÙNG PHẦN MỀM QUẢN LÝ BÁN HÀNG",
+      "en": "BENEFITS OF USING SALES MANAGEMENT SOFTWARE",
+      "ja": "使用销售管理软件的好处"
+    },
+    "items": [
+      {
+        "be_image": "images/benefit_6.png",
+        "benefit": {
+          "vi": "Quản lý bán hàng thông minh & nâng cao trải nghiệm khách hàng",
+          "en": "Smart Sales Management & Better Customer Experience",
+          "ja": "スマート販売管理と顧客体験の向上"
+        },
+        "be_description": {
+          "vi": "Phần mềm tích hợp AI giúp tự động hóa quy trình bán hàng như gợi ý sản phẩm, kiểm tra tồn kho và tạo đơn nhanh chóng. Hệ thống còn phân tích hành vi mua để cá nhân hóa trải nghiệm người dùng và tăng tỷ lệ chuyển đổi. Ngoài ra, giao diện dễ dùng hỗ trợ người bán quản lý sản phẩm, khách hàng và đơn hàng hiệu quả.",
+          "en": "The software uses AI to automate sales tasks like product suggestions, stock checking, and fast order creation. It analyzes buying behavior to personalize customer experience and boost conversion rates. The intuitive interface helps sellers manage products, customers, and orders efficiently.",
+          "ja": "このソフトウェアは、AIを活用して商品提案、在庫確認、注文作成などの販売業務を自動化します。購買行動を分析し、顧客体験をパーソナライズして成約率を向上させます。使いやすい画面で商品・顧客・注文を効率的に管理できます。"
+        }
+      },
+      {
+        "be_image": "images/benefit_8.png",
+        "benefit": {
+          "vi": "Phân tích dữ liệu & báo cáo theo thời gian thực",
+          "en": "Real-Time Data Analysis & Reporting",
+          "ja": "リアルタイムのデータ分析とレポート"
+        },
+        "be_description": {
+          "vi": "Phần mềm theo dõi hành vi mua, tỷ lệ chuyển đổi và hiệu suất chiến dịch để tối ưu hoạt động bán hàng. Hệ thống cung cấp báo cáo theo thời gian thực giúp người bán ra quyết định nhanh, chính xác. Từ đó, nâng cao hiệu quả kinh doanh và trải nghiệm khách hàng.",
+          "en": "The software tracks buying behavior, conversion rates, and campaign performance to optimize sales activities. It offers real-time reporting, enabling sellers to make fast and accurate decisions. This helps improve business efficiency and customer experience.",
+          "ja": "このソフトウェアは、購買行動、成約率、キャンペーンの効果を追跡し、販売活動を最適化します。リアルタイムでレポートを提供し、迅速かつ正確な意思決定を支援します。これにより、ビジネス効率と顧客体験の向上が可能になります。"
+        }
+      }
+    ],
+    "prj_description": {
+      "vi": "Các Dự Án Bất Động Sản Tiêu Biểu đề cập đến những dự án bất động sản nổi bật, thể hiện sự đổi mới và chất lượng trong thiết kế, xây dựng và phát triển. Những dự án này không chỉ góp phần nâng cao giá trị bất động sản mà còn tạo ra không gian sống và làm việc tiện nghi cho cộng đồng. Chúng thường bao gồm các căn hộ cao cấp, khu nghỉ dưỡng, trung tâm thương mại và các khu đô thị hiện đại, đáp ứng nhu cầu ngày càng cao của thị trường và người tiêu dùng.",
+      "en": "Outstanding Real Estate Projects refers to outstanding real estate projects that demonstrate innovation and quality in design, construction and development. These projects not only contribute to improving real estate value but also create comfortable living and working spaces for the community. They often include luxury apartments, resorts, commercial centers and modern urban areas, meeting the increasing needs of the market and consumers.",
+      "ja": "優れた不動産プロジェクトとは、設計、建設、開発において革新性と品質を実証した優れた不動産プロジェクトを指します。これらのプロジェクトは、不動産価値の向上に貢献するだけでなく、地域社会の快適な居住空間や執務空間の創出にも貢献します。これらには高級アパートメント、リゾート、商業センター、近代的な都市部が含まれることが多く、市場や消費者の増大するニーズに応えています。"
+    }
+  },
+  "official_disclosures": {
+    "ofd_title": {
+      "vi": "MỘT SỐ CHỨC NĂNG",
+      "en": "SOME FUNCTIONS",
+      "ja": "いくつかの機能"
+    },
+    "items": [
+      {
+        "ofd_image": "images/product_image1.png",
+        "item_title": {
+          "vi": "BIỆT THỰ MẶT TRỜI",
+          "en": "SUN VILLA",
+          "ja": "サンヴィラ"
+        },
+        "date": "18.06.2018",
+        "link": "#"
+      },
+      {
+        "ofd_image": "images/product_image2.png",
+        "item_title": {
+          "vi": "NGÔI NHÀ THIÊN NHIÊN",
+          "en": "NATURAL HOUSE",
+          "ja": "自然の家"
+        },
+        "date": "18.06.2018",
+        "link": "#"
+      },
+      {
+        "ofd_image": "images/product_image3.png",
+        "item_title": {
+          "vi": "BIỆT THỰ ĐÊM SÁNG",
+          "en": "VILLA AT NIGHT",
+          "ja": "夜のヴィラ"
+        },
+        "date": "18.06.2018",
+        "link": "#"
+      }
+    ]
+  },
+  "language_tools": {
+    "tool_title": {
+      "vi": "PHẦN MỀM QUẢN LÝ BÁN HÀNG ĐA KÊNH",
+      "en": "MULTI-CHANNEL SALES MANAGEMENT SOFTWARE",
+      "ja": "マルチチャネル販売管理ソフトウェア"
+    },
+    "items": [
+      {
+        "ofd_image": "images/product_1.png",
+        "item_tool": {
+          "vi": "Quản lý sản phẩm thông minh",
+          "en": "Smart Product Management",
+          "ja": "スマートな商品管理"
+        }
+      },
+      {
+        "ofd_image": "images/product_1.png",
+        "item_tool": {
+          "vi": "Đồng bộ đơn hàng tự động",
+          "en": "Automated Order Sync",
+          "ja": "注文の自動同期"
+        }
+      },
+      {
+        "ofd_image": "images/product_1.png",
+        "item_tool": {
+          "vi": "Giao diện dễ dùng, tối ưu",
+          "en": "User-Friendly, Optimized UI",
+          "ja": "使いやすく最適化されたUI"
+        }
+      },
+      {
+        "ofd_image": "images/product_1.png",
+        "item_tool": {
+          "vi": "Theo dõi doanh thu tức thì",
+          "en": "Instant Revenue Tracking",
+          "ja": "売上の即時トラッキング"
+        }
+      },
+      {
+        "ofd_image": "images/product_1.png",
+        "item_tool": {
+          "vi": "Quản lý tồn kho chính xác",
+          "en": "Accurate Inventory Control",
+          "ja": "正確な在庫管理"
+        }
+      },
+      {
+        "ofd_image": "images/product_1.png",
+        "item_tool": {
+          "vi": "Chăm sóc khách hàng hiệu quả",
+          "en": "Effective Customer Care",
+          "ja": "効果的な顧客対応"
+        }
+      }
+    ]
+  },
+  "buttons": {
+    "btn_benefit": {
+      "vi": "Tìm hiểu thêm",
+      "en": "Learn More",
+      "ja": "もっと詳しく知る"
+    },
+    "btn_price": {
+      "vi": "Mua",
+      "en": "Choose plan",
+      "ja": "プランを選ぶ"
+    },
+    "btn_all": {
+      "vi": "Xem chi tiết tại đây",
+      "en": "See details here",
+      "ja": "詳細はこちらをご覧ください"
+    },
+    "btn_free": {
+      "vi": "Bắt đầu",
+      "en": "Get started",
+      "ja": "始めましょう"
+    },
+    "btn_send": {
+      "vi": "Gửi thông tin",
+      "en": "Send information",
+      "ja": "情報を送信する"
+    }
+  },
+  "partner": {
+    "vi": "ĐỐI TÁC CHIẾN LƯỢC",
+    "en": "PARTNERS",
+    "ja": "パートナー"
+  },
+  "free_trail": {
+    "vi": "Hãy dùng thử miễn phí trong 30 ngày",
+    "en": "Let's try it's free trail for 30 days",
+    "ja": "30日間無料でお試しください"
+  },
+  "feedback": {
+    "fb_title": {
+      "vi": "Đánh giá từ khách hàng và đối tác",
+      "en": "Evaluation from Customers and Partners",
+      "ja": "お客様やパートナーからのレビュー"
+    },
+    "items": [
+      {
+        "fb_icon": "images/avatar2_fb.jpg",
+        "fb_name": "Đinh Công Tiến",
+        "fb_description": {
+          "vi": "Phần mềm này giúp tôi xử lý đơn hàng nhanh. Quản lý kho dễ dàng. Trải nghiệm mượt và ổn định.",
+          "en": "This software helps me process orders fast. Inventory is easy to manage. Smooth and stable experience.",
+          "ja": "这个软件让我快速处理订单。库存管理轻松。使用体验流畅稳定。"
+        }
+      },
+      {
+        "fb_icon": "images/avatar3_fb.jpg",
+        "fb_name": "Nguyễn Ngọc Thảo My",
+        "fb_description": {
+          "vi": "Giao diện dễ dùng. Theo dõi doanh thu và chăm sóc khách ngay trên điện thoại. Phù hợp với người mới.",
+          "en": "User-friendly interface. Track revenue and support customers via phone. Great for new sellers.",
+          "ja": "界面简洁易用。可通过手机查看收入与客户信息。很适合新手卖家。"
+        }
+      },
+      {
+        "fb_icon": "images/avatar_fb.jpeg",
+        "fb_name": "Nguyễn Trung Kiên",
+        "fb_description": {
+          "vi": "Tôi quản lý toàn bộ quy trình bán hàng. Mọi thứ gói gọn trong một nền tảng. Rất tiện và hiệu quả.",
+          "en": "I manage the full sales workflow. Everything runs on one platform. It's efficient and convenient.",
+          "ja": "我能管理完整销售流程。一切都在同一平台上完成。高效又方便。"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "address": {
+      "vi": "Ngách 49/41 Phố Huỳnh Thúc Kháng, <br>Quận Đống Đa, Hà Nội",
+      "en": "Alley 49/41 Huynh Thuc Khang Street, <br>Dong Da, Hanoi",
+      "ja": "Alley 49/41, Huynh Thuc Khang Street, <br>Dong Da District, ハノイ, ベトナム"
+    },
+    "phone_footer": {
+      "vi": "05 82 225566",
+      "en": "05 82 225566",
+      "ja": "05 82 225566"
+    },
+    "email_footer": {
+      "vi": "support@vstudy.com",
+      "en": "support@vstudy.com",
+      "ja": "support@vstudy.com"
+    },
+    "title_address": {
+      "vi": "Chúng tôi",
+      "en": "About Us",
+      "ja": "私たちについて"
+    }
+  },
+  "menu_footer": {
+    "items": [
+      {
+        "function": {
+          "vi": "Giáo dục",
+          "en": "Education",
+          "ja": "教育"
+        }
+      },
+      {
+        "function": {
+          "vi": "Bất động sản",
+          "en": "Real Estate",
+          "ja": "不動産"
+        }
+      },
+      {
+        "function": {
+          "vi": "Bán hàng trực tuyến",
+          "en": "E-commerce",
+          "ja": "オンライン販売"
+        }
+      },
+      {
+        "function": {
+          "vi": "Tin tức",
+          "en": "News",
+          "ja": "ニュース"
+        }
+      },
+      {
+        "function": {
+          "vi": "Khách sạn",
+          "en": "Hotel",
+          "ja": "ホテル"
+        }
+      },
+      {
+        "function": {
+          "vi": "Dùng thử",
+          "en": "Try it out",
+          "ja": "試してみてください"
+        }
+      }
+    ]
+  },
+  "social": {
+    "vi": "Theo dõi chúng tôi",
+    "en": "Follow us",
+    "ja": "私たちに従ってください"
+  },
+  "category": {
+    "vi": "Danh mục",
+    "en": "Category",
+    "ja": "カテゴリ"
+  },
+  "payment": {
+    "vi": "Phương thức thanh toán",
+    "en": "Payment method",
+    "ja": "支払方法"
+  },
+  "copy": {
+    "vi": "© 2026 CSOFT. Bản quyền thuộc về CSOFT",
+    "en": "© 2026 CSOFT. All Rights Reserved - Powered by CSOFT",
+    "ja": "© 2026 CSOFT. 全著作権所有 - CSOFTによる提供"
+  },
+  "policies": {
+    "policy_title": {
+      "vi": "Chính sách",
+      "en": "Policy",
+      "ja": "ポリシー"
+    },
+    "items": [
+      {
+        "policy_function": {
+          "vi": "Chính sách bảo mật",
+          "en": "Privacy policy",
+          "ja": "プライバシーポリシー"
+        }
+      },
+      {
+        "policy_function": {
+          "vi": "Chính sách dùng AI",
+          "en": "AI Policy",
+          "ja": "AI ポリシー"
+        }
+      },
+      {
+        "policy_function": {
+          "vi": "Chính sách thanh toán",
+          "en": "Payment policy",
+          "ja": "支払いポリシーー"
+        }
+      },
+      {
+        "policy_function": {
+          "vi": "Chính sách hoàn tiền",
+          "en": "Refund policy",
+          "ja": "返金ポリシー"
+        }
+      },
+      {
+        "policy_function": {
+          "vi": "Chính sách sử dụng dịch vụ",
+          "en": "Service Usage Policy",
+          "ja": "サービス利用規約"
+        }
+      },
+      {
+        "policy_function": {
+          "vi": "Điều khoản sử dụng",
+          "en": "Terms of Use",
+          "ja": "利用規約（りようきやく)"
+        }
+      }
+    ]
+  },
+  "title_address": {
+    "vi": "Về chúng tôi",
+    "en": "About Us",
+    "ja": "私たちについて"
+  },
+  "tool_link": {
+    "vi": "Khám phá ngay",
+    "en": "Explore now",
+    "ja": "今すぐ探索してください"
+  },
+  "alert_language": {
+    "en": {
+      "title": "Successfully!",
+      "success_message": "Language has been changed successfully.",
+      "error_message": "An error occurred while changing the language."
+    },
+    "vi": {
+      "title": "Thành công!",
+      "success_message": "Ngôn ngữ đã được chuyển đổi thành công.",
+      "error_message": "Có lỗi xảy ra khi đổi ngôn ngữ."
+    },
+    "ja": {
+      "title": "T成功しました!",
+      "success_message": "言語が正常に変更されました。",
+      "error_message": "言語の変更中にエラーが発生しました。"
+    }
+  },
+  "language_header": {
+    "vi": "Quản Lý Thông Minh, Tối Ưu Bán Hàng Bằng Công Nghệ AI",
+    "en": "Smart Editorial Software - Accelerate Production, Optimize Efficiency",
+    "ja": "スマート編集ソフトウェア - 制作を加速し、効率を最適化"
+  },
+  "language_description": {
+    "vi": "Tự động hóa quy trình bán hàng, tối ưu nguồn lực, nâng cao hiệu suất kinh doanh và trải nghiệm khách hàng.",
+    "en": "Automate sales processes, optimize resources, and improve business performance and customer experience.",
+    "ja": "販売プロセスを自動化し、リソースを最適化。業績と顧客体験を向上させます。"
+  },
+  "language_card": {
+    "items": [
+      {
+        "item_title": {
+          "vi": "Tự Động  ",
+          "en": "Automation ",
+          "ja": "自動化"
+        },
+        "description": {
+          "vi": "Xử lý đơn hàng, kho và hóa đơn tự động. Giảm thao tác thủ công, tăng tốc quy trình.",
+          "en": "Automates orders, inventory, and billing. Reduces manual work and boosts speed.",
+          "ja": "注文、在庫、請求書を自動で処理。手間を減らし、スピードアップ。"
+        }
+      },
+      {
+        "item_title": {
+          "vi": "THỐNG KÊ",
+          "en": "Statistics",
+          "ja": "統計"
+        },
+        "description": {
+          "vi": "Báo cáo doanh thu, hành vi khách hàng và hiệu suất bán hàng. Hỗ trợ quyết định chính xác.",
+          "en": "Reports on revenue, customer behavior, and sales. Supports accurate decisions.",
+          "ja": "売上、顧客行動、販売状況を把握。的確な判断を支援。"
+        }
+      },
+      {
+        "item_title": {
+          "vi": "Linh Hoạt",
+          "en": "Flexibility",
+          "ja": "柔軟性"
+        },
+        "description": {
+          "vi": "Dễ tích hợp, tùy chỉnh theo nhu cầu. Phù hợp với mọi lĩnh vực kinh doanh.",
+          "en": "Easy to integrate and customize. Adapts to all business types.",
+          "ja": "簡単に統合・カスタマイズ可能。全ての業種に対応。"
+        }
+      }
+    ]
+  },
+  "download": {
+    "vi": "Tải ứng dụng",
+    "en": "Download the application",
+    "ja": "アプリケーションをダウンロードする"
+  },
+  "certified": {
+    "vi": "Chứng nhận bởi",
+    "en": "Certified by",
+    "ja": "によって認定されました"
+  },
+  "privacy": {
+    "pcy_service": {
+      "vi": "Điều khoản dịch vụ",
+      "en": "Terms Of Service",
+      "ja": "利用規約"
+    },
+    "pcy_policy": {
+      "vi": "Chính sách bảo mật",
+      "en": "Privacy Policy",
+      "ja": "プライバシーポリシー"
+    },
+    "pcy_help": {
+      "vi": "Trợ giúp",
+      "en": "Support",
+      "ja": "サポート"
+    }
+  },
+  "localeMap": {
+    "vi": "vi-VN",
+    "en": "en-US",
+    "ja": "ja-JP"
+  },
+  "contact_section": {
+    "contact_title": {
+      "vi": "Liên hệ với chúng tôi!",
+      "en": "Contact with us!",
+      "ja": "接触私たちと一緒に！"
+    },
+    "title_description": {
+      "vi": "Hãy để lại thông tin, chúng tôi sẽ liên hệ và hỗ trợ xử lý mọi vướng mắc của bạn",
+      "en": "Please leave your information, we will contact and support to handle all your problems.",
+      "ja": "情報を残していただければ、私たちが連絡を取り、すべての問題に対処するためのサポートをさせていただきます。"
+    },
+    "contact_name": {
+      "vi": "Họ tên (*)",
+      "en": "Full name (*)",
+      "ja": "フルネーム (*)"
+    },
+    "contact_phone": {
+      "vi": "Số điện thoại (*)",
+      "en": "Phone number (*)",
+      "ja": "電話番号(*)"
+    },
+    "contact_mail": {
+      "vi": "Email (*)",
+      "en": "Email (*)",
+      "ja": "メールアドレス(*)"
+    },
+    "contact_interested": {
+      "vi": "Bạn quan tâm đến",
+      "en": "You are interested",
+      "ja": "興味がありますね"
+    },
+    "contact_content": {
+      "vi": "Nội dung (*)",
+      "en": "Content (*)",
+      "ja": "コンテンツ (*)"
+    },
+    "contact_security": {
+      "vi": "Bằng việc gửi đăng ký nhận tư vấn, bạn đã đồng ý với Chính sách bảo mật thông tin của CSOFT.",
+      "en": "By submitting your registration for consultation, you agree to CSOFT's Information Privacy Policy.",
+      "ja": "相談登録を送信すると、CSOFT の情報プライバシー ポリシーに同意したものとみなされます。"
+    },
+    "placeholder_name": {
+      "vi": "Nhập họ và tên của bạn",
+      "en": "Enter your first and last name",
+      "ja": "姓名を入力してください"
+    },
+    "placeholder_phone": {
+      "vi": "+84 Nhập số điện thoại của bạn",
+      "en": "+84 Enter your phone number",
+      "ja": "+84 電話番号を入力してください"
+    },
+    "placeholder_mail": {
+      "vi": "Nhập địa chỉ email của bạn",
+      "en": "Enter your email address",
+      "ja": "メールアドレスを入力してください"
+    },
+    "placeholder_content": {
+      "vi": "Bạn có câu hỏi gì?\n- Hãy cho chúng tôi biết bạn đang thắc mắc điều gì\n- Câu hỏi cần giải đáp",
+      "en": "Do you have any questions?\n- Let us know what you're wondering\n- Question needs to be answered",
+      "ja": "質問がありますか？\n- ご質問がありましたらお知らせください\n- 回答が必要な質問"
+    },
+    "text_interested": {
+      "vi": [
+        {
+          "value": "",
+          "text": "Lựa chọn"
+        },
+        {
+          "value": "phan-mem",
+          "text": "VBDS - Quản lý bất động sản"
+        },
+        {
+          "value": "ho-tro-ky-thuat",
+          "text": "VECP - Quản lý bán hàng"
+        },
+        {
+          "value": "tu-van",
+          "text": "VHD - Quản lý khách sạn"
+        },
+        {
+          "value": "vstudy",
+          "text": "VSTUDY - Nền tảng học tiếng Anh"
+        },
+        {
+          "value": "vcms",
+          "text": "VCMS - Hệ thống quản lý tin tức"
+        },
+        {
+          "value": "dich-vu-khac",
+          "text": "Dịch vụ khác"
+        }
+      ],
+      "en": [
+        {
+          "value": "",
+          "text": "Select"
+        },
+        {
+          "value": "phan-mem",
+          "text": "VBDS - Real Estate Management"
+        },
+        {
+          "value": "ho-tro-ky-thuat",
+          "text": "VECP - Sales Management"
+        },
+        {
+          "value": "tu-van",
+          "text": "VHD - Hotel Management"
+        },
+        {
+          "value": "vstudy",
+          "text": "VSTUDY - English Learning Platform"
+        },
+        {
+          "value": "vcms",
+          "text": "VCMS - News Management System"
+        }
+      ],
+      "ja": [
+        {
+          "value": "",
+          "text": "選択"
+        },
+        {
+          "value": "phan-mem",
+          "text": "VBDS - 不動産管理"
+        },
+        {
+          "value": "ho-tro-ky-thuat",
+          "text": "VECP - 営業管理"
+        },
+        {
+          "value": "tu-van",
+          "text": "VHD - ホテル管理"
+        },
+        {
+          "value": "vstudy",
+          "text": "VSTUDY - 英語学習プラットフォーム"
+        },
+        {
+          "value": "vcms",
+          "text": "VCMS - ニュース管理システム"
+        }
+      ]
+    }
+  }
+}
