@@ -26,6 +26,11 @@ section {
   padding-top: calc(40px + 20 * (100vw - 320px) / 1600);
   padding-bottom: calc(40px + 20 * (100vw - 320px) / 1600);
 }
+@media (max-width: 991px) {
+  section {
+    padding: clamp(32px, 6vw, 60px) 0;
+  }
+}
 
 img {
   max-width: 100% !important;
@@ -41,7 +46,7 @@ body {
 .main-header {
   background: linear-gradient(135deg, #F8FAFC 0%, #E0F2FE 100%);
   transition: all 0.4s ease;
-  z-index: 1000;
+  z-index: 1030;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .main-header .logo_menu {
@@ -432,7 +437,7 @@ body.offcanvas-open {
   }
   .hero-wrapper .hero-description {
     font-size: 0.95rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
   }
   .hero-wrapper .slider-btns {
@@ -760,11 +765,8 @@ body.offcanvas-open {
   }
 }
 @media (max-width: 991px) {
-  .unique-section {
-    padding: 80px 0 !important;
-  }
   .unique-section .main-title {
-    font-size: 2.5rem !important;
+    font-size: 1.8rem !important;
   }
   .unique-section .feature-card .card-inner .img-box {
     height: 220px;
@@ -792,12 +794,16 @@ body.offcanvas-open {
 .section_project .language-header h2 {
   font-size: calc(1.8rem + 0.5vw);
   color: #005FB8;
-  margin-bottom: 20px;
   position: relative;
   background: linear-gradient(90deg, #005FB8, #6366f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+@media (max-width: 991px) {
+  .section_project .language-header h2 {
+    font-size: 1.8rem !important;
+  }
 }
 .section_project .language-header .header-desc {
   font-size: 1.05rem;
@@ -901,7 +907,6 @@ body.offcanvas-open {
 }
 
 .section_pricing {
-  padding: 100px 0;
   background: #fdfdfd;
   overflow: hidden;
 }
@@ -910,6 +915,11 @@ body.offcanvas-open {
   font-size: 2.5rem;
   color: #005FB8;
   margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .section_pricing .section-title {
+    font-size: 1.8rem !important;
+  }
 }
 .section_pricing .pricing-switcher-wrapper {
   margin: 40px 0 60px;
@@ -1095,7 +1105,6 @@ body.offcanvas-open {
 }
 
 .section_tech_ecosystem {
-  padding: 100px 0;
   background: #ffffff;
   overflow: hidden;
 }
@@ -1107,8 +1116,14 @@ body.offcanvas-open {
   color: #005FB8;
   font-size: 2.5rem;
 }
+@media (max-width: 991px) {
+  .section_tech_ecosystem .ecosystem-header .title {
+    font-size: 1.8rem !important;
+  }
+}
 .section_tech_ecosystem .ecosystem-header .desc {
   color: #64748b;
+  font-size: 1.1rem !important;
 }
 .section_tech_ecosystem .ecosystem-grid {
   display: grid;
@@ -1219,7 +1234,6 @@ body.offcanvas-open {
 }
 
 .section_partners {
-  padding: 50px 0;
   background: #ffffff;
   overflow: hidden;
 }
@@ -1234,6 +1248,11 @@ body.offcanvas-open {
   letter-spacing: 2px;
   font-family: "VNEFont1", sans-serif;
   color: #005FB8;
+}
+@media (max-width: 991px) {
+  .section_partners .partners-header .sub-title {
+    font-size: 1.8rem !important;
+  }
 }
 .section_partners .partners-slider {
   position: relative;
@@ -1271,7 +1290,6 @@ body.offcanvas-open {
 }
 
 .section_testimonials {
-  padding: 100px 0;
   background-color: #f8fafc;
 }
 .section_testimonials .testimonials-header {
@@ -1281,6 +1299,15 @@ body.offcanvas-open {
   font-family: "VNEFont1", sans-serif;
   font-size: 2.5rem;
   color: #005FB8;
+}
+@media (max-width: 991px) {
+  .section_testimonials .testimonials-header .section-title {
+    font-size: 1.8rem !important;
+  }
+}
+.section_testimonials .testimonials-header .section-desc {
+  color: #64748b;
+  font-size: 1.1rem !important;
 }
 .section_testimonials .testimonials-grid {
   display: grid;
@@ -1394,7 +1421,6 @@ body.offcanvas-open {
 }
 
 .section_contact {
-  padding: 100px 0;
   background-color: #ffffff;
 }
 .section_contact .contact-wrapper {
@@ -1417,6 +1443,11 @@ body.offcanvas-open {
   font-size: 2.5rem;
   color: #005FB8;
   margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .section_contact .contact-info .contact-title {
+    font-size: 1.8rem !important;
+  }
 }
 .section_contact .contact-info .contact-desc {
   font-size: 1.05rem;
@@ -1569,8 +1600,9 @@ body.offcanvas-open {
 }
 
 .main-footer {
+  padding-top: calc(40px + 20 * (100vw - 320px) / 1600);
+  padding-bottom: calc(20px + 10 * (100vw - 320px) / 1600);
   background-color: #002d58;
-  padding: 80px 0 30px;
   color: #94a3b8;
   font-family: "Inter", sans-serif;
 }

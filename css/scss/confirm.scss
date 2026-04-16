@@ -1,0 +1,83 @@
+@use "sass:color";
+
+// Fonts
+@font-face {
+    font-family: "VNEFont1";
+    src: url("../../fonts/vne.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables
+$primary: #005FB8;
+$secondary: #6366f1;
+$dark: #1e1e1e;
+$light: #f8fafc;
+$gray-200: #e2e8f0;
+$gray-500: #64748b;
+$warning: #f1c40f;
+$white: #ffffff;
+$primary-light: rgba($primary, 0.1);
+$border-color: #e2e8f0;
+
+.success-checkmark {
+    .check-icon {
+        font-size: 5rem;
+        animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+}
+
+.qr-container {
+    border: 2px dashed #e2e8f0 !important;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.step-item {
+    .step-num {
+        width: 24px;
+        height: 24px;
+        background: #fdb813; // Màu vàng tạo sự chú ý
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.bg-primary-light {
+    background-color: rgba($primary, 0.1);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .qr-container {
+        width: 100%;
+
+        img {
+            width: 180px;
+        }
+    }
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminia IT - Landing Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/scss/confirm.css">
+    <link rel="stylesheet" href="css/scss/landing.css">
+
+
+</head>
+
+<body class="">
+
+    <!-- Start Main Header -->
+    <header class="main-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img class="logo_menu" alt src="images/logoIT.svg" width="160px">
+                </a>
+
+                <div class="d-flex align-items-center ms-auto ms-lg-0 order-lg-3">
+                    <!-- Nút giỏ hàng -->
+                    <a class="nav-link position-relative cart-icon me-3" href="javascript:void(0)"
+                        data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
+                            0
+                        </span>
+                    </a>
+
+                    <!-- Nút Hamburger Mobile -->
+                    <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="collapse navbar-collapse d-none d-lg-block" id="desktopNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#home">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#courses">Khóa học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#mentors">Đội ngũ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#blog">Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Separate Mobile Navigation Offcanvas -->
+    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logoIT.svg" alt="Luminia IT" width="120px">
+            </a>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">
+                        <i class="fa-solid fa-house me-2"></i> Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#courses">
+                        <i class="fa-solid fa-book-open me-2"></i> Khóa học
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#mentors">
+                        <i class="fa-solid fa-user-group me-2"></i> Đội ngũ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#blog">
+                        <i class="fa-solid fa-newspaper me-2"></i> Tin tức
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Main Header -->
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <!-- Thông báo trạng thái -->
+                    <div class="text-center mb-5">
+                        <div class="success-checkmark mb-4">
+                            <div class="check-icon">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                            </div>
+                        </div>
+                        <h2 class="fw-bold text-dark">Đăng ký thành công!</h2>
+                        <p class="text-secondary">Mã đơn hàng của bạn là: <strong class="text-primary"
+                                id="order-id-display">#LMN000000</strong></p>
+                    </div>
+
+                    <div class="row g-4 overflow-hidden">
+                        <!-- SECTION 1: CHUYỂN KHOẢN NGÂN HÀNG (VIETQR) -->
+                        <div id="bank-transfer-section" class="row g-4 d-none">
+                            <!-- CỘT TRÁI: THÔNG TIN CHUYỂN KHOẢN -->
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden">
+                                    <div class="bg-primary p-3 text-center">
+                                        <h6 class="text-white mb-0 fw-bold">QUÉT MÃ VIETQR</h6>
+                                    </div>
+                                    <div class="card-body p-4 text-center">
+                                        <div class="qr-container mb-3 p-2 border rounded-3 bg-white d-inline-block">
+                                            <img src="images/logoIT.svg" id="qr-code-img" alt="QR Thanh toán"
+                                                class="img-fluid" width="220">
+                                        </div>
+                                        <p class="x-small text-muted mb-0">Mở App Ngân hàng để quét mã QR</p>
+                                        <div class="mt-3">
+                                            <div class="small fw-bold text-secondary mb-1">Số tiền cần thanh toán:</div>
+                                            <div class="fs-4 fw-bold text-danger confirm-total-all">0 VND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CỘT PHẢI: CHI TIẾT -->
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-4">
+                                        <h6 class="fw-bold text-dark mb-4 text-uppercase letter-spacing">Thông tin ngân
+                                            hàng</h6>
+                                        <div class="bank-info mb-4">
+                                            <div class="mb-3">
+                                                <small class="text-muted d-block">Ngân hàng</small>
+                                                <span class="fw-bold">Vietcombank (VCB)</span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted d-block">Số tài khoản</small>
+                                                <span class="fw-bold text-primary fs-5">123456789</span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted d-block">Nội dung</small>
+                                                <span
+                                                    class="confirm-bank-memo-all fw-bold text-primary p-1 px-2 bg-primary-light rounded">MEMO</span>
+                                            </div>
+                                        </div>
+                                        <hr class="opacity-10">
+                                        <div class="next-steps mt-4">
+                                            <h6 class="fw-bold small mb-2 text-warning"><i
+                                                    class="fa-solid fa-clock-rotate-left me-2"></i>TIẾP THEO?</h6>
+                                            <p class="x-small text-muted mb-0">Hệ thống sẽ tự động kích hoạt tài khoản
+                                                sau khi nhận được tiền (15-30p).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION 2: VÍ ĐIỆN TỬ MOMO -->
+                        <div id="momo-transfer-section" class="row g-4 d-none">
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden"
+                                    style="border-top: 5px solid #a50064 !important;">
+                                    <div class="p-3 text-center" style="background: #a50064;">
+                                        <h6 class="text-white mb-0 fw-bold">QUÉT MÃ MOMO</h6>
+                                    </div>
+                                    <div class="card-body p-4 text-center">
+                                        <div class="qr-container mb-3 p-2 border rounded-3 bg-white d-inline-block"
+                                            style="border-color: #a50064 !important;">
+                                            <img src="images/[MOMO]_Logo_Primary_Colored.png" id="momo-qr-img"
+                                                alt="QR MoMo" class="img-fluid" width="220">
+                                        </div>
+                                        <p class="x-small text-muted mb-0">Sử dụng App MoMo để quét mã</p>
+                                        <div class="mt-3">
+                                            <div class="small fw-bold text-secondary mb-1">Số tiền cần thanh toán:</div>
+                                            <div class="fs-4 fw-bold confirm-total-all" style="color: #a50064;">0 VND
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <img src="images/[MOMO]_Logo_Primary_Colored.png" width="30" class="me-2">
+                                            <h6 class="fw-bold text-dark mb-0 text-uppercase letter-spacing">Thanh toán
+                                                MoMo</h6>
+                                        </div>
+                                        <div class="bank-info mb-4">
+                                            <div class="mb-3">
+                                                <small class="text-muted d-block">Chủ tài khoản</small>
+                                                <span class="fw-bold">LUMINIA IT ACADEMY</span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted d-block">Số điện thoại</small>
+                                                <span class="fw-bold fs-5" style="color: #a50064;">0987 XXX XXX</span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted d-block">Nội dung</small>
+                                                <span class="confirm-bank-memo-all fw-bold p-1 px-2 rounded"
+                                                    style="background: rgba(165, 0, 100, 0.1); color: #a50064;">MEMO</span>
+                                            </div>
+                                        </div>
+                                        <hr class="opacity-10">
+                                        <div class="alert alert-light border-0 small mb-0">
+                                            <i class="fa-solid fa-circle-info me-2" style="color: #a50064;"></i>
+                                            Lưu ý ghi đúng <strong>Mã đơn hàng</strong> vào phần lời nhắn trên MoMo.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút quay lại -->
+                    <div class="text-center mt-5">
+                        <p class="text-muted mb-4 small">Bạn gặp khó khăn khi thanh toán? <a href="#"
+                                class="fw-bold text-primary">Chat với Mentor</a></p>
+                        <a href="index.html" class="btn btn-outline-secondary px-5 py-2 rounded-pill fw-bold">QUAY LẠI
+                            TRANG CHỦ</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Cột 1: Brand & Bio -->
+                <div class="footer-col col-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logoIT.svg" alt="Luminia IT">
+                    </a>
+                    <p class="footer-desc">
+                        Hệ sinh thái đào tạo lập trình thực chiến. Chúng tôi tập trung vào chất lượng code, tư duy giải
+                        thuật và lộ trình sự nghiệp bền vững cho học viên.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cột 2: Khóa học -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Khóa Học</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Frontend Master</a></li>
+                        <li><a href="#">Backend Ninja</a></li>
+                        <li><a href="#">Fullstack Developer</a></li>
+                        <li><a href="#">AI & Data Science</a></li>
+                        <li><a href="#">Mobile App (Flutter)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Cộng đồng -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Cộng Đồng</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog Công Nghệ</a></li>
+                        <li><a href="#">Giải Đố LeetCode</a></li>
+                        <li><a href="#">Tài Liệu Open Source</a></li>
+                        <li><a href="#">Sự Kiện & Workshop</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Newsletter -->
+                <div class="footer-col col-newsletter">
+                    <h4 class="footer-title">Bản Tin Công Nghệ</h4>
+                    <p>Nhận lộ trình học và tin tức IT mới nhất hàng tuần.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn..." required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i> Bảo mật thông tin 100%
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 <span>Luminia IT</span>.<i class="fas fa-code"></i>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thêm cấu trúc Offcanvas (Đặt ở cuối body) -->
+    <div class="offcanvas offcanvas-end cart-sidebar" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="cartSidebarLabel">Giỏ hàng của bạn (<span
+                    id="cart-count-title">0</span>)</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- Danh sách sản phẩm (Sẽ render bằng JS) -->
+            <div class="cart-items-list flex-grow-1" id="cart-items-container">
+                <!-- Khi giỏ hàng trống (Sẽ bị ẩn/hiện bởi JS) -->
+                <div class="empty-cart-message text-center py-5">
+                    <i class="fa-solid fa-bag-shopping fa-3x mb-3 text-muted"></i>
+                    <p>Giỏ hàng hiện đang trống.</p>
+                    <a href="#bang_gia" class="btn btn-primary btn-glow px-4" data-bs-dismiss="offcanvas">Khám phá khóa
+                        học</a>
+                </div>
+            </div>
+
+            <!-- Tổng cộng & Thanh toán -->
+            <div class="cart-footer-box p-3 border-top mt-auto">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold">Tổng tài khoản:</span>
+                    <span class="fw-bold text-danger fs-5" id="cart-total-amount">0 VND</span>
+                </div>
+                <button class="btn btn-primary w-100 btn-glow py-2 fw-bold">THANH TOÁN NGAY</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+    <!-- Custom JS (Modules) -->
+    <script type="module" src="js/landing.js"></script>
+    <script type="module" src="js/cart.js"></script>
+    <script type="module" src="js/confirm.js"></script>
+</body>
+
+</html>

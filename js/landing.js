@@ -17,75 +17,80 @@ document.addEventListener('DOMContentLoaded', () => {
     const contents = document.querySelectorAll('.tab-content');
     const indicator = document.querySelector('.tab-line');
 
-    if (tabs.length === 0 || contents.length === 0) return;
+    if (tabs.length > 0 && contents.length > 0) {
+        let currentTab = 0;
+        let autoplayTimer;
 
-    let currentTab = 0;
-    let autoplayTimer;
+        function updateIndicator(index) {
+            const activeTab = tabs[index];
+            if (!activeTab || !indicator) return;
+            gsap.to(indicator, {
+                left: activeTab.offsetLeft,
+                width: activeTab.offsetWidth,
+                duration: 0.5,
+                ease: "power2.out"
+            });
+        }
 
-    function updateIndicator(index) {
-        const activeTab = tabs[index];
-        if (!activeTab || !indicator) return;
-        gsap.to(indicator, {
-            left: activeTab.offsetLeft,
-            width: activeTab.offsetWidth,
-            duration: 0.5,
-            ease: "power2.out"
+        function showTab(index) {
+            if (!tabs[index] || !contents[index]) return;
+
+            // Reset classes
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => {
+                c.classList.remove('active');
+                gsap.set(c, { opacity: 0, x: 20 });
+            });
+
+            // Activate new tab
+            tabs[index].classList.add('active');
+            contents[index].classList.add('active');
+            updateIndicator(index);
+
+            // Animate content appearance
+            gsap.to(contents[index], {
+                opacity: 1,
+                x: 0,
+                duration: 0.6,
+                ease: "power2.out"
+            });
+        }
+
+        function nextTab() {
+            currentTab = (currentTab + 1) % tabs.length;
+            showTab(currentTab);
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            autoplayTimer = setInterval(nextTab, 5000); // 5 seconds
+        }
+
+        function stopAutoplay() {
+            if (autoplayTimer) clearInterval(autoplayTimer);
+        }
+
+        // Initialize
+        setTimeout(() => {
+            showTab(0);
+            startAutoplay();
+        }, 100);
+
+        // Event Listeners for Tabs
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                currentTab = index;
+                showTab(index);
+                stopAutoplay(); // Stop autoplay on user interaction
+                startAutoplay(); // Restart timer
+            });
+        });
+
+        // Resize handling for indicator
+        window.addEventListener('resize', () => {
+            if (typeof currentTab !== 'undefined') updateIndicator(currentTab);
         });
     }
-
-    function showTab(index) {
-        if (!tabs[index] || !contents[index]) return;
-
-        // Reset classes
-        tabs.forEach(t => t.classList.remove('active'));
-        contents.forEach(c => {
-            c.classList.remove('active');
-            gsap.set(c, { opacity: 0, x: 20 });
-        });
-
-        // Activate new tab
-        tabs[index].classList.add('active');
-        contents[index].classList.add('active');
-        updateIndicator(index);
-
-        // Animate content appearance
-        gsap.to(contents[index], {
-            opacity: 1,
-            x: 0,
-            duration: 0.6,
-            ease: "power2.out"
-        });
-    }
-
-    function nextTab() {
-        currentTab = (currentTab + 1) % tabs.length;
-        showTab(currentTab);
-    }
-
-    function startAutoplay() {
-        stopAutoplay();
-        autoplayTimer = setInterval(nextTab, 5000); // 5 seconds
-    }
-
-    function stopAutoplay() {
-        if (autoplayTimer) clearInterval(autoplayTimer);
-    }
-
-    // Initialize
-    setTimeout(() => {
-        showTab(0);
-        startAutoplay();
-    }, 100);
-
-    // Event Listeners for Tabs
-    tabs.forEach((tab, index) => {
-        tab.addEventListener('click', () => {
-            currentTab = index;
-            showTab(index);
-            stopAutoplay(); // Stop autoplay on user interaction
-            startAutoplay(); // Restart timer
-        });
-    });
 
     // 3. Scroll Reveal for Intro Section
     gsap.from('.intro .tabs', {

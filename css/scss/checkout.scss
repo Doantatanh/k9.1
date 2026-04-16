@@ -1,0 +1,125 @@
+@use "sass:color";
+
+// Fonts
+@font-face {
+    font-family: "VNEFont1";
+    src: url("../../fonts/vne.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables
+$primary: #005FB8;
+$secondary: #6366f1;
+$dark: #1e1e1e;
+$light: #f8fafc;
+$gray-200: #e2e8f0;
+$gray-500: #64748b;
+$warning: #f1c40f;
+$white: #ffffff;
+$primary-light: rgba($primary, 0.1);
+$border-color: #e2e8f0;
+
+.checkout-page {
+    font-family: 'VNEFont1', 'Roboto', sans-serif;
+
+    // Header
+    .checkout-header {
+        .steps {
+            letter-spacing: 1px;
+            font-size: 0.75rem;
+        }
+    }
+
+    // Custom Cards
+    .card {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .bg-primary-light {
+        background-color: $primary-light;
+        width: 35px;
+        height: 35px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // Input form
+    .form-control {
+        &:focus {
+            background-color: #fff !important;
+            border: 1px solid $primary !important;
+            box-shadow: none !important;
+        }
+    }
+
+    // Payment Cards
+    .payment-card {
+        transition: all 0.3s ease;
+        border: 2px solid #f1f5f9 !important;
+        position: relative;
+        cursor: pointer;
+
+        .check-mark {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            border-color: $primary !important;
+            background: #fff;
+        }
+    }
+
+    // Xử lý khi Radio được check
+    .btn-check:checked+.payment-card {
+        border-color: $primary !important;
+        background-color: rgba($primary, 0.02);
+
+        .check-mark {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    // Shadow cho nút thanh toán
+    .shadow-primary {
+        box-shadow: 0 10px 25px rgba($primary, 0.3);
+    }
+}
+
+// X-small text helper
+.x-small {
+    font-size: 0.75rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.discount-box {
+    .border-dashed {
+        border: 2px dashed #cbd5e1 !important; // Viền đứt nét tạo cảm giác là vùng nhập voucher
+        background-color: #f8fafc;
+        border-radius: 10px 0 0 10px !important;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:focus {
+            border-style: solid !important;
+            border-color: $primary !important;
+        }
+    }
+
+    .btn-dark {
+        border-radius: 0 10px 10px 0 !important;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+
+    label {
+        letter-spacing: 1px;
+    }
+}

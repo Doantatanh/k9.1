@@ -40,6 +40,10 @@ h6,
 section {
     padding-top: calc(40px + 20 * (100vw - 320px) / 1600);
     padding-bottom: calc(40px + 20 * (100vw - 320px) / 1600);
+
+    @media (max-width: 991px) {
+        padding: clamp(32px, 6vw, 60px) 0;
+    }
 }
 
 img {
@@ -58,7 +62,7 @@ body {
 .main-header {
     background: linear-gradient(135deg, #F8FAFC 0%, #E0F2FE 100%);
     transition: all 0.4s ease;
-    z-index: 1000;
+    z-index: 1030;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
     .logo_menu {
@@ -524,7 +528,7 @@ body.offcanvas-open {
 
         .hero-description {
             font-size: 0.95rem;
-            text-align: center;
+            text-align: left;
             margin-bottom: 20px;
         }
 
@@ -934,10 +938,8 @@ body.offcanvas-open {
 
 @media (max-width: 991px) {
     .unique-section {
-        padding: 80px 0 !important;
-
         .main-title {
-            font-size: 2.5rem !important;
+            font-size: 1.8rem !important;
         }
 
         .feature-card .card-inner .img-box {
@@ -975,7 +977,6 @@ body.offcanvas-open {
         h2 {
             font-size: calc(1.8rem + 0.5vw);
             color: $primary;
-            margin-bottom: 20px;
             position: relative;
 
             // Nếu muốn dùng text-gradient giống phần Hero bạn đã làm:
@@ -983,6 +984,10 @@ body.offcanvas-open {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
+
+            @media (max-width: 991px) {
+                font-size: 1.8rem !important;
+            }
         }
 
         .header-desc {
@@ -1107,7 +1112,6 @@ body.offcanvas-open {
 //section_pricing
 //=========================================
 .section_pricing {
-    padding: 100px 0;
     background: #fdfdfd;
     overflow: hidden;
 
@@ -1116,6 +1120,10 @@ body.offcanvas-open {
         font-size: 2.5rem;
         color: $primary;
         margin-bottom: 15px;
+
+        @media (max-width: 991px) {
+            font-size: 1.8rem !important;
+        }
     }
 
     // Switcher Style
@@ -1334,7 +1342,6 @@ body.offcanvas-open {
 //section_tech_ecosystem
 //=========================================
 .section_tech_ecosystem {
-    padding: 100px 0;
     background: #ffffff;
     overflow: hidden;
 
@@ -1345,10 +1352,15 @@ body.offcanvas-open {
             font-family: "VNEFont1", sans-serif;
             color: $primary;
             font-size: 2.5rem;
+
+            @media (max-width: 991px) {
+                font-size: 1.8rem !important;
+            }
         }
 
         .desc {
             color: $gray-500;
+            font-size: 1.1rem !important;
         }
     }
 
@@ -1478,7 +1490,6 @@ body.offcanvas-open {
 //section_partners
 //=========================================
 .section_partners {
-    padding: 50px 0; // Thu nhỏ padding lại cho gọn
     background: #ffffff;
     overflow: hidden;
 
@@ -1493,6 +1504,10 @@ body.offcanvas-open {
             letter-spacing: 2px;
             font-family: "VNEFont1", sans-serif;
             color: $primary;
+
+            @media (max-width: 991px) {
+                font-size: 1.8rem !important;
+            }
         }
     }
 
@@ -1541,7 +1556,6 @@ body.offcanvas-open {
 //section_testimonials
 //=========================================
 .section_testimonials {
-    padding: 100px 0;
     background-color: #f8fafc;
 
     .testimonials-header {
@@ -1551,6 +1565,15 @@ body.offcanvas-open {
             font-family: "VNEFont1", sans-serif;
             font-size: 2.5rem;
             color: $primary;
+
+            @media (max-width: 991px) {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .section-desc {
+            color: $gray-500;
+            font-size: 1.1rem !important;
         }
     }
 
@@ -1689,7 +1712,6 @@ body.offcanvas-open {
 //section_contact
 //=========================================
 .section_contact {
-    padding: 100px 0;
     background-color: #ffffff;
 
     .contact-wrapper {
@@ -1714,6 +1736,10 @@ body.offcanvas-open {
             font-size: 2.5rem;
             color: $primary;
             margin-bottom: 20px;
+
+            @media (max-width: 991px) {
+                font-size: 1.8rem !important;
+            }
         }
 
         .contact-desc {
@@ -1894,8 +1920,9 @@ body.offcanvas-open {
 //section_footer
 //=========================================
 .main-footer {
+    padding-top: calc(40px + 20 * (100vw - 320px) / 1600);
+    padding-bottom: calc(20px + 10 * (100vw - 320px) / 1600);
     background-color: #002d58; // Màu nền tối sâu (Tech Style)
-    padding: 80px 0 30px;
     color: #94a3b8; // Màu chữ Slate nhạt
     font-family: 'Inter', sans-serif;
 
