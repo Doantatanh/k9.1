@@ -1506,6 +1506,9 @@ body.offcanvas-open {
 .section_contact .contact-form-container .input-group input,
 .section_contact .contact-form-container .input-group select,
 .section_contact .contact-form-container .input-group textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   padding: 15px 15px 15px 50px;
   border-radius: 12px;
