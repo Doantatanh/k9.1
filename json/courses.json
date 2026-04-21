@@ -1,27 +1,27 @@
 [
     {
-        "id": "fe-master",
-        "name": "Frontend Master",
+        "id": "basic-knowledge",
+        "name": "Kiến thức nền tảng",
         "img": "images/LUMINIA.png",
-        "tag": "Basic",
         "featured": false,
         "prices": {
-            "monthly": 499000,
-            "halfyear": 2490000,
-            "yearly": 4490000
+            "monthly": 399000,
+            "halfyear": 1990000,
+            "yearly": 3490000
         },
         "benefits": [
-            "HTML5, CSS3 & SASS",
-            "JavaScript & GSAP",
-            "ReactJS & Next.js",
-            "Hỗ trợ Mentor 24/7"
+            "Rèn luyện tư duy logic & tư duy giải quyết vấn đề",
+            "Nắm vững thuật toán và cấu trúc điều khiển cơ bản",
+            "Thành thạo lập trình nền tảng (C++ / Java)",
+            "Kỹ năng Debug & đọc hiểu lỗi chuyên nghiệp",
+            "Phương pháp tự học IT hiệu quả & lộ trình phát triển dài hạn",
+            "Mentor hỗ trợ 24/7 trong quá trình học"
         ]
     },
     {
-        "id": "fs-ninja",
-        "name": "Fullstack Ninja",
+        "id": "system-design",
+        "name": "Thiết kế hệ thống",
         "img": "images/LUMINIA.png",
-        "tag": "Popular",
         "featured": true,
         "prices": {
             "monthly": 899000,
@@ -29,17 +29,39 @@
             "yearly": 7990000
         },
         "benefits": [
-            "Toàn bộ lộ trình Frontend",
-            "Node.js & Database",
-            "System Design",
-            "Cam kết việc làm"
+            "Thiết kế kiến trúc phần mềm (Monolith → Microservices)",
+            "Thiết kế Database chuẩn hóa & tối ưu cho hệ thống lớn",
+            "Tối ưu hiệu năng (Performance) & khả năng mở rộng (Scalability)",
+            "Bảo mật hệ thống: Authentication, Authorization, OWASP cơ bản",
+            "Deploy, CI/CD & tư duy DevOps thực chiến",
+            "Logging, Monitoring & xử lý sự cố Production",
+            "Case study hệ thống thực tế & phỏng vấn System Design"
         ]
     },
     {
-        "id": "ai-data",
-        "name": "AI & Data Science",
+        "id": "ai-ml",
+        "name": "Trí tuệ nhân tạo",
         "img": "images/LUMINIA.png",
-        "tag": "Advanced",
+        "featured": false,
+        "prices": {
+            "monthly": 799000,
+            "halfyear": 3900000,
+            "yearly": 6900000
+        },
+        "benefits": [
+            "Toán nền tảng cho AI: Linear Algebra, Xác suất – Thống kê",
+            "Python cho AI & hệ sinh thái (NumPy, Pandas, Scikit-learn)",
+            "Tiền xử lý & phân tích dữ liệu thực tế",
+            "Machine Learning: Supervised & Unsupervised Learning",
+            "Deep Learning & Neural Networks (CNN, RNN, Transformer cơ bản)",
+            "Triển khai mô hình AI (Model Serving, API, Docker cơ bản)",
+            "Xây dựng dự án AI thực tế từ A → Z"
+        ]
+    },
+    {
+        "id": "cyber-security",
+        "name": "An ninh mạng",
+        "img": "images/LUMINIA.png",
         "featured": false,
         "prices": {
             "monthly": 699000,
@@ -47,100 +69,50 @@
             "yearly": 6200000
         },
         "benefits": [
-            "Python Foundation",
-            "Machine Learning",
-            "Deep Learning",
-            "AI Projects"
+            "Networking & hệ điều hành (Windows/Linux) dành cho Security",
+            "Lập trình an toàn & phòng chống lỗ hổng (Secure Coding)",
+            "Web Security: OWASP Top 10 & khai thác lỗ hổng phổ biến",
+            "Pentest: Recon, Scanning, Exploitation & Reporting",
+            "Defense: Hardening hệ thống, Firewall, IDS/IPS",
+            "Giám sát an ninh & xử lý sự cố (Incident Response cơ bản)",
+            "Thực hành lab mô phỏng hệ thống thực tế"
         ]
     },
     {
-        "id": "mobile-flutter",
-        "name": "Mobile App (Flutter)",
+        "id": "blockchain",
+        "name": "Blockchain",
         "img": "images/LUMINIA.png",
-        "tag": "New",
         "featured": false,
         "prices": {
-            "monthly": 550000,
-            "halfyear": 2700000,
-            "yearly": 4900000
+            "monthly": 999000,
+            "halfyear": 4900000,
+            "yearly": 8500000
         },
         "benefits": [
-            "Dart Language",
-            "Flutter Framework",
-            "Firebase Integration",
-            "App Store Deployment"
+            "Cơ chế đồng thuận (Consensus)",
+            "Smart Contract với Solidity",
+            "Xây dựng DApps trên Ethereum",
+            "Web3 & NFT Marketplace"
         ]
     },
     {
-        "id": "be-arch",
-        "name": "Backend Architecture",
+        "id": "programming-languages",
+        "name": "Ngôn ngữ lập trình",
         "img": "images/LUMINIA.png",
-        "tag": "High Demand",
         "featured": false,
         "prices": {
-            "monthly": 600000,
-            "halfyear": 2900000,
-            "yearly": 5500000
-        },
-        "benefits": [
-            "Node.js & Go Language",
-            "Microservices Architecture",
-            "SQL & NoSQL Databases",
-            "Redis & Message Queues"
-        ]
-    },
-    {
-        "id": "devops-cloud",
-        "name": "DevOps & Cloud",
-        "img": "images/LUMINIA.png",
-        "tag": "Expert",
-        "featured": true,
-        "prices": {
-            "monthly": 850000,
-            "halfyear": 4200000,
-            "yearly": 7500000
-        },
-        "benefits": [
-            "Docker & Kubernetes (K8s)",
-            "AWS / Azure Cloud",
-            "CI/CD Pipeline Automation",
-            "Infrastructure as Code"
-        ]
-    },
-    {
-        "id": "data-pro",
-        "name": "Data Analysis Pro",
-        "img": "images/LUMINIA.png",
-        "tag": "Trending",
-        "featured": false,
-        "prices": {
-            "monthly": 500000,
+            "monthly": 499000,
             "halfyear": 2400000,
             "yearly": 4200000
         },
         "benefits": [
-            "SQL for Data Science",
-            "Python (Pandas, Numpy)",
-            "Power BI & Tableau",
-            "Thống kê & Dự báo dữ liệu"
-        ]
-    },
-    {
-        "id": "ui-ux",
-        "name": "UI/UX Design",
-        "img": "images/LUMINIA.png",
-        "tag": "Creative",
-        "featured": false,
-        "prices": {
-            "monthly": 450000,
-            "halfyear": 2200000,
-            "yearly": 3900000
-        },
-        "benefits": [
-            "Tư duy Design Thinking",
-            "Figma & Adobe XD Master",
-            "Wireframing & Prototyping",
-            "Tối ưu trải nghiệm người dùng"
+            "Javascript Core: Scope, Closure, Async, ES6+",
+            "Python for Everyone: từ cơ bản đến ứng dụng thực tế",
+            "Data Structures & Algorithms cho phỏng vấn & tối ưu code",
+            "Java Professional: OOP, Design Patterns, Clean Code",
+            "C++ & System Programming nền tảng",
+            "Software Testing: Unit Test, Integration Test, Debug chuyên sâu",
+            "Xây dựng portfolio & thư viện cá nhân"
         ]
     }
 ]

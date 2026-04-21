@@ -337,16 +337,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     data-price-halfyear="${course.prices.halfyear}"
                     data-price-yearly="${course.prices.yearly}">
                     <div class="card-inner">
-                        ${course.tag ? `<div class="tag">${course.tag}</div>` : ''}
                         <h3 class="course-name">${course.name}</h3>
                         <div class="price-box">
-                            <span class="currency">VND</span>
                             <span class="amount" 
                                 data-monthly="${formatPriceShort(course.prices.monthly)}" 
                                 data-halfyear="${formatPriceShort(course.prices.halfyear)}"
                                 data-yearly="${formatPriceShort(course.prices.yearly)}">
                                 ${formatPriceShort(course.prices.monthly)}
                             </span>
+                            <span class="currency">VND</span>
                             <span class="period">/tháng</span>
                         </div>
                         <ul class="benefits">
@@ -645,6 +644,66 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         );
     }
+
+    // 1. Hiệu ứng chữ bên trái trồi lên
+    gsap.from(".reveal-text", {
+        scrollTrigger: {
+            trigger: ".ai-interview-section",
+            start: "top 70%",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // 2. Hiệu ứng hình ảnh bên phải lướt vào
+    gsap.from(".reveal-image", {
+        scrollTrigger: {
+            trigger: ".ai-interview-section",
+            start: "top 70%",
+        },
+        x: 100,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out"
+    });
+
+    // 3. Hiệu ứng thanh năng lượng và con số nhảy (Counter)
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".ai-interview-section",
+            start: "top 60%",
+        }
+    });
+
+    tl.to("#energyFill", {
+        width: "85%", // Con số năng lượng demo
+        duration: 2,
+        ease: "expo.out"
+    })
+        .to(".counter-num", {
+            innerText: 85,
+            duration: 2,
+            snap: { innerText: 1 },
+            ease: "expo.out"
+        }, "<"); // Chạy đồng thời với thanh bar
+
+    const videoModal = document.getElementById('videoModal');
+    const videoIframe = document.getElementById('introVideo');
+
+    // Lấy URL gốc của video
+    const videoSrc = videoIframe.getAttribute('src');
+
+    // Khi Modal đóng: Xóa src để dừng video hoàn toàn
+    videoModal.addEventListener('hide.bs.modal', () => {
+        videoIframe.setAttribute('src', '');
+    });
+
+    // Khi Modal mở lại: Nạp lại src để video sẵn sàng
+    videoModal.addEventListener('show.bs.modal', () => {
+        videoIframe.setAttribute('src', videoSrc);
+    });
 
     // Resize handling for indicator
     window.addEventListener('resize', () => {

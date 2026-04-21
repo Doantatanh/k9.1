@@ -9,7 +9,7 @@
 }
 
 // Variables
-$primary: #005FB8;
+$primary: #1E40AF;
 $secondary: #6366f1;
 $dark: #1e1e1e;
 $light: #f8fafc;
@@ -19,6 +19,10 @@ $warning: #f1c40f;
 $white: #ffffff;
 
 $transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); // Hiệu ứng mượt
+
+html {
+    scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -588,7 +592,7 @@ body.offcanvas-open {
         display: flex;
         align-items: center;
         position: relative;
-        border-bottom: 2px solid $gray-200;
+        border-bottom: 2px solid #bae6fd;
         margin-bottom: 50px;
         padding-bottom: 0;
 
@@ -1496,7 +1500,7 @@ body.offcanvas-open {
     .partners-header {
         margin-bottom: 30px;
 
-        .sub-title {
+        h2.sub-title {
             font-size: 2.5rem;
             font-weight: 700;
             text-align: center;
@@ -1968,8 +1972,8 @@ body.offcanvas-open {
     }
 
     .col-brand {
-        .footer-logo img {
-            height: 45px;
+        .footer-logo svg {
+            height: 120px;
             width: 180px;
             margin-bottom: 20px;
             filter: brightness(0) invert(1); // Làm logo thành màu trắng nếu cần
@@ -1979,6 +1983,7 @@ body.offcanvas-open {
             font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 25px;
+            color: #fff;
         }
 
         .footer-social {
@@ -2018,13 +2023,13 @@ body.offcanvas-open {
             margin-bottom: 12px;
 
             a {
-                color: #94a3b8;
+                color: #fff;
                 text-decoration: none;
                 font-size: 0.95rem;
                 transition: 0.3s;
 
                 &:hover {
-                    color: $primary;
+                    color: #fff;
                     padding-left: 8px;
                 }
             }
@@ -2101,13 +2106,23 @@ body.offcanvas-open {
         }
 
         .copyright span {
-            color: $primary;
+            color: #fff;
             font-weight: 700;
         }
 
         i {
             color: #ef4444;
-            margin: 0 3px;
+            margin: -3px 3px;
+        }
+
+        .logo-footer {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../../images/favicon_io/favicon-32x32.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .footer-bottom-links {
@@ -2115,7 +2130,7 @@ body.offcanvas-open {
             gap: 20px;
 
             a {
-                color: #475569;
+                color: #fff;
                 text-decoration: none;
 
                 &:hover {
@@ -2124,4 +2139,132 @@ body.offcanvas-open {
             }
         }
     }
+}
+
+$dark: #1e1e1e;
+
+.ai-interview-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    overflow: hidden;
+
+    .bg-soft-primary {
+        background-color: rgba($primary, 0.08);
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+
+            @media (max-width: 991px) {
+                font-size: 1.8rem;
+                line-height: 1.5;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .energy-info-card {
+        border: 1px solid #f1f5f9;
+
+        h6 {
+            letter-spacing: 0.5px;
+        }
+    }
+
+    // Mockup phong cách trình duyệt
+    .browser-mockup-container {
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #e2e8f0;
+        background: #fff;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #cbd5e1;
+        }
+
+        .mock-url {
+            font-size: 10px;
+            color: #94a3b8;
+            border: 1px solid #f1f5f9;
+        }
+    }
+
+    .border-dashed {
+        border: 2px dashed rgba($primary, 0.15);
+    }
+}
+
+// Responsive
+@media (max-width: 991px) {
+    .ai-interview-section {
+        text-align: center;
+
+        .reveal-text {
+            margin-bottom: 50px;
+        }
+
+        .energy-info-card {
+            text-align: left;
+        }
+    }
+}
+
+// ==============
+
+.path-card {
+    border: 2px solid #f1f5f9 !important;
+    transition: all 0.3s ease;
+
+    .path-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:hover {
+        border-color: $primary !important;
+        transform: translateY(-5px);
+        background: #fff;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.bg-info-light {
+    background-color: rgba(13, 202, 240, 0.1);
+}
+
+#videoModal {
+    .modal-content {
+        background-color: #000 !important; // Nền đen sâu kiểu rạp phim
+        border-radius: 20px;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: -10px;
+        top: -35px; // Đưa nút đóng lên phía trên khung video
+        opacity: 1;
+        background-size: 1.2rem;
+    }
+
+    @media (max-width: 576px) {
+        .btn-close {
+            right: 0;
+            top: -30px;
+        }
+    }
+}
+
+// Làm mờ toàn bộ trang khi mở video
+.modal-backdrop.show {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.8);
 }

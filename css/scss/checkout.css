@@ -15,7 +15,7 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .checkout-page .bg-primary-light {
-  background-color: rgba(0, 95, 184, 0.1);
+  background-color: rgba(30, 64, 175, 0.1);
   width: 35px;
   height: 35px;
   display: inline-flex;
@@ -24,8 +24,8 @@
 }
 .checkout-page .form-control:focus {
   background-color: #fff !important;
-  border: 1px solid #005FB8 !important;
-  box-shadow: none;
+  border: 1px solid #1E40AF !important;
+  box-shadow: none !important;
 }
 .checkout-page .payment-card {
   transition: all 0.3s ease;
@@ -39,19 +39,19 @@
   transition: all 0.3s ease;
 }
 .checkout-page .payment-card:hover {
-  border-color: #005FB8 !important;
+  border-color: #1E40AF !important;
   background: #fff;
 }
 .checkout-page .btn-check:checked + .payment-card {
-  border-color: #005FB8 !important;
-  background-color: rgba(0, 95, 184, 0.02);
+  border-color: #1E40AF !important;
+  background-color: rgba(30, 64, 175, 0.02);
 }
 .checkout-page .btn-check:checked + .payment-card .check-mark {
   opacity: 1;
   transform: scale(1);
 }
 .checkout-page .shadow-primary {
-  box-shadow: 0 10px 25px rgba(0, 95, 184, 0.3);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
 }
 
 .x-small {
@@ -71,7 +71,7 @@
 }
 .discount-box .border-dashed:focus {
   border-style: solid !important;
-  border-color: #005FB8 !important;
+  border-color: #1E40AF !important;
 }
 .discount-box .btn-dark {
   border-radius: 0 10px 10px 0 !important;
