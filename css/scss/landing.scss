@@ -1140,6 +1140,10 @@ body.offcanvas-open {
     }
 
     .btn-close-wow {
+        appearance: none;
+        -webkit-appearance: none;
+        padding: 0 !important;
+        border: none !important;
         position: fixed;
         top: 30px;
         right: 30px;

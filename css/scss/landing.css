@@ -945,6 +945,11 @@ body.offcanvas-open {
   font-size: 0.85rem;
 }
 .feature-modal-wow .btn-close-wow {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  padding: 0 !important;
+  border: none !important;
   position: fixed;
   top: 30px;
   right: 30px;
