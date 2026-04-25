@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "VNEFont1";
+  src: url("../../fonts/vne.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.benefit-detail-wrapper .bg-primary-light {
+  background-color: rgba(30, 64, 175, 0.08);
+}
+.benefit-detail-wrapper .display-4 {
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.benefit-detail-wrapper .lead {
+  line-height: 1.6;
+  color: #64748b;
+}
+.benefit-detail-wrapper .hover-up {
+  transition: all 0.3s ease;
+}
+.benefit-detail-wrapper .hover-up:hover {
+  transform: translateY(-5px);
+  border-color: #1E40AF;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+}
+.benefit-detail-wrapper .cta-box {
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(90deg, #f8fafc 0%, #ffffff 100%);
+}
+.benefit-detail-wrapper .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1) !important;
+}
+.benefit-detail-wrapper .image-box {
+  background: #fff;
+}
+.benefit-detail-wrapper .image-box img {
+  transition: transform 0.5s ease;
+}
+.benefit-detail-wrapper .image-box img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 991px) {
+  .benefit-detail-wrapper .display-4 {
+    font-size: 2.5rem;
+  }
+  .benefit-detail-wrapper .sticky-top {
+    position: relative !important;
+    top: 0 !important;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=benefit-detail.css.map */

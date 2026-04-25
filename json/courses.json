@@ -2,12 +2,15 @@
     {
         "id": "basic-knowledge",
         "name": "Kiến thức nền tảng",
+        "icon": "fas fa-code-branch",
         "img": "images/LUMINIA.png",
         "featured": false,
+        "badge": "new",
+        "badge_text": "Mới",
         "prices": {
-            "monthly": 399000,
-            "halfyear": 1990000,
-            "yearly": 3490000
+            "monthly": 199000,
+            "halfyear": 999000,
+            "yearly": 1790000
         },
         "benefits": [
             "Rèn luyện tư duy logic & tư duy giải quyết vấn đề",
@@ -21,12 +24,15 @@
     {
         "id": "system-design",
         "name": "Thiết kế hệ thống",
+        "icon": "fas fa-layer-group",
         "img": "images/LUMINIA.png",
         "featured": true,
+        "badge": "recommend",
+        "badge_text": "Nên học",
         "prices": {
-            "monthly": 899000,
-            "halfyear": 4500000,
-            "yearly": 7990000
+            "monthly": 299000,
+            "halfyear": 1499000,
+            "yearly": 2599000
         },
         "benefits": [
             "Thiết kế kiến trúc phần mềm (Monolith → Microservices)",
@@ -41,12 +47,15 @@
     {
         "id": "ai-ml",
         "name": "Trí tuệ nhân tạo",
+        "icon": "fas fa-brain",
         "img": "images/LUMINIA.png",
         "featured": false,
+        "badge": "hot",
+        "badge_text": "Bán chạy",
         "prices": {
-            "monthly": 799000,
-            "halfyear": 3900000,
-            "yearly": 6900000
+            "monthly": 399000,
+            "halfyear": 1999000,
+            "yearly": 3599000
         },
         "benefits": [
             "Toán nền tảng cho AI: Linear Algebra, Xác suất – Thống kê",
@@ -61,12 +70,13 @@
     {
         "id": "cyber-security",
         "name": "An ninh mạng",
+        "icon": "fas fa-user-shield",
         "img": "images/LUMINIA.png",
         "featured": false,
         "prices": {
-            "monthly": 699000,
-            "halfyear": 3500000,
-            "yearly": 6200000
+            "monthly": 499000,
+            "halfyear": 2499000,
+            "yearly": 4499000
         },
         "benefits": [
             "Networking & hệ điều hành (Windows/Linux) dành cho Security",
@@ -81,12 +91,15 @@
     {
         "id": "blockchain",
         "name": "Blockchain",
+        "icon": "fas fa-link",
         "img": "images/LUMINIA.png",
         "featured": false,
+        "badge": "new",
+        "badge_text": "Mới",
         "prices": {
-            "monthly": 999000,
-            "halfyear": 4900000,
-            "yearly": 8500000
+            "monthly": 599000,
+            "halfyear": 2999000,
+            "yearly": 5499000
         },
         "benefits": [
             "Cơ chế đồng thuận (Consensus)",
@@ -98,6 +111,7 @@
     {
         "id": "programming-languages",
         "name": "Ngôn ngữ lập trình",
+        "icon": "fas fa-laptop-code",
         "img": "images/LUMINIA.png",
         "featured": false,
         "prices": {

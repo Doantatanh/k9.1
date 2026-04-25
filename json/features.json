@@ -1,0 +1,92 @@
+{
+    "dashboard": {
+        "title": "Giao diện Dashboard Thông minh",
+        "subtitle": "INTELLIGENT MANAGEMENT",
+        "desc": "Hệ thống quản lý học tập (LMS) thế hệ mới, tối ưu hóa trải nghiệm người dùng dựa trên dữ liệu thực tế. Giúp bạn kiểm soát toàn bộ tiến độ chỉ trong một cái nhìn duy nhất.",
+        "images": [
+            "images/feature/dashboard_1.png",
+            "images/feature/dashboard_2.png",
+            "images/feature/dashboard_3.png"
+        ],
+        "specs": [
+            "Real-time Tracking",
+            "AI Suggestions",
+            "100ms Latency"
+        ]
+    },
+    "roadmap": {
+        "title": "Lộ trình học tập Cá nhân hóa",
+        "subtitle": "AI ROADMAP DESIGN",
+        "desc": "Thuật toán AI tự động thiết kế con đường học tập riêng biệt cho từng cá nhân, giúp tiết kiệm 40% thời gian nghiên cứu kiến thức dư thừa.",
+        "images": [
+            "images/feature/dashboard_1.png",
+            "images/feature/dashboard_2.png",
+            "images/feature/dashboard_3.png"
+        ],
+        "specs": [
+            "Dynamic Steps",
+            "Goal Focused",
+            "Skill Mapping"
+        ]
+    },
+    "analytics": {
+        "title": "Thống kê & Phân tích chuyên sâu",
+        "subtitle": "ADVANCED ANALYTICS HUB",
+        "desc": "Minh bạch hóa năng lực thông qua dữ liệu. Nhận báo cáo chi tiết về kỹ năng tư duy, tốc độ gõ code và khả năng tối ưu thuật toán sau mỗi module.",
+        "images": [
+            "images/feature/dashboard_1.png",
+            "images/feature/dashboard_2.png",
+            "images/feature/dashboard_3.png"
+        ],
+        "specs": [
+            "Performance Score",
+            "Weakness ID",
+            "Behavioral Data"
+        ]
+    },
+    "video": {
+        "title": "Hệ thống Bài giảng 4K Sắc nét",
+        "subtitle": "ULTRA-HD STREAMING",
+        "desc": "Trải nghiệm học tập không gián đoạn với công nghệ truyền tải video thích ứng. Hình ảnh sắc nét giúp bạn quan sát từng chi tiết nhỏ nhất trong mã nguồn.",
+        "images": [
+            "images/feature/dashboard_1.png",
+            "images/feature/dashboard_2.png",
+            "images/feature/dashboard_3.png"
+        ],
+        "specs": [
+            "4K Resolution",
+            "Interactive Notes",
+            "Code Downloads"
+        ]
+    },
+    "sandbox": {
+        "title": "Trình giả lập Code Sandbox",
+        "subtitle": "CLOUD-BASED COMPILER",
+        "desc": "Viết và thực thi mã nguồn ngay trên trình duyệt với sức mạnh của máy chủ ảo. Hỗ trợ hơn 20 ngôn ngữ lập trình phổ biến với tốc độ phản hồi tức thì.",
+        "images": [
+            "images/feature/dashboard_1.png",
+            "images/feature/dashboard_2.png",
+            "images/feature/dashboard_3.png"
+        ],
+        "specs": [
+            "Zero Setup",
+            "Auto Grading",
+            "Multi-Language"
+        ]
+    },
+    "support": {
+        "title": "Đội ngũ Mentor 24/7",
+        "subtitle": "EXPERT GUIDANCE",
+        "desc": "Kết nối trực tiếp với đội ngũ chuyên gia đang làm việc tại các tập đoàn Big Tech. Mọi rào cản về kiến thức sẽ được tháo gỡ chỉ trong vài phút.",
+        "images": [
+            "images/feature/dashboard_1.png",
+            "images/feature/dashboard_2.png",
+            "images/feature/dashboard_3.png"
+        ],
+        "specs": [
+            "15min Response",
+            "1-1 Code Review",
+            "Career Coaching"
+        ]
+    }
+}

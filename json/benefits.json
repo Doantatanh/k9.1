@@ -1,0 +1,118 @@
+{
+    "chuyen-biet-ky-nang": {
+        "id": "chuyen-biet-ky-nang",
+        "title": "Chuyên biệt Kỹ năng",
+        "description": "Tập trung tối ưu các kỹ năng lập trình trọng tâm theo từng vai trò cụ thể.",
+        "icon": "bx bx-terminal",
+        "image": "images/benefit-detail-skills.png",
+        "full_content": "Chương trình đào tạo tại Luminia IT được chia nhỏ thành các module kỹ năng chuyên sâu. Thay vì học lan man, bạn sẽ được tập trung 100% nội lực vào các công nghệ cốt lõi của từng vị trí: từ kiến trúc hệ thống (System Design), tối ưu hóa thuật toán cho đến các Framework hàng đầu hiện nay. Chúng tôi cam kết sau mỗi học phần, bạn sẽ làm chủ hoàn toàn một bộ kỹ năng cụ thể có thể áp dụng ngay vào dự án thực tế.",
+        "features": [
+            "Lộ trình tinh gọn, không học kiến thức thừa.",
+            "Bài tập thực hành sát với yêu cầu tuyển dụng.",
+            "Đánh giá năng lực theo từng mốc kỹ năng.",
+            "Cấp chứng nhận kỹ năng sau mỗi module."
+        ],
+        "stats": {
+            "specialized_stacks": "12+",
+            "expert_mentors": "30+",
+            "projects_per_stack": "5+"
+        }
+    },
+    "hoc-tap-moi-luc-moi-noi": {
+        "id": "hoc-tap-moi-luc-moi-noi",
+        "title": "Học tập mọi lúc mọi nơi",
+        "description": "Trải nghiệm học tập không giới hạn không gian và thời gian trên mọi nền tảng thiết bị.",
+        "icon": "bx bx-devices",
+        "image": "images/benefit-detail-everywhere.png",
+        "full_content": "Luminia IT được xây dựng trên kiến trúc đám mây (Cloud-Native), cho phép đồng bộ hóa dữ liệu học tập theo thời gian thực. Bạn có thể bắt đầu bài học trên máy tính tại văn phòng, tiếp tục xem lại trên điện thoại khi đang di chuyển và thực hành code trên máy tính bảng trước khi đi ngủ. Hệ thống thông minh tự động lưu lại vị trí video và mã nguồn bạn đang viết dở, giúp hành trình học tập luôn liền mạch và hiệu quả nhất.",
+        "features": [
+            "Hỗ trợ Web, App iOS và Android.",
+            "Đồng bộ hóa tiến độ học tập (Sync progress) tức thì.",
+            "Chế độ học Offline (Tải bài giảng về máy).",
+            "Giao diện Responsive tối ưu cho từng kích thước màn hình."
+        ],
+        "stats": {
+            "platforms": "03",
+            "sync_speed": "< 1s",
+            "availability": "99.9%"
+        }
+    },
+    "he-thong-qua-tang": {
+        "id": "he-thong-qua-tang",
+        "title": "Hệ thống Quà tặng & Token",
+        "description": "Biến quá trình học tập thành một hành trình chinh phục những phần thưởng giá trị.",
+        "icon": "bx bx-gift",
+        "image": "images/benefit-detail-rewards.png",
+        "full_content": "Tại Luminia IT, chúng tôi tin rằng mỗi nỗ lực của bạn đều xứng đáng được ghi nhận. Thông qua việc hoàn thành bài học, tham gia các thử thách lập trình (Coding Challenges) và các cuộc thi định kỳ, bạn sẽ tích lũy được Luminia Token. Đây là đơn vị điểm thưởng nội bộ, không có giá trị quy đổi thành tiền mặt, nhưng lại mang đến những đặc quyền vô giá: đổi lấy các khóa học chuyên sâu, vật phẩm công nghệ hoặc những phần quà giới hạn từ đội ngũ Luminia.",
+        "features": [
+            "Tích lũy Token qua mỗi bài giảng hoàn thành.",
+            "Phần thưởng lớn từ các cuộc thi Hackathon nội bộ.",
+            "Token dùng để mở khóa các tính năng cao cấp.",
+            "Đổi Token lấy Quà tặng vật lý (Áo thun, Balo, Gadget IT)."
+        ],
+        "stats": {
+            "active_challenges": "20+",
+            "tokens_distributed": "500K+",
+            "special_gifts": "15"
+        }
+    },
+    "luyen-thi-chung-chi": {
+        "id": "luyen-thi-chung-chi",
+        "title": "Luyện thi chứng chỉ",
+        "description": "Ôn luyện bộ đề thi chuẩn từ các hãng công nghệ lớn như Google, Microsoft, Amazon. Trang bị kiến thức vững chắc để tự tin chinh phục các chứng chỉ quốc tế.",
+        "icon": "fa-solid fa-award",
+        "image": "images/feature/benefit-detail-course.png",
+        "full_content": "Tại Luminia IT, chúng tôi hiểu rằng chứng chỉ quốc tế là 'tấm vé vàng' để bạn vươn ra thị trường lao động toàn cầu. Chương trình luyện thi được thiết kế bám sát cấu trúc đề thực tế từ các đối tác lớn như AWS, Google Cloud, và Microsoft Azure. Chúng tôi không chỉ cung cấp ngân hàng câu hỏi mà còn phân tích sâu kiến thức cốt lõi, giúp bạn hiểu rõ bản chất vấn đề thay vì học vẹt, từ đó tối ưu hóa tỷ lệ đỗ và sẵn sàng cho các kỳ thi khắc nghiệt nhất.",
+        "features": [
+            "Ngân hàng đề thi thử (Mock Exams) cập nhật liên tục theo phiên bản mới nhất.",
+            "Chế độ thi mô phỏng: Giới hạn thời gian và áp lực như kỳ thi thật.",
+            "Giải thích chi tiết đáp án: Phân tích tại sao đúng, tại sao sai kèm tài liệu bổ trợ.",
+            "Hệ thống Flashcards thông minh giúp ghi nhớ nhanh các khái niệm và thuật ngữ then chốt.",
+            "Lộ trình học tập cá nhân hóa dựa trên kết quả các bài thi thử đầu vào.",
+            "Cộng đồng ôn luyện và hỗ trợ trực tiếp từ các chuyên gia đã sở hữu chứng chỉ Expert."
+        ],
+        "stats": {
+            "exam_sets": "100+",
+            "pass_rate": "95%",
+            "partners": "10+"
+        }
+    },
+    "ai-venus-interview": {
+        "id": "ai-venus-interview",
+        "title": "Phỏng vấn cùng AI Venus",
+        "description": "Trợ lý ảo thông minh giúp bạn rèn luyện bản lĩnh và kỹ năng phỏng vấn chuyên nghiệp.",
+        "icon": "bx bx-bot",
+        "image": "images/benefit-detail-ai-venus.png",
+        "full_content": "AI Venus là hệ thống trí tuệ nhân tạo độc quyền tại Luminia IT, được thiết kế để đóng vai trò như một HR Manager thực thụ. Với khả năng nhận diện giọng nói và phân tích ngữ nghĩa, Venus sẽ đưa ra những câu hỏi hóc búa sát với thực tế tuyển dụng của các tập đoàn IT lớn. Không chỉ đánh giá kiến thức chuyên môn, Venus còn giúp bạn chỉnh sửa tông giọng, tốc độ nói và tư duy logic trong từng câu trả lời. Đây là môi trường hoàn hảo để bạn 'sai và sửa' trước khi bước vào kỳ phỏng vấn quyết định sự nghiệp.",
+        "features": [
+            "Cá nhân hóa câu hỏi theo từng vị trí ứng tuyển.",
+            "Phân tích thái độ và độ tự tin qua giọng nói/hình ảnh.",
+            "Nhận báo cáo điểm mạnh, điểm yếu ngay sau phiên họp.",
+            "Hỗ trợ hơn 1000+ bộ đề phỏng vấn từ các Big Tech."
+        ],
+        "stats": {
+            "success_rate": "92%",
+            "daily_sessions": "5,000+",
+            "confidence_score": "+85%"
+        }
+    },
+    "bao-cao-tien-do": {
+        "id": "bao-cao-tien-do",
+        "title": "Báo cáo tiến độ học tập",
+        "description": "Hệ thống theo dõi nỗ lực và phân tích kỹ năng chuyên sâu dành riêng cho bạn.",
+        "icon": "bx bx-bar-chart-alt-2",
+        "image": "images/benefit-detail-analytics.png",
+        "full_content": "Tại Luminia IT, chúng tôi không để bạn học trong 'mù quáng'. Mọi hoạt động từ việc xem video, hoàn thành bài tập code đến kết quả phỏng vấn AI đều được ghi lại và phân tích bởi hệ thống Big Data. Kết quả trả về là một 'Skill-tree' (Cây kỹ năng) trực quan, giúp bạn biết mình đã hoàn thành bao nhiêu % lộ trình trở thành Fullstack Developer. Dựa vào đó, Mentor AI sẽ đưa ra những gợi ý ôn tập chính xác cho những mảng kiến thức bạn còn hổng, giúp tối ưu hóa thời gian học tập đến mức tối đa.",
+        "features": [
+            "Biểu đồ Skill-tree cá nhân hóa theo từng chuyên ngành.",
+            "Báo cáo đánh giá năng lực hàng tuần gửi về Email.",
+            "So sánh tiến độ cá nhân với cộng đồng học viên.",
+            "Gợi ý bài học bù cho những kỹ năng còn yếu."
+        ],
+        "stats": {
+            "tracking_accuracy": "99%",
+            "weekly_reports": "10,000+",
+            "improvement_rate": "40%"
+        }
+    }
+}
