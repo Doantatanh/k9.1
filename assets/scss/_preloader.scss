@@ -1,0 +1,182 @@
+.back-to-top {
+  border-radius: 50% !important;
+  background-color: $theme-color;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: $white;
+  font-size: 18px;
+  position: fixed;
+  display: inline-block;
+  z-index: 999;
+  right: 30px;
+  bottom: 30px;
+  @include transition;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+  }
+}
+
+
+.cursor-outer {
+  -webkit-margin-start: -12px;
+  margin-inline-start: -12px;
+  margin-top: -12px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $theme-color;
+  background-color: $theme-color;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 10000000;
+  opacity: 0.34;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.cursor-outer.cursor-hover {
+  opacity: 0.14;
+}
+
+.cursor-outer.cursor-big {
+  opacity: 0;
+}
+
+.mouseCursor {
+  position: fixed;
+  top: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+  text-align: center;
+}
+
+.mouseCursor.cursor-big {
+  width: 20px;
+  height: 20px;
+  -webkit-margin-start: -12px;
+  margin-inline-start: -12px;
+  margin-top: -12px;
+}
+
+.cursor-inner {
+  -webkit-margin-start: -3px;
+  margin-inline-start: -3px;
+  margin-top: -3px;
+  width: 10px;
+  height: 10px;
+  z-index: 10000001;
+  background-color: $theme-color;
+  opacity: 1;
+  -webkit-transition: all 0.24s ease-out 0s;
+  transition: all 0.24s ease-out 0s;
+
+  span {
+    color: $text-color;
+    line-height: 60px;
+    opacity: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+}
+
+.cursor-inner.cursor-big {
+  span {
+    opacity: 1;
+  }
+}
+
+.cursor-inner.cursor-hover {
+  -webkit-margin-start: -10px;
+  margin-inline-start: -10px;
+  margin-top: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: $theme-color;
+  border: 1px solid #686363;
+  opacity: 0;
+}
+
+.preloader {
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 99999999999999;
+}
+
+.preloader svg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 110vh;
+  fill: #fff;
+}
+
+h5.preloader-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(80px + 5vw);
+  color: $header-color;
+}
+
+@media (max-width: 1040px) {
+  h5.preloader-text {
+    font-size: 60px;
+  }
+}
+
+h5.preloader-text::after {
+  content: "Q-INVEST";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: $white;
+  animation: move 3s infinite alternate;
+
+  .home-2 & {
+    color: $white;
+  }
+}
+
+@keyframes move {
+  from {
+    clip-path: circle(20% at 0% 50%);
+  }
+
+  to {
+    clip-path: circle(20% at 100% 50%);
+  }
+}

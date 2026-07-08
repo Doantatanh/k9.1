@@ -1,0 +1,520 @@
+.array-button-2 {
+    gap: 16px;
+    position: relative;
+    z-index: 9;
+    margin-top: 37px;
+
+    &.style-3 {
+		.array-prev2 {
+			transform: rotate(0deg);
+
+            i {
+                transform: rotate(0deg);
+            }
+
+            &:hover {
+            i {
+                color: $white;
+            }
+        }
+		}
+
+        .array-next2 {
+			transform: rotate(0deg);
+
+            i {
+                transform: rotate(0deg);
+            }
+
+            &:hover {
+            i {
+                color: $white;
+            }
+        }
+		}
+	}
+
+    @include breakpoint (max-xl) {
+        flex-wrap: wrap;
+    }
+
+    .array-prev2 {
+        width: 55px;
+        height: 55px;
+        line-height: 50px;
+        text-align: center;
+        background-color: transparent;
+        color: $header-color;
+        @include transition;
+        overflow: hidden;
+       border: 1px solid rgba(199, 201, 206, 0.32);
+
+        @include breakpoint (max-sm) {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        }
+
+    
+    
+        i {
+        transform: rotate(45deg);
+        @include transition;
+        }
+    
+        &:hover {
+            background-color: $theme-color;
+            color: $header-color;
+            border: 1px solid $theme-color;
+    
+            svg path {
+                fill: $white
+            }
+        }
+    }
+    
+    .array-next2 {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        background-color: transparent;
+        color: $header-color;
+        @include transition;
+        border: 1px solid rgba(199, 201, 206, 0.32);
+
+        @include breakpoint (max-sm) {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        
+        i {
+            transform: rotate(45deg);
+            @include transition;
+        }
+    
+        &:hover {
+            background-color: $theme-color;
+            color: $header-color;
+            border: 1px solid $theme-color;
+    
+            svg path {
+                fill: $white
+            }
+        }
+    }
+
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.ralt{
+ position: relative;
+}
+
+.sticky-style {
+  position: sticky !important;
+  top: 100px;
+}
+
+.gt-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.gt-brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.ripple {
+  position: relative;
+
+  &::before,&::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 70px;
+      height: 70px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(2, 21, 36, 0.5);
+      -webkit-animation: rippleOne 3s infinite;
+      animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+  &::after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+
+
+.page-nav-wrap {
+    margin-top: 60px;
+
+    ul {
+        li {
+            display: inline-block;
+
+            &.active {
+
+                .page-numbers {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+
+            .page-numbers {
+                &.current {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                text-align: center;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                line-height: 48px;
+                border-radius: 0;
+                background: #f5f5f5;
+                color: $header-color;
+                font-weight: 900;
+                transition: all 0.3s ease-in-out;
+                margin: 0 2px;
+                border-radius: 50%;
+                font-family: $heading-font;
+
+                @media (max-width: 767px) {
+                    margin-top: 10px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                }
+
+                i {
+                    margin-top: 2px;
+                    color: $header-color;
+                    @include transition;
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.border-dashed-item {
+    padding: 60px 0;
+    position: relative;
+    z-index: 9;
+
+    .bt-dashed {
+        border-top: 1px dashed rgba(255, 255, 255, 0.20);
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.20);
+        padding: 9px 0;
+    }
+}
+
+.box-user {
+    position: sticky;
+    top: 0px;
+    padding-top: 60px;
+}
+
+.text_invert > div {
+  background-image: linear-gradient(to right, rgb(46, 46, 46) 50%, rgb(77, 77, 77) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.text_invert-2 > div {
+  background-image: linear-gradient(to right, rgb(2, 21, 36) 50%, rgb(126, 126, 126) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+ .tilt_scale {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.no-break {
+    white-space: nowrap; /* Keeps "My Background and Expertise" together */
+}
+
+/* Optional: styling for words split animation */
+.split-word {
+    display: inline-block; /* Required for animation */
+    opacity: 0;
+}
+
+.arrow-path {
+  width: 220px;
+  height: 130px;
+  color: black;
+  stroke-dasharray: 1000;
+  animation: draw 10s linear infinite;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  transition: all .8s 
+cubic-bezier(0.55, 0.085, 0, 0.99);
+}
+
+.animated-image {
+  display: block;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+
+.image-wrapper.active .animated-image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Ensure the link inherits styles from its parent */
+.wt-about-title2 a {
+    display: inline-block; /* Needed for transform animations */
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.project-section-3  {
+    .line-ani {
+        margin-top: -25px;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+}
+
+.brand-container {
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+.gt-text-scale-anim {
+    white-space: pre-wrap;
+    transform-origin: top left;
+}
+
+.gt-letter-span {
+    display: inline-block;
+}
+.gt-word-span {
+    display: inline-block;
+}
+
+.p-relative {
+    position: relative;
+}
+.swiper-dot {
+  margin-bottom: 2px;
+  position: relative;
+
+  .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      transition: 0.6s;
+      background-color: #C1C1C1;
+      opacity: 1;
+      border-radius: 10px;
+      &:not(:last-child){
+        margin-right: 15px;
+      }
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $theme-color;
+      transition: 0.6s;
+      position: relative;
+
+      &::before{
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid $theme-color;
+        content: "";
+      }
+   }
+}
+
+.body-bg-3 {
+    background-color: #F9F9F9;
+}
+
+//Line custom animation
+.line-shape-animation {
+	max-width: 1720px;
+	height: 100vh;
+	position: fixed;
+	left: 50%;
+	top: -20px;
+	justify-content: space-between;
+	margin: 0 auto;
+	transform: translateX(-50%);
+  z-index: -1;
+
+  @include breakpoint (max-xl){
+    display: none !important;
+  }
+}
+.line-shape-animation span {
+	position: relative;
+	width: 1px;
+	height: 100%;
+	display: block;
+	    background: rgb(199 199 199 / 20%);
+}
+.line-shape-animation span::before,
+.line-shape-animation span::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	background: $theme-color;
+	box-shadow: rgba(2, 21, 36, .20) 0px 8px 24px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	clip-path: polygon(
+		51% 8%,
+		68% 15%,
+		66% 40%,
+		60% 78%,
+		56% 100%,
+		46% 100%,
+		42% 84%,
+		38% 56%,
+		34% 17%
+	);
+}
+.line-shape-animation span::after {
+	animation: dscroll 2s linear infinite;
+	width: 2px;
+	height: 24px;
+	bottom: 0;
+	left: 0;
+	background: $theme-color;
+	box-shadow: rgba(2, 21, 36, .20) 0px 8px 24px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	clip-path: polygon(
+		51% 8%,
+		68% 15%,
+		66% 40%,
+		60% 78%,
+		56% 100%,
+		46% 100%,
+		42% 84%,
+		38% 56%,
+		34% 17%
+	);
+}
+.line-shape-animation span:nth-child(2)::after {
+	animation: dscroll 2.1s linear infinite;
+}
+.line-shape-animation span:nth-child(3)::after {
+	animation: dscroll 2.2s linear infinite;
+}
+.line-shape-animation span:nth-child(4)::after {
+	animation: dscroll 2.3s linear infinite;
+}
+.line-shape-animation span:nth-child(5)::after {
+	animation: dscroll 2.4s linear infinite;
+}
+.line-shape-animation span:nth-child(6)::after {
+	animation: dscroll 1s linear infinite;
+}
+.line-shape-animation span:nth-child(7)::after {
+	animation: dscroll 3.5s linear infinite;
+}
+
+.line-shape-animation span:nth-child(2)::backdrop {
+	animation: dscroll 4.1s linear infinite;
+}
+.line-shape-animation span:nth-child(3)::before {
+	animation: dscroll 4.2s linear infinite;
+}
+.line-shape-animation span:nth-child(4)::before {
+	animation: dscroll 4.3s linear infinite;
+}
+.line-shape-animation span:nth-child(5)::before {
+	animation: dscroll 4.4s linear infinite;
+}
+.line-shape-animation span:nth-child(6)::before {
+	animation: dscroll 4s linear infinite;
+}
+.line-shape-animation span:nth-child(7)::before {
+	animation: dscroll 4.5s linear infinite;
+}
+//Line custom animation
+@keyframes dscroll {
+	100% {
+		transform: translateY(100vh);
+	}
+}
+
+.p-relative {
+	position: relative !important;
+}

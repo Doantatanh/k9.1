@@ -1,0 +1,143 @@
+.brand-box {
+   border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    @include transition;
+
+    img {
+        filter: grayscale(1) brightness(0) saturate(1000%) invert(53%);
+        @include transition;
+    }
+
+    &:hover {
+        background-color: $white;
+
+        img {
+            filter: none;
+        }
+    }
+}
+
+.brand-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+
+    b {
+        color: $theme-color;
+        font-weight: 500;
+    }
+}
+
+.brand-wrapper-3 {
+    h6 {
+        color: $white;
+        font-family: $body-font;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.10);
+        padding: 8px 15px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .brand-image-3 {
+        text-align: center;
+        filter: invert(87%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        @include transition;
+
+        &:hover {
+           filter: initial;
+        }
+    }
+}
+
+.brand-wrapper-4 {
+    padding: 100px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+    @include breakpoint (max-lg){
+       padding: 70px 0;
+    }
+
+    .brand-text-4 {
+        font-size: 200px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $header-color;
+        font-family: $heading-font;
+        line-height: 1;
+
+        @include breakpoint (max-md){
+            font-size: 100px;
+        }
+
+        @include breakpoint (max-sm){
+            font-size: 70px;
+        }
+    }
+
+    .swiper-wrapper {
+        @include flex;
+    }
+
+    &.style-2 {
+        padding: 0;
+        border: none;
+    }
+
+    &.text-white-style {
+        .brand-text-4 {
+           color: $white;
+        }
+    }
+}
+
+.brand-box-1 {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    .brand-img-1 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+           transition: all 0.6s ease; 
+           transform: translateY(0);
+            opacity: 1;
+        }
+
+        &:last-child img {
+          transform: translateY(-350%);
+          opacity: 0;
+        }
+    }
+
+    &:hover {
+        .brand-img-1:first-child img {
+           transform: translateY(100%);
+            opacity: 0;
+        }
+
+        .brand-img-1:last-child img {
+          transform: translateY(0);
+          opacity: 1;
+        }
+    }
+}

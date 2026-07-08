@@ -1,0 +1,1256 @@
+.footer-wrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 40px;
+  margin-top: 60px;
+}
+
+.footer-bottom {
+  @include flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(2, 21, 36, 0.2);
+  padding: 30px 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
+
+  @include breakpoint(max-lg) {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .icon-items-area {
+    @include flex;
+    gap: 25px;
+    justify-content: center;
+
+    @include breakpoint(max-md) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .icon-items {
+      @include flex;
+      gap: 10px;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #171914;
+        @include transition;
+        color: $white;
+      }
+
+      a {
+        text-transform: capitalize;
+        font-family: $body-font;
+        color: $text-color;
+        @include transition;
+      }
+    }
+  }
+
+  p {
+    span {
+      color: $theme-color;
+    }
+  }
+
+  ul {
+    @include flex;
+    gap: 20px;
+
+    li {
+      font-size: 14px;
+      font-weight: 400;
+
+      a {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.footer-wrapper-2 {
+  padding: 120px 0 0;
+
+  @include breakpoint(max-xl) {
+    padding-top: 100px;
+  }
+
+  @include breakpoint(max-lg) {
+    padding-top: 80px;
+  }
+
+  .let-work-wrapper {
+    @include flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(2, 21, 36, 0.2);
+    padding-bottom: 60px;
+
+    @include breakpoint(max-xl) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+
+  .footer-logo {
+    @include breakpoint(max-lg) {
+      img {
+        width: 280px;
+      }
+    }
+
+    @include breakpoint(max-md) {
+      img {
+        width: 220px;
+      }
+    }
+
+    @include breakpoint(max-sm) {
+      img {
+        width: 180px;
+      }
+    }
+  }
+
+  .content {
+    h2 {
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -1.5px;
+      text-transform: uppercase;
+
+      @include breakpoint(max-lg) {
+        font-size: 90px;
+      }
+
+      @include breakpoint(max-md) {
+        font-size: 70px;
+      }
+
+      @include breakpoint(max-sm) {
+        font-size: 60px;
+      }
+
+      @include breakpoint(max-xxs) {
+        font-size: 45px;
+      }
+
+      span {
+        color: #888;
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  .footer-contact-info-items {
+    margin-top: 60px;
+    @include flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(2, 21, 36, 0.2);
+    padding-bottom: 60px;
+
+    @include breakpoint(max-lg) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    ul {
+      @include flex;
+      gap: 35px;
+
+      @include breakpoint(max-md) {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      li {
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color: #021524;
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          color: #888888;
+
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #888888;
+          }
+        }
+      }
+
+      .line {
+        width: 1px;
+        height: 52px;
+        background: rgba(2, 21, 36, 0.2);
+
+        @include breakpoint(max-md) {
+          display: none;
+        }
+      }
+    }
+
+    .social-icon {
+      gap: 12px;
+
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid rgba(2, 21, 36, 0.2);
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $theme-color;
+          border: 1px solid $theme-color;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .footer-link-area {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 60px;
+    padding-top: 40px;
+
+    .link-item {
+      .widget-title {
+        color: $white;
+        font-family: $body-font;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+
+      .menu-item {
+        @include flex;
+        gap: 20px;
+
+        @include breakpoint(max-xxl) {
+          flex-wrap: wrap;
+          gap: 14px;
+        }
+
+        li {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+
+          a {
+            color: #888;
+
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }
+
+    .location-text {
+      margin-left: -30px;
+      border-right: none;
+
+      @include breakpoint(max-xxl) {
+        margin-left: 0;
+      }
+
+      p {
+        color: #888;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.footer-section2 {
+  position: relative;
+
+  .shape1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    @include breakpoint(max-xl) {
+      display: none;
+    }
+  }
+}
+
+.footer-bottom-2 {
+  padding: 16px 0;
+
+  p {
+    text-align: center;
+
+    span {
+      font-weight: 400;
+      color: #060606;
+    }
+  }
+}
+
+.footer-box-items {
+  border-radius: 10px;
+  background: #1a1a1a;
+  padding: 60px 0 0;
+
+  .icon {
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    background: #060606;
+    text-align: center;
+    line-height: 138px;
+    margin: 0 auto;
+  }
+
+  .content {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0 60px;
+
+    @include breakpoint(max-lg) {
+      padding: 0 35px;
+      margin-bottom: 15px;
+      margin-top: 20px;
+    }
+
+    @include breakpoint(max-sm) {
+      padding: 0 30px;
+    }
+
+    p {
+      color: $white;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 4.8px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+
+      @include breakpoint(max-sm) {
+        font-size: 18px;
+      }
+    }
+
+    h2 {
+      color: #888;
+      font-size: 80px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      text-transform: uppercase;
+
+      @include breakpoint(max-md) {
+        font-size: 60px;
+      }
+
+      @include breakpoint(max-sm) {
+        font-size: 50px;
+      }
+    }
+
+    .icon-items-area {
+      @include flex;
+      gap: 25px;
+      justify-content: center;
+      margin-top: 45px;
+
+      @include breakpoint(max-xl) {
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .icon-items {
+        @include flex;
+        gap: 10px;
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          display: inline-block;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #171914;
+          @include transition;
+        }
+
+        a {
+          text-transform: capitalize;
+          font-family: $body-font;
+          color: $text-color;
+          @include transition;
+        }
+
+        &:hover {
+          .icon {
+            background-color: $theme-color;
+            color: #060606;
+          }
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .f-bottom-text {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+  }
+}
+
+.Rend-image {
+  margin-top: 30px;
+  display: inline-block;
+
+  @include breakpoint(max-xxl) {
+    display: block;
+
+    img {
+      @include imgw;
+    }
+  }
+
+  img {
+    @include imgw;
+  }
+}
+
+.footer-section {
+  position: relative;
+
+  .like-shape {
+    position: absolute;
+    top: 14%;
+    right: 9%;
+
+    @include breakpoint(max-xl) {
+      display: none;
+    }
+  }
+}
+
+.footer-wrapper-4 {
+  border-radius: 20px;
+  background: #060606;
+  padding: 0;
+  margin: 0 60px;
+
+  @include breakpoint(max-xxxl) {
+    margin: 0 25px;
+  }
+
+  @include breakpoint(max-xl) {
+    margin: 0 15px;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+
+    @include breakpoint(max-lg) {
+      img {
+        width: 280px;
+      }
+    }
+
+    @include breakpoint(max-md) {
+      img {
+        width: 220px;
+      }
+    }
+
+    @include breakpoint(max-sm) {
+      img {
+        width: 180px;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 50px;
+    text-align: center;
+
+    h2 {
+      color: #888;
+      font-size: 150px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -1.5px;
+      text-transform: uppercase;
+
+      @include breakpoint(max-xl) {
+        font-size: 120px;
+      }
+
+      @include breakpoint(max-lg) {
+        font-size: 90px;
+      }
+
+      @include breakpoint(max-md) {
+        font-size: 70px;
+      }
+
+      @include breakpoint(max-sm) {
+        font-size: 60px;
+      }
+
+      @include breakpoint(max-xxs) {
+        font-size: 45px;
+      }
+
+      span {
+        color: #888;
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  .footer-link-area {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .link-item {
+      .widget-title {
+        color: $white;
+        font-family: $body-font;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+
+      .menu-item {
+        @include flex;
+        gap: 20px;
+
+        @include breakpoint(max-xxl) {
+          flex-wrap: wrap;
+          gap: 14px;
+        }
+
+        li {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+
+          a {
+            color: #888;
+
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }
+
+    .location-text {
+      margin-left: -30px;
+      border-right: none;
+
+      @include breakpoint(max-xxl) {
+        margin-left: 0;
+      }
+
+      p {
+        color: #888;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+
+    .icon-items-area {
+      @include flex;
+      gap: 25px;
+      justify-content: end;
+
+      @include breakpoint(max-xxl) {
+        justify-content: start;
+      }
+
+      @include breakpoint(max-sm) {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .icon-items {
+        @include flex;
+        gap: 10px;
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          display: inline-block;
+          text-align: center;
+          border-radius: 50%;
+          background-color: #171914;
+          @include transition;
+        }
+
+        a {
+          text-transform: capitalize;
+          font-family: $body-font;
+          color: $text-color;
+          @include transition;
+        }
+
+        &:hover {
+          .icon {
+            background-color: $theme-color;
+            color: #060606;
+          }
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom-4 {
+  .footer-bottom-wrapper-4 {
+    text-align: center;
+    padding: 30px 0;
+
+    @include breakpoint(max-xl) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @include breakpoint(max-md) {
+      justify-content: center;
+    }
+
+    p {
+      span {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+.footer-section-3 {
+  .footer-left3 {
+    max-width: 385px;
+
+    .footer-logo {
+      @include breakpoint(max-md) {
+        img {
+          width: 220px;
+        }
+      }
+    }
+
+    ul {
+      @include flex;
+      justify-content: space-between;
+      margin-top: 60px;
+
+      li {
+        font-size: 16px;
+        font-weight: 400;
+
+        a {
+          color: #fff;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    p {
+      color: #fff;
+      border-top: 1px solid #fff;
+      padding-top: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  .footer-contact-info {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 10px;
+
+    h6 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 20px;
+
+      span {
+        color: #7e7e7e;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 20px;
+
+      span {
+        color: #7e7e7e;
+      }
+    }
+
+    ul {
+      li {
+        background-color: $theme-color;
+        @include flex;
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+        gap: 15px;
+        padding: 16px;
+        border-radius: 10px;
+        margin-right: 7px;
+        position: relative;
+        z-index: 9;
+
+        &::before {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          top: 7px;
+          right: -7px;
+          content: "";
+          width: 100%;
+          height: 100%;
+          border: 1px solid $theme-color;
+          border-radius: 10px;
+          z-index: -1;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+
+        a {
+          color: $white;
+        }
+
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .footer-email-box {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 30px;
+
+    .social-items {
+      @include flex;
+      gap: 15px;
+      border-bottom: 1px solid rgba(2, 21, 36, 0.2);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+
+      @include breakpoint(max-md) {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      span {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: $heading-font;
+        color: $header-color;
+
+        b {
+          color: #7e7e7e;
+        }
+      }
+
+      .social-icon {
+        gap: 20px;
+
+        a {
+          display: inline-block;
+          color: $theme-color;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: 1px solid rgba(2, 21, 36, 0.2);
+          text-align: center;
+          line-height: 60px;
+          font-size: 24px;
+
+          @include breakpoint(max-xl) {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 18px;
+          }
+
+          &:hover {
+            background-color: $theme-color;
+            color: $white;
+            border: 1px solid $theme-color;
+          }
+        }
+      }
+    }
+
+    h6 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: $heading-font;
+      color: $header-color;
+
+      b {
+        color: #7e7e7e;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: $heading-font;
+      color: $header-color;
+
+      b {
+        color: #7e7e7e;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: $heading-font;
+      color: $header-color;
+
+      b {
+        color: #7e7e7e;
+      }
+    }
+
+    form {
+      position: relative;
+      margin-top: 20px;
+
+      .email-btn {
+        position: absolute;
+        top: 0;
+        right: 26px;
+        top: 16px;
+      }
+
+      input {
+        outline: none;
+        background: transparent;
+        border: 1px solid rgba(2, 21, 36, 0.2);
+        width: 100%;
+        padding: 18px 26px;
+        line-height: 1;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #7e7e7e;
+
+        &::placeholder {
+          color: #7e7e7e;
+        }
+      }
+    }
+  }
+}
+
+.footer-section4 {
+  position: relative;
+  margin: 0 60px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+
+  @include breakpoint(max-xxxl) {
+    margin: 0 30px;
+  }
+
+  @include breakpoint(max-xxl) {
+    margin: 0 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  @include breakpoint(max-sm) {
+    margin: 0 15px;
+  }
+
+  .shape1 {
+    position: absolute;
+    bottom: 0;
+    left: 420px;
+
+    @include breakpoint(max-xl4) {
+      left: 350px;
+    }
+
+    @include breakpoint(max-xxxl) {
+      left: 230px;
+    }
+
+    @include breakpoint(max-xxl) {
+      display: none;
+    }
+  }
+}
+
+.footer-wrapper-5 {
+  padding: 100px 0 120px;
+
+  @include breakpoint(max-xxl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include breakpoint(max-lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .let-work-wrapper-4 {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(max-xl) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .left-content {
+      .social-icon {
+        gap: 12px;
+
+        a {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border: 1px solid rgba(2, 21, 36, 0.2);
+          border-radius: 50%;
+
+          &:hover {
+            background-color: $theme-color-2;
+            border: 1px solid $theme-color-2;
+            color: $white;
+          }
+        }
+      }
+
+      .footer-logo {
+        @include breakpoint(max-lg) {
+          img {
+            width: 280px;
+          }
+        }
+
+        @include breakpoint(max-md) {
+          img {
+            width: 220px;
+          }
+        }
+
+        @include breakpoint(max-sm) {
+          img {
+            width: 180px;
+          }
+        }
+      }
+
+      p {
+        max-width: 390px;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(126, 126, 126, 1);
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .content {
+      h2 {
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -1.5px;
+        text-transform: uppercase;
+        color: rgba(136, 136, 136, 1);
+
+        @include breakpoint(max-lg) {
+          font-size: 90px;
+        }
+
+        @include breakpoint(max-md) {
+          font-size: 70px;
+        }
+
+        @include breakpoint(max-sm) {
+          font-size: 60px;
+        }
+
+        @include breakpoint(max-xxs) {
+          font-size: 45px;
+        }
+
+        span {
+          color: rgba(36, 117, 253, 1);
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $theme-color-2;
+            left: 0;
+            right: 0;
+            bottom: 15px;
+
+            @include breakpoint(max-xxl) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      ul {
+        @include flex;
+        gap: 35px;
+        margin-top: 60px;
+
+        @include breakpoint(max-xxl) {
+          margin-top: 30px;
+        }
+
+        @include breakpoint(max-md) {
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+
+        li {
+          p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #021524;
+            margin-bottom: 10px;
+          }
+
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(2, 21, 36, 1);
+
+            a {
+              font-size: 16px;
+              font-weight: 500;
+              color: rgba(2, 21, 36, 1);
+            }
+          }
+        }
+
+        .line {
+          width: 1px;
+          height: 52px;
+          background: rgba(2, 21, 36, 0.2);
+
+          @include breakpoint(max-md) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom-4 {
+  background-color: $theme-color-2;
+  padding: 30px 0;
+  margin-top: 30px;
+
+  p {
+    text-align: center;
+    margin: 0 auto;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.footer-new-section {
+  padding-top: 1px;
+  background-color: $bg-color-logo;
+
+  .container {
+    max-width: 1770px;
+  }
+
+  .footer-logo {
+    border-bottom: 1px dashed rgba(2, 21, 36, 0.2);
+    display: inline-block;
+    padding-bottom: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 70px;
+
+    b {
+      color: $header-color;
+      font-weight: 400;
+    }
+  }
+
+  .conversation-text {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 700;
+    font-size: 100px;
+    font-family: $heading-font;
+    line-height: 1;
+    padding-top: 36px;
+    padding-bottom: 25px;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 4px;
+    }
+
+    @include breakpoint(max-xl) {
+      font-size: 70px;
+    }
+
+    @include breakpoint(max-lg) {
+      font-size: 55px;
+    }
+
+    @include breakpoint(max-md) {
+      font-size: 45px;
+    }
+
+    @include breakpoint(max-sm) {
+      font-size: 36px;
+    }
+
+    @include breakpoint(max-xxs) {
+      line-height: 1.4;
+    }
+  }
+}
+
+.footer-new-wrapper-1 {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 62px;
+
+  @include breakpoint(max-md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include breakpoint(max-sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(max-xxs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-list-items {
+    li {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
+        color: $white;
+      }
+
+      a {
+        color: $white;
+
+        &:hover {
+          text-decoration: underline;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.new-cta-adds {
+  position: relative;
+
+  .rend-img {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    right: 20px;
+    max-width: 1770px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}

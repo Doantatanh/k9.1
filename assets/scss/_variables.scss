@@ -1,0 +1,36 @@
+:root {
+  --body: #fff;
+  --black: #000;
+  --white: #fff;
+  --theme: #021524;
+  --theme2: #2475fd;
+  --header: #021524;
+  --text: #7e7e7e;
+  --border: #fcfcfc;
+  --bg: #021524;
+  --bg2: #030523;
+  --bg3: #f7f3ee;
+  --bglogo: #145da1;
+  --box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.13);
+}
+
+// Theme Color - Defualt Colors
+$body-bg: var(--body);
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$text-color: var(--text);
+$header-color: var(--header);
+$border-color: var(--border);
+$bg-color: var(--bg);
+$bg-color-2: var(--bg2);
+$bg-color-3: var(--bg3);
+$shadow: var(--box-shadow);
+$bg-color-logo: var(--bglogo);
+
+.arrow-rotate {
+  transform: rotate(45deg);
+  display: inline-block;
+  /* Bắt buộc có để thuộc tính transform hoạt động */
+}
