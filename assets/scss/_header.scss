@@ -11,7 +11,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 3px 0;
+	padding: 10px 0;
 
 	.main-menu {
 		ul {
@@ -475,10 +475,10 @@
 
 
 	.header-logo img {
-		width: 130px;
+		width: 200px;
 
 		@include breakpoint (max-sm) {
-			width: 75px;
+			width: 160px;
 			margin-top: 10px;
 		}
 	}
@@ -569,12 +569,21 @@
 
 	.header-logo {
 		img {
-			width: 80px;
+			width: 200px;
 		}
 	}
 }
 
 //>>>>> Offcanvas Start <<<<<//
+
+@include breakpoint (max-sm) {
+	.offcanvas__logo {
+
+		img {
+			width: 160px;
+		}
+	}
+}
 
 .style-offcanvas-2 {
 	position: relative;

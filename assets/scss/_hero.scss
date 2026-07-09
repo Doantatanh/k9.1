@@ -11,6 +11,16 @@
     padding-top: 120px;
   }
 
+  @include breakpoint(max-xxl) {
+    padding-top: 20px;
+  }
+
+  @include breakpoint(max-sm) {
+    padding-top: 100px;
+  }
+
+
+
   .line-shape {
     position: absolute;
     left: 0;
@@ -93,8 +103,8 @@
       }
 
       @include breakpoint(max-xxl) {
-        font-size: 111px;
-        line-height: 115%;
+        font-size: 85px;
+        line-height: 97%;
         margin-bottom: 30px;
       }
 
@@ -125,7 +135,19 @@
         color: $theme-color;
       }
 
-      strong,
+
+      strong {
+        font-size: 70px;
+
+        @include breakpoint(max-xxl) {
+          font-size: 60px;
+        }
+
+        @include breakpoint(max-sm) {
+          font-size: 28px;
+        }
+      }
+
       span {
         font-size: 80px;
         color: $theme-color;

@@ -12,11 +12,12 @@
         left: -3%;
         z-index: 999;
 
-        @include breakpoint (max-xxxl){
+        @include breakpoint (max-xxxl) {
             display: none;
         }
 
-        .array-prev,.array-next {
+        .array-prev,
+        .array-next {
             border-radius: 100px;
             border: 1.5px solid rgba(0, 0, 0, 0.20);
             width: 48px;
@@ -27,7 +28,7 @@
             color: $theme-color;
             @include transition;
             cursor: pointer;
-           
+
 
             &:hover {
                 background-color: $theme-color;
@@ -36,7 +37,7 @@
         }
     }
 
-    @include breakpoint (max-xxl){
+    @include breakpoint (max-xxl) {
         margin-right: 0;
     }
 
@@ -53,34 +54,35 @@
     /* Optional: center the pagination below slider */
     .swiper-pagination {
         text-align: center;
-        margin-top: 15px; /* adjust as needed */
+        margin-top: 15px;
+        /* adjust as needed */
     }
 
 
     .testimonial-box-items {
-        padding: 36px;
+        padding: 24px;
         background-color: $white;
         border-radius: 10px;
         @include flex;
-        gap: 40px;
+        gap: 30px;
         border: 2px solid #021524;
 
-         @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             display: block;
-            padding: 30px;
+            padding: 24px;
         }
 
-        @include breakpoint (max-xxs){
-           padding: 24px;
+        @include breakpoint (max-xxs) {
+            padding: 20px;
         }
 
         .thumb {
-            max-width: 335px;
+            max-width: 260px;
             position: relative;
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 max-width: initial;
-                height: 500px;
+                height: 400px;
             }
 
             img {
@@ -91,7 +93,7 @@
 
             .info-title {
                 background-color: $white;
-                padding: 16px;
+                padding: 12px 16px;
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -100,7 +102,7 @@
                 border-bottom-right-radius: 10px;
 
                 h4 {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 500;
                     font-family: $body-font;
                     color: #060606;
@@ -112,61 +114,69 @@
         .content {
             max-width: 740px;
 
-            @include breakpoint (max-xxl){
-               margin-top: 20px;
+            @include breakpoint (max-xxl) {
+                margin-top: 20px;
             }
 
-            @include breakpoint (max-xxs){
-               padding: 0 15px;
+            @include breakpoint (max-xxs) {
+                padding: 0 15px;
             }
 
             .quote-icon {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
 
-                @include breakpoint (max-xxl){
+                @include breakpoint (max-xxl) {
                     margin-bottom: 10px;
                 }
             }
 
             p {
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 400;
                 color: #060606;
                 text-transform: capitalize;
-                line-height: 187%;
+                line-height: 160%;
 
-                @include breakpoint (max-xxl){
-                   font-size: 20px;
+                @include breakpoint (max-xxl) {
+                    font-size: 16px;
                 }
 
-                @include breakpoint (max-lg){
-                   font-size: 18px;
+                @include breakpoint (max-lg) {
+                    font-size: 15px;
                 }
 
-                 @include breakpoint (max-xxs){
-                   font-size: 16px;
+                @include breakpoint (max-xxs) {
+                    font-size: 14px;
                 }
             }
 
             .clutech-image {
                 margin-top: 60px;
 
-                @include breakpoint (max-xxl){
-                   margin-top: 30px;
+                @include breakpoint (max-xxl) {
+                    margin-top: 30px;
                 }
             }
         }
     }
 }
 
+testimonial-section {
+    @include breakpoint (max-sm) {
+        padding-bottom: 0px;
+    }
+}
+
 .testimonial-section-2 {
     .section-title-area {
-       .sub-title {
-        color: $white;
-            &::before,&::after {
+        .sub-title {
+            color: $white;
+
+            &::before,
+            &::after {
                 background-color: $white;
             }
-       }
+        }
     }
 }
 
@@ -176,8 +186,8 @@
     margin-right: -45%;
     margin-top: 30px;
 
-    @include breakpoint (max-lg){
-       margin-right: 0;
+    @include breakpoint (max-lg) {
+        margin-right: 0;
     }
 
 
@@ -185,16 +195,16 @@
         margin-top: 30px;
         border-right: 1px solid rgba(255, 255, 255, 0.2);
 
-        @include breakpoint (max-xl){
-           border-right: none;
+        @include breakpoint (max-xl) {
+            border-right: none;
         }
 
         h2 {
             margin-top: 100px;
             font-size: 50px;
-             color: $white;
+            color: $white;
 
-             @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 margin-top: 30px;
             }
         }
@@ -215,7 +225,7 @@
             gap: 30px;
             margin-top: 80px;
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 margin-top: 30px;
             }
         }
@@ -244,7 +254,7 @@
             font-weight: 400;
             margin-top: 30px;
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 font-size: 17px;
             }
         }
@@ -254,8 +264,8 @@
             gap: 20px;
             margin-top: 40px;
 
-             @include breakpoint (max-sm){
-               margin-top: 20px;
+            @include breakpoint (max-sm) {
+                margin-top: 20px;
             }
 
             .client-content {
@@ -293,7 +303,7 @@
         letter-spacing: -0.1px;
         text-transform: uppercase;
 
-        @include breakpoint (max-xl){
+        @include breakpoint (max-xl) {
             font-size: 16px;
         }
     }
@@ -316,10 +326,10 @@
 
     img {
         @include imgw;
-         border-radius: 6px;
+        border-radius: 6px;
     }
 
-    @include breakpoint (max-lg){
+    @include breakpoint (max-lg) {
         max-width: 212px;
     }
 }
@@ -373,7 +383,7 @@
     background: #232323;
     padding: 16px 30px;
 
-    @include breakpoint (max-xl){
+    @include breakpoint (max-xl) {
         max-width: 660px;
     }
 
@@ -383,7 +393,7 @@
         background-position: center;
         position: relative;
 
-        @include breakpoint (max-xl4){
+        @include breakpoint (max-xl4) {
             background-image: none !important;
             padding: 0;
         }
@@ -395,8 +405,8 @@
             margin-bottom: 30px;
             padding-top: 10px;
 
-            @include breakpoint (max-xl4){
-               padding-left: 0;
+            @include breakpoint (max-xl4) {
+                padding-left: 0;
             }
 
             .thumb {
@@ -406,8 +416,8 @@
                 width: 75px;
                 height: 61px;
 
-                @include breakpoint (max-xl4){
-                   position: static;
+                @include breakpoint (max-xl4) {
+                    position: static;
                 }
 
                 img {
@@ -445,13 +455,13 @@
     margin-bottom: 120px;
 
     @include breakpoint (max-xxl) {
-       margin: 0 30px;
-       margin-bottom: 100px;
+        margin: 0 30px;
+        margin-bottom: 100px;
     }
 
-     @include breakpoint (max-sm) {
-       margin: 0 15px;
-       margin-bottom: 80px;
+    @include breakpoint (max-sm) {
+        margin: 0 15px;
+        margin-bottom: 80px;
     }
 }
 
@@ -465,19 +475,19 @@
         margin-top: 30px;
         margin-bottom: 0px;
     }
-    
+
     .ball-shape {
         position: absolute;
         z-index: -1;
         left: 319px;
         bottom: -100px;
 
-         @include breakpoint (max-xxl) {
+        @include breakpoint (max-xxl) {
             display: none;
         }
-        
+
         img {
-             animation: rotateBall 10s linear infinite;
+            animation: rotateBall 10s linear infinite;
         }
     }
 
@@ -487,12 +497,12 @@
         top: -50px;
         z-index: -1;
 
-         @include breakpoint (max-xxl) {
+        @include breakpoint (max-xxl) {
             display: none;
         }
 
         img {
-             animation: rotateBall 10s linear infinite;
+            animation: rotateBall 10s linear infinite;
         }
     }
 
@@ -507,7 +517,7 @@
         }
 
         img {
-             animation: rotateBall 10s linear infinite;
+            animation: rotateBall 10s linear infinite;
         }
     }
 
@@ -521,11 +531,11 @@
         backdrop-filter: blur(75.69499969482422px);
 
         @include breakpoint (max-lg) {
-           padding: 45px 30px 45px;
+            padding: 45px 30px 45px;
         }
-        
+
         @include breakpoint (max-sm) {
-           padding: 30px;
+            padding: 30px;
         }
 
         .testimonial-content {
@@ -534,6 +544,7 @@
                 text-align-last: left;
                 margin-bottom: 10px;
             }
+
             p {
                 font-size: 18px;
                 font-style: italic;
@@ -544,7 +555,7 @@
                 text-transform: capitalize;
 
                 @include breakpoint (max-xxl) {
-                   font-size: 16px;
+                    font-size: 16px;
                 }
             }
 
@@ -610,7 +621,7 @@
     height: 50vh;
     margin-top: 230px;
 
-   
+
 
     .swiper-container {
         width: 100%;
@@ -622,7 +633,7 @@
             .slide-image {
                 height: 480px;
 
-                @include breakpoint (max-xxl){
+                @include breakpoint (max-xxl) {
                     height: 380px;
                 }
 
@@ -636,54 +647,54 @@
 }
 
 .coverflow-slider-text-wrap {
-  margin-top: 0px;
-  text-align: center;
+    margin-top: 0px;
+    text-align: center;
 }
 
 .coverflow-slider-text-active {
-  width: 100%;
-  height: 60px; 
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
 }
 
 .coverflow-slider-text-active .swiper-wrapper {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .coverflow-slider-text-active .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .coverflow-slider-text-active .coverflow-slider-content h4 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-  opacity: 0.5;
-  transform: scale(0.9);
-  transition: all 0.6s ease;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: all 0.6s ease;
 
-  @include breakpoint (max-xxl){
+    @include breakpoint (max-xxl) {
         font-size: 40px;
     }
 
-  @include breakpoint (max-lg){
+    @include breakpoint (max-lg) {
         font-size: 40px;
     }
 
-   @include breakpoint (max-md){
+    @include breakpoint (max-md) {
         font-size: 20px;
     }
 }
 
 .coverflow-slider-text-active .swiper-slide-active h4 {
-  transform: scale(1.2);
-  opacity: 1;
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .coverflow-slider-main {
@@ -694,24 +705,24 @@
         margin-left: 20px;
         margin-right: 20px;
 
-         @include breakpoint (max-xxl){
+        @include breakpoint (max-xxl) {
             display: none;
         }
 
-         .dot-number {
+        .dot-number {
             @include flex;
             gap: 20px;
-            
-            @include breakpoint (max-md){
+
+            @include breakpoint (max-md) {
                 display: none;
             }
 
             .swiper-pagination-bullet-active {
                 .dot-num {
-                span {
-                    color: $theme-color;
+                    span {
+                        color: $theme-color;
+                    }
                 }
-             }
             }
 
             .dot-num {
@@ -724,49 +735,49 @@
             }
         }
 
-            .arrow-button {
-                @include flex;
-                gap: 24px;
+        .arrow-button {
+            @include flex;
+            gap: 24px;
 
-                .array-prev {
-                    width: 60px;
-                    height: 60px;
-                    line-height: 60px;
-                    text-align: center;
-                    border: 1px solid $white;
-                    color: $white;
-                    border-radius: 100px;
-                    z-index: 99999;
-                    @include transition;
-                    cursor: pointer;
+            .array-prev {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                border: 1px solid $white;
+                color: $white;
+                border-radius: 100px;
+                z-index: 99999;
+                @include transition;
+                cursor: pointer;
 
-                    &:hover {
-                        background-color: $theme-color;
-                        border: 1px solid $theme-color;
-                        color: $bg-color;
-                        z-index: 9999;
-                    }
+                &:hover {
+                    background-color: $theme-color;
+                    border: 1px solid $theme-color;
+                    color: $bg-color;
+                    z-index: 9999;
                 }
+            }
 
-                .array-next {
-                    width: 60px;
-                    height: 60px;
-                    line-height: 60px;
-                    text-align: center;
-                    border: 1px solid $white;
-                    color: $white;
-                    border-radius: 100px;
-                    z-index: 999;
-                    @include transition;
+            .array-next {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                border: 1px solid $white;
+                color: $white;
+                border-radius: 100px;
+                z-index: 999;
+                @include transition;
 
-                    &:hover {
-                        background-color: $theme-color;
-                        border: 1px solid $theme-color;
-                        color: $bg-color;
-                    }
+                &:hover {
+                    background-color: $theme-color;
+                    border: 1px solid $theme-color;
+                    color: $bg-color;
                 }
             }
         }
+    }
 }
 
 .testimonial-wrapper-3 {
@@ -779,7 +790,7 @@
         bottom: 25%;
         left: 0;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
@@ -789,7 +800,7 @@
         bottom: 25%;
         right: 0;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
@@ -799,7 +810,7 @@
         left: 50px;
         bottom: 58%;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
@@ -809,7 +820,7 @@
         right: 50px;
         bottom: 58%;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
@@ -819,17 +830,17 @@
         left: 17%;
         top: 4%;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
 
-     .client-5 {
+    .client-5 {
         position: absolute;
         right: 17%;
         top: 4%;
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
@@ -840,7 +851,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             display: none;
         }
     }
@@ -855,20 +866,20 @@
         padding-top: 60px;
         margin-top: 140px;
 
-        @include breakpoint (max-lg){
-           margin-top: 30px;
-           padding: 30px;
+        @include breakpoint (max-lg) {
+            margin-top: 30px;
+            padding: 30px;
         }
 
         &::before {
-           @include before;
-           background-color: $white;
-           border-radius: 50%;
+            @include before;
+            background-color: $white;
+            border-radius: 50%;
             width: 868px;
             height: 868px;
             z-index: -1;
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 display: none;
             }
         }
@@ -885,14 +896,14 @@
                     font-size: 36px;
                     font-weight: 600;
 
-                    @include breakpoint (max-md){
+                    @include breakpoint (max-md) {
                         font-size: 24px;
                     }
                 }
             }
 
             .quote-icon {
-                @include breakpoint (max-lg){
+                @include breakpoint (max-lg) {
                     img {
                         width: 100%;
                     }
@@ -906,7 +917,7 @@
                 font-style: italic;
                 margin-top: 25px;
 
-                @include breakpoint (max-sm){
+                @include breakpoint (max-sm) {
                     font-size: 14px;
                 }
             }
@@ -916,7 +927,8 @@
     .array-button {
         justify-content: center;
 
-        .array-next,.array-prev {
+        .array-next,
+        .array-prev {
             border: 1.3px solid rgba(193, 193, 193, 0.5);
 
             &:hover {
@@ -929,7 +941,7 @@
 .testimonial-wrapper-5 {
     margin-left: 15px;
     margin-right: 15px;
-    
+
 
     .testimonial-thumb {
         position: relative;
@@ -967,7 +979,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
 
             @include breakpoint (max-xxl) {
                 width: 70px;
@@ -986,7 +998,7 @@
         width: 100%;
 
         @include breakpoint (max-sm) {
-           padding: 25px;
+            padding: 25px;
         }
 
         &::before {
@@ -1008,12 +1020,13 @@
             margin-bottom: 35px;
             margin-top: 30px;
 
-             @include breakpoint (max-xxl) {
+            @include breakpoint (max-xxl) {
                 margin-bottom: 30px;
                 font-size: 16px;
                 margin-top: 20px;
-             }
+            }
         }
+
         .star {
             color: rgba(236, 176, 20, 1);
         }
@@ -1027,7 +1040,7 @@
 
             @include breakpoint (max-xxl) {
                 margin-top: 30px;
-             }
+            }
 
             .cont {
                 h3 {
@@ -1050,13 +1063,13 @@
 }
 
 .testimonial-slider-4 {
-  .swiper-slide {
-    width: auto !important;
+    .swiper-slide {
+        width: auto !important;
 
-    @include breakpoint (max-sm) {
-         width: 100% !important;
+        @include breakpoint (max-sm) {
+            width: 100% !important;
+        }
     }
-  }
 }
 
 .testimonial-section-5 {
@@ -1068,24 +1081,24 @@
             h2 {
                 font-size: 55px;
 
-                @include breakpoint(max-xxl){
-                  font-size: 44px;
+                @include breakpoint(max-xxl) {
+                    font-size: 44px;
                 }
 
-                @include breakpoint(max-xl){
-                  font-size: 35px;
+                @include breakpoint(max-xl) {
+                    font-size: 35px;
                 }
 
-                @include breakpoint(max-lg){
-                  font-size: 35px;
+                @include breakpoint(max-lg) {
+                    font-size: 35px;
                 }
 
-                @include breakpoint(max-md){
-                  font-size: 35px;
+                @include breakpoint(max-md) {
+                    font-size: 35px;
                 }
 
-                @include breakpoint(max-sm){
-                  font-size: 28px;
+                @include breakpoint(max-sm) {
+                    font-size: 28px;
                 }
             }
         }
@@ -1110,7 +1123,8 @@
             }
         }
 
-        .array-prev, .array-next {
+        .array-prev,
+        .array-next {
             width: 48px;
             height: 48px;
             line-height: 48px;

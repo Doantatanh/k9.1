@@ -160,10 +160,6 @@
                     nextEl: ".array-next",
                     prevEl: ".array-prev",
                 },
-                pagination: {
-                    el: ".swiper-pagination",
-                    type: "fraction",
-                },
                 breakpoints: {
                     991: {
                         slidesPerView: 2,
@@ -632,37 +628,7 @@
             opacity: 0,
             duration: 1,
             stagger: 0.1,
-        });
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        ScrollTrigger.matchMedia({
-
-            // âœ… XL and up
-            "(min-width: 992px)": function () {
-
-                const featureTimeline = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: ".feature-section1",
-                        start: "top top+=120",
-                        end: "+=450",
-                        pin: true,
-                        scrub: 1,
-                        anticipatePin: 1,
-                        invalidateOnRefresh: true
-                    }
-                });
-
-                featureTimeline.to(".feature-i-do-box2", {
-                    marginTop: 70,
-                    ease: "power1.out"
-                });
-            },
-
-            "(max-width: 1199px)": function () {
-                ScrollTrigger.getAll().forEach(st => st.kill());
-            }
-
+            // Parallax and pin scroll effects removed as requested
         });
 
         // smoother à¦¥à¦¾à¦•à¦²à§‡
@@ -1002,56 +968,9 @@
 
 
         /* ================================
-          Service Panel Js Start
-       ================================ */
-
-        let sv = gsap.matchMedia();
-        sv.add("(min-width: 1199px)", () => {
-            let tl = gsap.timeline();
-            let projectpanels = document.querySelectorAll('.tp-service-panel');
-            let baseOffset = 150;
-            let offsetIncrement = 60;
-
-            projectpanels.forEach((section, index) => {
-                let topOffset = baseOffset + (index * offsetIncrement);
-                tl.to(section, {
-                    scrollTrigger: {
-                        trigger: section,
-                        pin: section,
-                        scrub: 1,
-                        start: `top ${topOffset}px`,
-                        end: "bottom 50%",
-                        endTrigger: '.tp-service-pin',
-                        pinSpacing: false,
-                        markers: false,
-                    },
-                });
-            });
-        });
-
-        let sv2 = gsap.matchMedia();
-        sv2.add("(min-width: 1199px)", () => {
-            let tl = gsap.timeline();
-            let projectpanels = document.querySelectorAll('.tp-service-panel2');
-            let baseOffset = 150;
-            let offsetIncrement = 120;
-
-            projectpanels.forEach((section, index) => {
-                let topOffset = baseOffset + (index * offsetIncrement);
-                tl.to(section, {
-                    scrollTrigger: {
-                        trigger: section,
-                        pin: section,
-                        scrub: 1,
-                        start: `top ${topOffset}px`,
-                        end: "bottom 55%",
-                        endTrigger: '.tp-service-pin2',
-                        pinSpacing: false,
-                        markers: false,
-                    },
-                });
-            });
-        });
+          Service Panel Js Start (Scroll Pinning Removed)
+        ================================ */
+        // Service panel pinning effects disabled as requested
 
         /* ================================
            Text Up Js Start

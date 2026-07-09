@@ -828,9 +828,9 @@
           }
 
           &:hover {
-            background-color: $theme-color;
+            background-color: $bg-color-logo;
             color: $white;
-            border: 1px solid $theme-color;
+            border: 1px solid $bg-color-logo;
           }
         }
       }
@@ -1149,6 +1149,17 @@
     border-bottom: 1px dashed #fff;
     padding-bottom: 70px;
 
+    @include breakpoint(max-xxl) {
+      padding-top: 60px;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint(max-sm) {
+      padding-bottom: 50px;
+      margin-bottom: 30px;
+    }
+
     b {
       color: $header-color;
       font-weight: 400;
@@ -1160,7 +1171,7 @@
     text-transform: uppercase;
     color: $white;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 55px;
     font-family: $heading-font;
     line-height: 1;
     padding-top: 36px;
@@ -1209,15 +1220,22 @@
 
   @include breakpoint(max-sm) {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   @include breakpoint(max-xxs) {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @include breakpoint(max-xxl) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .footer-list-items {
     li {
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 400;
       text-transform: uppercase;
 

@@ -371,6 +371,10 @@
   padding: 10px 0;
 }
 
+.brand-section {
+  padding-bottom: 35px;
+}
+
 .work-process-section-2 {
   .section-title-area {
     h2 {
@@ -899,7 +903,6 @@
 
 .faq-content-items {
   padding: 46px 50px;
-  border: 1px solid rgba(2, 21, 36, 0.2);
   border-radius: 10px;
 
   @include breakpoint (max-xl) {
@@ -1112,7 +1115,7 @@
       font-size: 80px;
 
       @include breakpoint (max-xxl) {
-        font-size: 140px;
+        font-size: 70px;
       }
 
       @include breakpoint (max-xl) {
@@ -1124,7 +1127,7 @@
       }
 
       @include breakpoint (max-sm) {
-        font-size: 50px;
+        font-size: 40px;
       }
     }
   }
@@ -2673,14 +2676,14 @@
 
 .feature-i-do-box1 {
   background-color: #021524;
-  padding: 120px 0;
+  padding: 45px 0;
   position: relative;
   padding-right: 30px;
 
   @include breakpoint (max-lg) {
     padding-left: 30px !important;
     padding-right: 30px !important;
-    padding-top: 80px !important;
+    padding-top: 30px !important;
     padding-bottom: 80px !important;
   }
 
@@ -2790,7 +2793,7 @@
 }
 
 .feature-i-do-box2 {
-  padding: 120px 0;
+  padding: 45px 0;
   position: relative;
   padding-left: 30px;
   height: 100%;
@@ -3305,6 +3308,12 @@
         font-size: 30px;
       }
     }
+  }
+}
+
+.feature-section {
+  @include breakpoint (max-sm) {
+    padding-bottom: 40px;
   }
 }
 
